@@ -1,0 +1,6 @@
+Job23: Cập nhật module nhận diện bằng khuôn mặt
+Tạo form thống kê và cập nhật nhận diện là Unknown:
+      + Tạo GridView list các ảnh nhận diện sai: cột STT, cột ảnh, cột nhận diện
+      + Phía trên GridView có TextBox “Tên nhận diện”, khi click vào 1 ảnh thì tên nhận diện (cho phép sửa lại để cập nhật) và 1 nút cập nhật => Bổ sung vào CSDL dữ liệu huấn luyện
+      + Có Combox chọn theo ngày
+Deadline: 19/2/2024
