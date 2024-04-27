@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "f8QQGdSo7Mc1C7d4yL3WsU0lOq3Lfxsl8qnOKpgdSKQvPdjaHPvjZ3RGr7nMpGROqgaEfHInZOFY0Au9k2qX7g==",
+  "success": true,
+  "projectFilePath": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job26_The map view library on winform\\View Map on Winform\\View Map on Winform.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\gmap.net.windowsforms\\1.7.5\\gmap.net.windowsforms.1.7.5.nupkg.sha512"
+  ],
+  "logs": []
+}

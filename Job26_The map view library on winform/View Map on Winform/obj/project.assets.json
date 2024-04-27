@@ -1,0 +1,147 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.8": {
+      "GMap.NET.WindowsForms/1.7.5": {
+        "type": "package",
+        "compile": {
+          "lib/net40/GMap.NET.Core.dll": {},
+          "lib/net40/GMap.NET.WindowsForms.dll": {}
+        },
+        "runtime": {
+          "lib/net40/GMap.NET.Core.dll": {},
+          "lib/net40/GMap.NET.WindowsForms.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win": {
+      "GMap.NET.WindowsForms/1.7.5": {
+        "type": "package",
+        "compile": {
+          "lib/net40/GMap.NET.Core.dll": {},
+          "lib/net40/GMap.NET.WindowsForms.dll": {}
+        },
+        "runtime": {
+          "lib/net40/GMap.NET.Core.dll": {},
+          "lib/net40/GMap.NET.WindowsForms.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win-arm64": {
+      "GMap.NET.WindowsForms/1.7.5": {
+        "type": "package",
+        "compile": {
+          "lib/net40/GMap.NET.Core.dll": {},
+          "lib/net40/GMap.NET.WindowsForms.dll": {}
+        },
+        "runtime": {
+          "lib/net40/GMap.NET.Core.dll": {},
+          "lib/net40/GMap.NET.WindowsForms.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win-x64": {
+      "GMap.NET.WindowsForms/1.7.5": {
+        "type": "package",
+        "compile": {
+          "lib/net40/GMap.NET.Core.dll": {},
+          "lib/net40/GMap.NET.WindowsForms.dll": {}
+        },
+        "runtime": {
+          "lib/net40/GMap.NET.Core.dll": {},
+          "lib/net40/GMap.NET.WindowsForms.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win-x86": {
+      "GMap.NET.WindowsForms/1.7.5": {
+        "type": "package",
+        "compile": {
+          "lib/net40/GMap.NET.Core.dll": {},
+          "lib/net40/GMap.NET.WindowsForms.dll": {}
+        },
+        "runtime": {
+          "lib/net40/GMap.NET.Core.dll": {},
+          "lib/net40/GMap.NET.WindowsForms.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GMap.NET.WindowsForms/1.7.5": {
+      "sha512": "VA2836bCMgIAhcvpQIJpmDJrQFm+nnH8AiqKzGqvMAoamO+UqAoNy6b+YPKNAqS1+2RRAcq12nrC582tUcb90A==",
+      "type": "package",
+      "path": "gmap.net.windowsforms/1.7.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "gmap.net.windowsforms.1.7.5.nupkg.sha512",
+        "gmap.net.windowsforms.nuspec",
+        "lib/net20/GMap.NET.Core.dll",
+        "lib/net20/GMap.NET.WindowsForms.dll",
+        "lib/net40/GMap.NET.Core.dll",
+        "lib/net40/GMap.NET.WindowsForms.dll"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.8": [
+      "GMap.NET.WindowsForms >= 1.7.5"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job26_The map view library on winform\\View Map on Winform\\View Map on Winform.csproj",
+      "projectName": "View Map on Winform",
+      "projectPath": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job26_The map view library on winform\\View Map on Winform\\View Map on Winform.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job26_The map view library on winform\\View Map on Winform\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net48"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net48": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "net48": {
+        "dependencies": {
+          "GMap.NET.WindowsForms": {
+            "target": "Package",
+            "version": "[1.7.5, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-arm64": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}
