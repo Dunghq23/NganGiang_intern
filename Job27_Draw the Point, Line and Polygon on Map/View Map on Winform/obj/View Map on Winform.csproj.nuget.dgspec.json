@@ -1,0 +1,60 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job26_The map view library on winform\\View Map on Winform\\View Map on Winform.csproj": {}
+  },
+  "projects": {
+    "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job26_The map view library on winform\\View Map on Winform\\View Map on Winform.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job26_The map view library on winform\\View Map on Winform\\View Map on Winform.csproj",
+        "projectName": "View Map on Winform",
+        "projectPath": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job26_The map view library on winform\\View Map on Winform\\View Map on Winform.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job26_The map view library on winform\\View Map on Winform\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "dependencies": {
+            "GMap.NET.WindowsForms": {
+              "target": "Package",
+              "version": "[1.7.5, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-arm64": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
