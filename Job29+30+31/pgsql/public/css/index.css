@@ -1,0 +1,25 @@
+body {
+    background-image: url('https://static.vinwonders.com/production/ho-hoan-kiem-2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.list-group-item:hover {
+    background-color: rgb(153, 213, 251);
+    cursor: pointer;
+}
+
+.list-group-item:active {
+    background-color: rgb(60, 180, 255);
+}
+
+.text-with-image {
+    font-weight: bold;
+    color: transparent;
+    background-image: url('https://st.quantrimang.com/photos/image/2021/02/04/Hinh-nen-Quoc-Ky-VN-9.jpg');
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-position: center center;
+}
