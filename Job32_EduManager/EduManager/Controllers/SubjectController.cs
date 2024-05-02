@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data.SqlClient;
 using System.Windows.Forms;
 using EduManager.Models;
 using EduManager.Services;
@@ -26,9 +21,9 @@ namespace EduManager.Controllers
             return instance;
         }
 
+        // Thêm dữ liệu
         public bool addSubject(Subject subject)
         {
-            // query
             string query = "INSERT INTO Subjects VALUES (@Id_Sub , @name_Sub)";
             SqlParameter[] para = new SqlParameter[]
             {
@@ -41,12 +36,14 @@ namespace EduManager.Controllers
             return rowAffect > 0 ? true : false;
         }
 
+        // Hiển thị dữ liệu
         public void showData(DataGridView dgv)
         {
             string query = "Select \r\n\tId_Sub AS N'Mã môn học', \r\n\tName_Sub AS N'Tên môn học'\r\nFROM Subjects";
             dgv.DataSource = connectDatabase.ExecuteQuery(query);
         }
 
+        // Sửa dữ liệu
         public bool editData(Subject s)
         {
             string query = "UPDATE Subjects SET Name_Sub = @name_Sub WHERE Id_Sub = @Id_Sub";
@@ -59,6 +56,7 @@ namespace EduManager.Controllers
             return (rowAffect > 0 ? true : false);
         }
 
+        // Xóa dữ liệu
         public bool RemoveData(Subject s)
         {
             string query = "DELETE FROM Subjects WHERE Id_Sub = @Id_Sub";

@@ -63,6 +63,16 @@ namespace EduManager.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ICON_ADD_24x24 {
+            get {
+                object obj = ResourceManager.GetObject("ICON_ADD_24x24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ICON_EDIT {
             get {
                 object obj = ResourceManager.GetObject("ICON_EDIT", resourceCulture);
@@ -73,9 +83,39 @@ namespace EduManager.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ICON_EDIT_24x24 {
+            get {
+                object obj = ResourceManager.GetObject("ICON_EDIT_24x24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ICON_TRASH {
             get {
                 object obj = ResourceManager.GetObject("ICON_TRASH", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ICON_TRASH_24x24 {
+            get {
+                object obj = ResourceManager.GetObject("ICON_TRASH_24x24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap QLDT {
+            get {
+                object obj = ResourceManager.GetObject("QLDT", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

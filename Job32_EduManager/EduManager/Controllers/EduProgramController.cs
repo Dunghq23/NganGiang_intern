@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data.SqlClient;
 using System.Windows.Forms;
 
 using EduManager.Models;
@@ -21,6 +13,7 @@ namespace EduManager.Controllers
 
         private EduProgramController() { }
 
+        // Khởi tạo một instance mới nếu chưa tồn tại, ngược lại trả về instance hiện tại
         public static EduProgramController Instance()
         {
             if (instance == null)
@@ -30,14 +23,15 @@ namespace EduManager.Controllers
             return instance;
         }
 
+        // Hiển thị dữ liệu
         public void ShowData(DataGridView dgv)
         {
-            // Truy vấn dữ liệu
             string query = "SELECT * FROM EduProgramView";
             dgv.Columns.Clear();
             dgv.DataSource = ConnectDatabase.getInstance().ExecuteQuery(query);
         }
 
+        // Thêm dữ liệu
         public bool AddData(EduProgram ep)
         {
             string query = "INSERT INTO EduProgram VALUES (@FK_Id_Sub, @FK_Id_LS, @NumHour)";
@@ -52,6 +46,7 @@ namespace EduManager.Controllers
             return rowAffect > 0 ? true : false;
         }
 
+        // Sửa dữ liệu
         public bool EditData(EduProgram ep)
         {
             string query = "UPDATE EduProgram " +
@@ -67,6 +62,7 @@ namespace EduManager.Controllers
             return rowAffect > 0 ? true : false;
         }
 
+        // Xóa dữ liệu
         public bool RemoveData(EduProgram ed)
         {
             string query = "DELETE FROM EduProgram WHERE Id_EP = @Id_EP";
@@ -79,6 +75,7 @@ namespace EduManager.Controllers
             return rowAffect > 0 ? true : false;
         }
 
+        // Xóa tất cả dữ liệu
         public bool RemoveAllData(EduProgram ed)
         {
 

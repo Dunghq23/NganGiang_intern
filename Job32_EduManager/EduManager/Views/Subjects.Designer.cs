@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Subjects));
             this.btnAddSubject = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.nmBT = new System.Windows.Forms.NumericUpDown();
@@ -156,7 +157,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(22, 66);
+            this.label2.Location = new System.Drawing.Point(22, 68);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 16);
             this.label2.TabIndex = 3;
@@ -164,7 +165,7 @@
             // 
             // txbName_Sub
             // 
-            this.txbName_Sub.Location = new System.Drawing.Point(25, 85);
+            this.txbName_Sub.Location = new System.Drawing.Point(25, 87);
             this.txbName_Sub.Name = "txbName_Sub";
             this.txbName_Sub.Size = new System.Drawing.Size(262, 22);
             this.txbName_Sub.TabIndex = 2;
@@ -184,6 +185,7 @@
             this.txbId_Sub.Name = "txbId_Sub";
             this.txbId_Sub.Size = new System.Drawing.Size(262, 22);
             this.txbId_Sub.TabIndex = 0;
+            this.txbId_Sub.TextChanged += new System.EventHandler(this.txbId_Sub_TextChanged);
             // 
             // Subjects
             // 
@@ -191,6 +193,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(343, 365);
             this.Controls.Add(this.panel2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Subjects";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Subjects";

@@ -103,12 +103,23 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\ICON_EDIT.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ICON_TRASH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICON_ADD-24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICON_EDIT-24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICON_TRASH-24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QLDT.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

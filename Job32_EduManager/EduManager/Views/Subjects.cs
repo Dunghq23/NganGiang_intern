@@ -1,22 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using EduManager.Models;
 using EduManager.Controllers;
+using System.Text.RegularExpressions;
 
 namespace EduManager.Views
 {
     public partial class Subjects : Form
     {
-        public Subjects()
+        private EduProgram_Form _eduProgramForm;
+
+        public Subjects(EduProgram_Form eduProgramForm)
         {
+            _eduProgramForm = eduProgramForm;
             InitializeComponent();
         }
 
@@ -44,7 +41,6 @@ namespace EduManager.Views
                 return;
             }
 
-            // Thêm môn học
             var subjectAdded = AddSubject();
 
             // Thêm chương trình giáo dục cho các checkbox được chọn
@@ -56,6 +52,7 @@ namespace EduManager.Views
             if (subjectAdded && ltAdded && btAdded && thAdded)
             {
                 MessageBox.Show("Thêm môn học và chương trình liên quan thành công!", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                _eduProgramForm.LoadData();
             }
             else
             {
@@ -98,6 +95,28 @@ namespace EduManager.Views
             nmLT.Value = 0;
             nmBT.Value = 0;
             nmTH.Value = 0;
+        }
+
+        private void txbId_Sub_TextChanged(object sender, EventArgs e)
+        {
+            var regex = new Regex("^[a-zA-Z0-9]+$");
+
+            // Nếu đầu vào không hợp lệ, cảnh báo hoặc điều chỉnh
+            try
+            {
+                if (!regex.IsMatch(txbId_Sub.Text) && txbId_Sub.Text != "")
+                {
+                    MessageBox.Show("Vui lòng chỉ nhập chữ in hoa và số.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                    // Loại bỏ ký tự cuối cùng (vì nó không hợp lệ)
+                    txbId_Sub.Text = txbId_Sub.Text.Substring(0, txbId_Sub.Text.Length - 1);
+                    txbId_Sub.SelectionStart = txbId_Sub.Text.Length; // Đặt con trỏ cuối cùng
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi không xác định", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

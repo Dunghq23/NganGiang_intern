@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.IO;
+using System.Linq;
 using System.Windows.Forms;
 using EduManager.Controllers;
 using EduManager.Models;
@@ -15,7 +16,7 @@ namespace EduManager.Views
             InitializeComponent();
             dtgvEduProgram.RowTemplate.Height = 40;
 
-            
+
         }
 
         // FORM LOAD
@@ -24,21 +25,22 @@ namespace EduManager.Views
             LoadData();
             // Chọn dòng toàn bộ khi click
             dtgvEduProgram.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dtgvEduProgram.DefaultCellStyle.SelectionBackColor = ColorTranslator.FromHtml("#e0a277");
-            dtgvEduProgram.DefaultCellStyle.SelectionForeColor = ColorTranslator.FromHtml("#fff");
+            dtgvEduProgram.DefaultCellStyle.SelectionBackColor = ColorTranslator.FromHtml("#d8dfdc");
+            dtgvEduProgram.DefaultCellStyle.SelectionForeColor = ColorTranslator.FromHtml("#000");
+
+            btnAddSubject.Image = Properties.Resources.ICON_ADD_24x24;
+            btnAddSubject.TextImageRelation = TextImageRelation.ImageBeforeText;
 
         }
 
         // LOAD DATA
-        private void LoadData()
+        public void LoadData()
         {
             EduProgramController.Instance().ShowData(dtgvEduProgram);
             ConfigureDataGridViewReadOnly(dtgvEduProgram, "Mã môn học");
             ConfigureColumnHeaders(dtgvEduProgram);
-            // Canh giữa các cột cụ thể
             ConfigureColumnAlignment(dtgvEduProgram, new string[] { "Mã môn học", "Lý thuyết", "Bài tập", "Thực hành" });
-
-            AddActionColumns(dtgvEduProgram); // Thêm các cột "Sửa" và "Xóa"
+            AddActionColumns(dtgvEduProgram); 
         }
 
         // ADD & CONFIGURATION DATAGRIDVIEW
@@ -57,7 +59,6 @@ namespace EduManager.Views
                     AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
                 };
                 dgv.Columns.Add(editColumn);
-                //editColumn.DefaultCellStyle.BackColor = ColorTranslator.FromHtml("#4a88da");
             }
 
             if (dgv.Columns["Delete"] == null) // Chỉ thêm nếu chưa tồn tại
@@ -182,6 +183,7 @@ namespace EduManager.Views
             {
                 LoadData();
                 MessageBox.Show("Sửa môn học thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             }
             else
             {
@@ -191,9 +193,64 @@ namespace EduManager.Views
 
         private void btnAddSubject_Click(object sender, EventArgs e)
         {
-            var subjectForm = new Subjects();
-            subjectForm.ShowDialog(); // Hiển thị dialog
-            LoadData(); // Tải lại dữ liệu sau khi dialog đóng
+            var subjectForm = new Subjects(this);
+            subjectForm.ShowDialog(); 
+        }
+
+        // VALIDATION
+        private object previousValue;
+        private void dtgvEduProgram_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
+        {
+            previousValue = dtgvEduProgram[e.ColumnIndex, e.RowIndex].Value;
+        }
+
+        private void dtgvEduProgram_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+            var currentValue = dtgvEduProgram[e.ColumnIndex, e.RowIndex].Value;
+
+            if (currentValue == null || string.IsNullOrWhiteSpace(currentValue.ToString()))
+            {
+                dtgvEduProgram[e.ColumnIndex, e.RowIndex].Value = previousValue;
+            }
+            else
+            {
+                if (!currentValue.Equals(previousValue))
+                {
+                    dtgvEduProgram[e.ColumnIndex, e.RowIndex].Style.ForeColor = System.Drawing.Color.Blue;
+                }
+            }
+        }
+
+        private void dtgvEduProgram_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
+        {
+            var textBox = e.Control as TextBox;
+
+            if (textBox != null)
+            {
+                textBox.KeyPress -= TextBox_KeyPress;
+
+                int columnIndex = dtgvEduProgram.CurrentCell.ColumnIndex;
+                int[] numericColumns = { 2, 3, 4 }; 
+
+                if (numericColumns.Contains(columnIndex))
+                {
+                    textBox.KeyPress += TextBox_KeyPress;
+                }
+            }
+        }
+
+        private void TextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+                lbMessage.Text = "Vui lòng chỉ nhập số!";
+                lbMessage.ForeColor = Color.Red;
+            }
+            else
+            {
+                lbMessage.Text = "";
+            }
         }
 
     }

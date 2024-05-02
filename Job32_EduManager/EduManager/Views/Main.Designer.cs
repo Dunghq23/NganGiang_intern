@@ -36,10 +36,10 @@
             // 
             this.btnEduManage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnEduManage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEduManage.Location = new System.Drawing.Point(50, 71);
+            this.btnEduManage.Location = new System.Drawing.Point(63, 26);
             this.btnEduManage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnEduManage.Name = "btnEduManage";
-            this.btnEduManage.Size = new System.Drawing.Size(110, 102);
+            this.btnEduManage.Size = new System.Drawing.Size(107, 122);
             this.btnEduManage.TabIndex = 2;
             this.btnEduManage.Text = "Quản lý đào tạo";
             this.btnEduManage.UseVisualStyleBackColor = true;
@@ -57,7 +57,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Trường Đại học Thủy lợi";
+            this.Text = "Quản lý giáo dục";
             this.Load += new System.EventHandler(this.Main_Load);
             this.ResumeLayout(false);
 
