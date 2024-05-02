@@ -63,6 +63,7 @@
             this.dtgvEduProgram.RowHeadersVisible = false;
             this.dtgvEduProgram.RowHeadersWidth = 51;
             this.dtgvEduProgram.RowTemplate.Height = 24;
+            this.dtgvEduProgram.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgvEduProgram.Size = new System.Drawing.Size(1474, 668);
             this.dtgvEduProgram.TabIndex = 0;
             this.dtgvEduProgram.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvEduProgram_CellClick);

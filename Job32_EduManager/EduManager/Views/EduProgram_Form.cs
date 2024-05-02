@@ -1,98 +1,199 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
-
 using EduManager.Controllers;
 using EduManager.Models;
-using EduManager.Services;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace EduManager.Views
 {
     public partial class EduProgram_Form : Form
     {
+
         public EduProgram_Form()
         {
             InitializeComponent();
+            dtgvEduProgram.RowTemplate.Height = 40;
+
+            
         }
 
+        // FORM LOAD
         private void EduProgram_Load(object sender, EventArgs e)
         {
-            EduProgramController.Instance().showData(dtgvEduProgram);
+            LoadData();
+            // Chọn dòng toàn bộ khi click
+            dtgvEduProgram.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dtgvEduProgram.DefaultCellStyle.SelectionBackColor = ColorTranslator.FromHtml("#e0a277");
+            dtgvEduProgram.DefaultCellStyle.SelectionForeColor = ColorTranslator.FromHtml("#fff");
+
         }
 
-        private void dtgvEduProgram_CellClick(object sender, DataGridViewCellEventArgs e)
+        // LOAD DATA
+        private void LoadData()
+        {
+            EduProgramController.Instance().ShowData(dtgvEduProgram);
+            ConfigureDataGridViewReadOnly(dtgvEduProgram, "Mã môn học");
+            ConfigureColumnHeaders(dtgvEduProgram);
+            // Canh giữa các cột cụ thể
+            ConfigureColumnAlignment(dtgvEduProgram, new string[] { "Mã môn học", "Lý thuyết", "Bài tập", "Thực hành" });
+
+            AddActionColumns(dtgvEduProgram); // Thêm các cột "Sửa" và "Xóa"
+        }
+
+        // ADD & CONFIGURATION DATAGRIDVIEW
+
+        private void AddActionColumns(DataGridView dgv)
         {
 
-            DataGridView dgv = sender as DataGridView;
-            if (e.RowIndex >= 0 && (dgv.Columns[e.ColumnIndex].HeaderText == "Xóa" || dgv.Columns[e.ColumnIndex].HeaderText == "Sửa"))
+            if (dgv.Columns["Edit"] == null) // Chỉ thêm nếu chưa tồn tại
             {
-                string Id_Sub = dgv.Rows[e.RowIndex].Cells[0].Value.ToString();
-
-                if (dgv.Columns[e.ColumnIndex].HeaderText == "Xóa")
+                string imagePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..", "..", "Resources", "ICON_EDIT-24x24.png");
+                var editColumn = new DataGridViewImageColumn
                 {
-                    EduProgram ed = new EduProgram(Id_Sub);
-                    Subject s = new Subject(Id_Sub);
-
-                    bool result1 = EduProgramController.Instance().removeAllData(ed);
-                    bool result2 = SubjectController.Instance().removeData(s);
-
-                    if (result1 && result2)
-                    {
-                        EduProgramController.Instance().showData(dtgvEduProgram);
-                        MessageBox.Show("Xóa môn học thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                    else
-                    {
-                        MessageBox.Show("Xóa môn học thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                }
-                else if (dgv.Columns[e.ColumnIndex].HeaderText == "Sửa")
-                {
-                    string tenMonHoc = dgv.Rows[e.RowIndex].Cells[1].Value.ToString();
-                    int lyThuyet = Convert.ToInt32(dgv.Rows[e.RowIndex].Cells[2].Value.ToString());
-                    int baiTap = Convert.ToInt32(dgv.Rows[e.RowIndex].Cells[3].Value.ToString());
-                    int thucHanh = Convert.ToInt32(dgv.Rows[e.RowIndex].Cells[4].Value.ToString());
-
-                    Subject s = new Subject(Id_Sub, tenMonHoc);
-                    EduProgram ed1 = new EduProgram(Id_Sub, 1, lyThuyet);
-                    EduProgram ed2 = new EduProgram(Id_Sub, 2, baiTap);
-                    EduProgram ed3 = new EduProgram(Id_Sub, 3, thucHanh);
-
-                    bool isUpdateSubject = SubjectController.Instance().editData(s);
-                    bool isUpdateLyThuyet =EduProgramController.Instance().editData(ed1);
-                    bool isUpdateBaiTap = EduProgramController.Instance().editData(ed2);
-                    bool isUpdateThucHanh = EduProgramController.Instance().editData(ed3);
-
-                    if (isUpdateSubject && isUpdateLyThuyet && isUpdateBaiTap && isUpdateThucHanh)
-                    {
-                        EduProgramController.Instance().showData(dtgvEduProgram);
-                        MessageBox.Show("Sửa môn học thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                    else
-                    {
-                        MessageBox.Show("Sửa môn học thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-
-                }
+                    Name = "Edit",
+                    HeaderText = "Sửa",
+                    Image = Image.FromFile(imagePath),
+                    AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+                };
+                dgv.Columns.Add(editColumn);
+                //editColumn.DefaultCellStyle.BackColor = ColorTranslator.FromHtml("#4a88da");
             }
 
+            if (dgv.Columns["Delete"] == null) // Chỉ thêm nếu chưa tồn tại
+            {
+                string imagePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..", "..", "Resources", "ICON_TRASH-24x24.png");
+                var deleteColumn = new DataGridViewImageColumn
+                {
+                    Name = "Delete",
+                    HeaderText = "Xóa",
+                    Image = Image.FromFile(imagePath),
+                    AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+                };
+                dgv.Columns.Add(deleteColumn);
+                //deleteColumn.DefaultCellStyle.BackColor = ColorTranslator.FromHtml("#f44336");
+
+            }
         }
 
+        private void ConfigureDataGridViewReadOnly(DataGridView dgv, string columnName)
+        {
+            var column = dgv.Columns[columnName];
+            if (column != null)
+            {
+                column.ReadOnly = true; // Đặt cột là chỉ đọc
+            }
+        }
+
+        private void ConfigureColumnHeaders(DataGridView dgv)
+        {
+            var headerStyle = new DataGridViewCellStyle
+            {
+                Alignment = DataGridViewContentAlignment.MiddleCenter,
+                BackColor = SystemColors.GrayText,
+                ForeColor = SystemColors.WindowText,
+                Font = new Font("Arial", 10, FontStyle.Bold)
+            };
+
+            dgv.ColumnHeadersDefaultCellStyle = headerStyle;
+        }
+
+        private void ConfigureColumnAlignment(DataGridView dgv, string[] columnNames)
+        {
+            foreach (var columnName in columnNames)
+            {
+                var column = dgv.Columns[columnName];
+                if (column != null)
+                {
+                    column.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                    column.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                }
+            }
+        }
+
+        // EVENT HANDLERS
+        private void dtgvEduProgram_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0) return; // Bỏ qua khi click vào tiêu đề
+
+            var dgv = sender as DataGridView;
+            var headerText = dgv.Columns[e.ColumnIndex].HeaderText;
+
+            if (headerText == "Xóa")
+            {
+                HandleDelete(dgv, e.RowIndex);
+            }
+            else if (headerText == "Sửa")
+            {
+                HandleEdit(dgv, e.RowIndex);
+            }
+        }
+
+        private void HandleDelete(DataGridView dgv, int rowIndex)
+        {
+            var subjectId = dgv.Rows[rowIndex].Cells[0].Value.ToString();
+            var subjectName = dgv.Rows[rowIndex].Cells[1].Value.ToString();
+
+            // Xác nhận trước khi xóa
+            var confirmation = MessageBox.Show(
+                $"Bạn có chắc chắn muốn xóa môn \"{subjectName}\"?",
+                "Xác nhận",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question // Thay đổi biểu tượng để cho biết đây là một câu hỏi xác nhận
+            );
+
+            if (confirmation == DialogResult.Yes)
+            {
+                var isDeleted = EduProgramController.Instance().RemoveAllData(new EduProgram(subjectId)) &&
+                                SubjectController.Instance().RemoveData(new Subject(subjectId));
+
+                if (isDeleted)
+                {
+                    LoadData(); // Tải lại dữ liệu
+                    MessageBox.Show("Xóa môn học thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Xóa môn học thất bại.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void HandleEdit(DataGridView dgv, int rowIndex)
+        {
+            var subjectId = dgv.Rows[rowIndex].Cells[0].Value.ToString();
+            var subjectName = dgv.Rows[rowIndex].Cells[1].Value.ToString();
+
+            var lectureHours = Convert.ToInt32(dgv.Rows[rowIndex].Cells[2].Value);
+            var exerciseHours = Convert.ToInt32(dgv.Rows[rowIndex].Cells[3].Value);
+            var practiceHours = Convert.ToInt32(dgv.Rows[rowIndex].Cells[4].Value);
+
+            var subject = new Subject(subjectId, subjectName);
+            var eduProgram1 = new EduProgram(subjectId, 1, lectureHours);
+            var eduProgram2 = new EduProgram(subjectId, 2, exerciseHours);
+            var eduProgram3 = new EduProgram(subjectId, 3, practiceHours);
+
+            var isUpdated = SubjectController.Instance().editData(subject) &&
+                            EduProgramController.Instance().EditData(eduProgram1) &&
+                            EduProgramController.Instance().EditData(eduProgram2) &&
+                            EduProgramController.Instance().EditData(eduProgram3);
+
+            if (isUpdated)
+            {
+                LoadData();
+                MessageBox.Show("Sửa môn học thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Sửa môn học thất bại.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
         private void btnAddSubject_Click(object sender, EventArgs e)
         {
-            Subjects f = new Subjects();
-            // this.Hide();
-            f.ShowDialog();
-            // this.Show();
-            EduProgramController.Instance().showData(dtgvEduProgram);
+            var subjectForm = new Subjects();
+            subjectForm.ShowDialog(); // Hiển thị dialog
+            LoadData(); // Tải lại dữ liệu sau khi dialog đóng
         }
 
     }

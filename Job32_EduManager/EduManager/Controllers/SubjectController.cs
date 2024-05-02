@@ -59,7 +59,7 @@ namespace EduManager.Controllers
             return (rowAffect > 0 ? true : false);
         }
 
-        public bool removeData(Subject s)
+        public bool RemoveData(Subject s)
         {
             string query = "DELETE FROM Subjects WHERE Id_Sub = @Id_Sub";
             SqlParameter[] para = new SqlParameter[]

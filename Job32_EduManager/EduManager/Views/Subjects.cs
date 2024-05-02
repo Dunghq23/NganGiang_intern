@@ -85,7 +85,7 @@ namespace EduManager.Views
                 NumHour = numHours
             };
 
-            return EduProgramController.Instance().addData(eduProgram);
+            return EduProgramController.Instance().AddData(eduProgram);
         }
 
         private void ResetInputFields() // Đặt lại các trường nhập liệu

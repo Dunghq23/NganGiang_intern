@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -29,40 +30,15 @@ namespace EduManager.Controllers
             return instance;
         }
 
-        public void ConfigureDataGridView(DataGridView dgv, string columnName)
-        {
-            DataGridViewColumn column = dgv.Columns[columnName]; // Lấy cột
-            if (column != null)
-            {
-                column.ReadOnly = true; // Đặt cột chỉ đọc
-            }
-        }
-
-        public void showData(DataGridView dgv)
+        public void ShowData(DataGridView dgv)
         {
             // Truy vấn dữ liệu
             string query = "SELECT * FROM EduProgramView";
             dgv.Columns.Clear();
             dgv.DataSource = ConnectDatabase.getInstance().ExecuteQuery(query);
-
-            // Thêm cột "Sửa"
-            DataGridViewButtonColumn editColumn = new DataGridViewButtonColumn();
-            editColumn.HeaderText = "Sửa";
-            editColumn.Text = "Sửa";
-            editColumn.UseColumnTextForButtonValue = true;
-            dgv.Columns.Add(editColumn);
-
-            // Thêm cột "Xóa"
-            DataGridViewButtonColumn deleteColumn = new DataGridViewButtonColumn();
-            deleteColumn.HeaderText = "Xóa";
-            deleteColumn.Text = "Xóa";
-            deleteColumn.UseColumnTextForButtonValue = true;
-            dgv.Columns.Add(deleteColumn);
-
-            ConfigureDataGridView(dgv, "Mã môn học");
         }
 
-        public bool addData(EduProgram ep)
+        public bool AddData(EduProgram ep)
         {
             string query = "INSERT INTO EduProgram VALUES (@FK_Id_Sub, @FK_Id_LS, @NumHour)";
             SqlParameter[] para = new SqlParameter[]
@@ -76,7 +52,7 @@ namespace EduManager.Controllers
             return rowAffect > 0 ? true : false;
         }
 
-        public bool editData(EduProgram ep)
+        public bool EditData(EduProgram ep)
         {
             string query = "UPDATE EduProgram " +
                            "SET NumHour = @NumHour " +
@@ -91,7 +67,7 @@ namespace EduManager.Controllers
             return rowAffect > 0 ? true : false;
         }
 
-        public bool removeData(EduProgram ed)
+        public bool RemoveData(EduProgram ed)
         {
             string query = "DELETE FROM EduProgram WHERE Id_EP = @Id_EP";
             SqlParameter[] para = new SqlParameter[]
@@ -103,7 +79,7 @@ namespace EduManager.Controllers
             return rowAffect > 0 ? true : false;
         }
 
-        public bool removeAllData(EduProgram ed)
+        public bool RemoveAllData(EduProgram ed)
         {
 
             string query = "DELETE FROM EduProgram WHERE FK_Id_Sub = @FK_Id_Sub";
