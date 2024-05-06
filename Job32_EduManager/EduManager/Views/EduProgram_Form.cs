@@ -2,6 +2,7 @@
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using EduManager.Controllers;
 using EduManager.Models;
@@ -39,7 +40,7 @@ namespace EduManager.Views
             EduProgramController.Instance().ShowData(dtgvEduProgram);
             ConfigureDataGridViewReadOnly(dtgvEduProgram, "Mã môn học");
             ConfigureColumnHeaders(dtgvEduProgram);
-            ConfigureColumnAlignment(dtgvEduProgram, new string[] { "Mã môn học", "Lý thuyết", "Bài tập", "Thực hành" });
+            ConfigureColumnAlignment(dtgvEduProgram, new string[] { "Mã môn học", "Ký hiệu", "Lý thuyết", "Bài tập", "Thực hành" });
             AddActionColumns(dtgvEduProgram); 
         }
 
@@ -108,6 +109,7 @@ namespace EduManager.Views
                 {
                     column.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
                     column.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                    column.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
                 }
             }
         }
@@ -132,7 +134,7 @@ namespace EduManager.Views
 
         private void HandleDelete(DataGridView dgv, int rowIndex)
         {
-            var subjectId = dgv.Rows[rowIndex].Cells[0].Value.ToString();
+            int subjectId = int.Parse(dgv.Rows[rowIndex].Cells[0].Value.ToString());
             var subjectName = dgv.Rows[rowIndex].Cells[1].Value.ToString();
 
             // Xác nhận trước khi xóa
@@ -162,14 +164,21 @@ namespace EduManager.Views
 
         private void HandleEdit(DataGridView dgv, int rowIndex)
         {
-            var subjectId = dgv.Rows[rowIndex].Cells[0].Value.ToString();
+            var subjectId = int.Parse(dgv.Rows[rowIndex].Cells[0].Value.ToString());
             var subjectName = dgv.Rows[rowIndex].Cells[1].Value.ToString();
+            var subjectSymbol = dgv.Rows[rowIndex].Cells[2].Value.ToString();
 
-            var lectureHours = Convert.ToInt32(dgv.Rows[rowIndex].Cells[2].Value);
-            var exerciseHours = Convert.ToInt32(dgv.Rows[rowIndex].Cells[3].Value);
-            var practiceHours = Convert.ToInt32(dgv.Rows[rowIndex].Cells[4].Value);
+            var lectureHours = Convert.ToInt32(dgv.Rows[rowIndex].Cells[3].Value);
+            var exerciseHours = Convert.ToInt32(dgv.Rows[rowIndex].Cells[4].Value);
+            var practiceHours = Convert.ToInt32(dgv.Rows[rowIndex].Cells[5].Value);
 
-            var subject = new Subject(subjectId, subjectName);
+            if(SubjectController.Instance().checkDuplicate(subjectSymbol, subjectId) > 0 )
+            {
+                MessageBox.Show("Ký hiệu môn học đã tồn tại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            var subject = new Subject(subjectId, subjectName, subjectSymbol.ToUpper());
             var eduProgram1 = new EduProgram(subjectId, 1, lectureHours);
             var eduProgram2 = new EduProgram(subjectId, 2, exerciseHours);
             var eduProgram3 = new EduProgram(subjectId, 3, practiceHours);
@@ -183,7 +192,6 @@ namespace EduManager.Views
             {
                 LoadData();
                 MessageBox.Show("Sửa môn học thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
             }
             else
             {
@@ -208,15 +216,25 @@ namespace EduManager.Views
         {
             var currentValue = dtgvEduProgram[e.ColumnIndex, e.RowIndex].Value;
 
+            // Kiểm tra nếu giá trị rỗng hoặc chỉ có dấu cách
             if (currentValue == null || string.IsNullOrWhiteSpace(currentValue.ToString()))
             {
-                dtgvEduProgram[e.ColumnIndex, e.RowIndex].Value = previousValue;
+                dtgvEduProgram[e.ColumnIndex, e.RowIndex].Value = previousValue; // Khôi phục giá trị trước đó
             }
             else
             {
+                // Nếu giá trị thay đổi so với trước đó
                 if (!currentValue.Equals(previousValue))
                 {
-                    dtgvEduProgram[e.ColumnIndex, e.RowIndex].Style.ForeColor = System.Drawing.Color.Blue;
+                    dtgvEduProgram[e.ColumnIndex, e.RowIndex].Style.ForeColor = System.Drawing.Color.Blue; // Đánh dấu màu xanh để cho biết ô đã được chỉnh sửa
+                }
+
+                // Kiểm tra tính hợp lệ với regex cho các cột khác không phải cột số
+                var regex = new Regex(@"^[\p{L}\d\s\-,]+$");
+                if (!regex.IsMatch(currentValue.ToString()))
+                {
+                    MessageBox.Show("Dữ liệu không hợp lệ. Vui lòng chỉ nhập chữ, số, dấu cách, gạch ngang, và phẩy.", "Thông báo");
+                    dtgvEduProgram[e.ColumnIndex, e.RowIndex].Value = previousValue; // Khôi phục lại giá trị trước đó nếu không hợp lệ
                 }
             }
         }
@@ -230,12 +248,12 @@ namespace EduManager.Views
                 textBox.KeyPress -= TextBox_KeyPress;
 
                 int columnIndex = dtgvEduProgram.CurrentCell.ColumnIndex;
-                int[] numericColumns = { 2, 3, 4 }; 
+                int[] numericColumns = { 3, 4, 5 };
 
                 if (numericColumns.Contains(columnIndex))
                 {
                     textBox.KeyPress += TextBox_KeyPress;
-                }
+                } 
             }
         }
 

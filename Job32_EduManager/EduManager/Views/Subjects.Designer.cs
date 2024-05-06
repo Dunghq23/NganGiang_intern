@@ -42,7 +42,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txbName_Sub = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txbId_Sub = new System.Windows.Forms.TextBox();
+            this.txbSym_Sub = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmBT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmTH)).BeginInit();
@@ -73,7 +73,7 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.txbName_Sub);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.txbId_Sub);
+            this.panel2.Controls.Add(this.txbSym_Sub);
             this.panel2.Location = new System.Drawing.Point(12, 12);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(319, 341);
@@ -169,23 +169,24 @@
             this.txbName_Sub.Name = "txbName_Sub";
             this.txbName_Sub.Size = new System.Drawing.Size(262, 22);
             this.txbName_Sub.TabIndex = 2;
+            this.txbName_Sub.TextChanged += new System.EventHandler(this.txbName_Sub_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(22, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 16);
+            this.label1.Size = new System.Drawing.Size(104, 16);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Mã môn học";
+            this.label1.Text = "Ký hiệu môn học";
             // 
-            // txbId_Sub
+            // txbSym_Sub
             // 
-            this.txbId_Sub.Location = new System.Drawing.Point(25, 32);
-            this.txbId_Sub.Name = "txbId_Sub";
-            this.txbId_Sub.Size = new System.Drawing.Size(262, 22);
-            this.txbId_Sub.TabIndex = 0;
-            this.txbId_Sub.TextChanged += new System.EventHandler(this.txbId_Sub_TextChanged);
+            this.txbSym_Sub.Location = new System.Drawing.Point(25, 32);
+            this.txbSym_Sub.Name = "txbSym_Sub";
+            this.txbSym_Sub.Size = new System.Drawing.Size(262, 22);
+            this.txbSym_Sub.TabIndex = 0;
+            this.txbSym_Sub.TextChanged += new System.EventHandler(this.txbId_Sub_TextChanged);
             // 
             // Subjects
             // 
@@ -212,7 +213,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txbName_Sub;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txbId_Sub;
+        private System.Windows.Forms.TextBox txbSym_Sub;
         private System.Windows.Forms.CheckBox chbLT;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;

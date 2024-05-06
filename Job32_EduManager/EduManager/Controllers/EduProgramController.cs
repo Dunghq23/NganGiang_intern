@@ -1,4 +1,5 @@
-﻿using System.Data.SqlClient;
+﻿using System;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 using EduManager.Models;
@@ -31,6 +32,9 @@ namespace EduManager.Controllers
             dgv.DataSource = ConnectDatabase.getInstance().ExecuteQuery(query);
         }
 
+
+        
+
         // Thêm dữ liệu
         public bool AddData(EduProgram ep)
         {
@@ -41,9 +45,7 @@ namespace EduManager.Controllers
                 new SqlParameter("FK_Id_LS", ep.FK_Id_LS),
                 new SqlParameter("NumHour", ep.NumHour)
             };
-            int rowAffect = connectDatabase.ExecuteNonQuery(query, para);
-
-            return rowAffect > 0 ? true : false;
+            return connectDatabase.ExecuteNonQuery(query, para) > 0;
         }
 
         // Sửa dữ liệu
@@ -71,7 +73,7 @@ namespace EduManager.Controllers
                 new SqlParameter("Id_EP", ed.Id_EP)
             };
             int rowAffect = connectDatabase.ExecuteNonQuery(query, para);
-            
+
             return rowAffect > 0 ? true : false;
         }
 

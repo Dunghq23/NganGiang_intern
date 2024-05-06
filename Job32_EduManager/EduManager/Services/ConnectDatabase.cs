@@ -61,6 +61,7 @@ namespace EduManager.Services
             return rowsAffected;
         }
 
+
         public string GetValue(string query)
         {
             string value = null;

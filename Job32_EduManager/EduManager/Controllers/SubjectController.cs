@@ -1,4 +1,5 @@
-﻿using System.Data.SqlClient;
+﻿using System;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 using EduManager.Models;
 using EduManager.Services;
@@ -21,19 +22,36 @@ namespace EduManager.Controllers
             return instance;
         }
 
+        public int getNewID()
+        {
+            string query = "EXEC GetNextSubjectId"; 
+            string result = connectDatabase.GetValue(query);
+            int value = int.Parse(result);
+            return value; 
+        }
+
+        public int checkDuplicate(String sym_sub, int subjectId)
+        {
+            string query = $"SELECT COUNT(*) FROM subjects WHERE Sym_Sub = '{sym_sub}' AND Id_Sub <> {subjectId};";
+            
+            string result = connectDatabase.GetValue(query);
+            int value = int.Parse(result);
+            return value;
+        }
+
         // Thêm dữ liệu
         public bool addSubject(Subject subject)
         {
-            string query = "INSERT INTO Subjects VALUES (@Id_Sub , @name_Sub)";
+            string query = "INSERT INTO Subjects VALUES (@Id_Sub , @name_Sub, @Sym_Sub)";
             SqlParameter[] para = new SqlParameter[]
             {
                 new SqlParameter("Id_Sub", subject.Id_Sub),
-                new SqlParameter("name_Sub", subject.Name_Sub)
+                new SqlParameter("name_Sub", subject.Name_Sub),
+                new SqlParameter("Sym_Sub", subject.Sym_Sub)
             };
             int rowAffect = connectDatabase.ExecuteNonQuery(query, para);
-            // ExecuteNonQuery sẽ trả về số dòng được thay đổi tại Database. Ví dụ không có dữ liệu nào được thay đổi hay là thay đổi lỗi thì số dòng thay đổi sẽ = 0 => Lỗi
 
-            return rowAffect > 0 ? true : false;
+            return rowAffect > 0;
         }
 
         // Hiển thị dữ liệu
@@ -46,10 +64,11 @@ namespace EduManager.Controllers
         // Sửa dữ liệu
         public bool editData(Subject s)
         {
-            string query = "UPDATE Subjects SET Name_Sub = @name_Sub WHERE Id_Sub = @Id_Sub";
+            string query = "UPDATE Subjects SET Name_Sub = @name_Sub, Sym_Sub = @Sym_Sub WHERE Id_Sub = @Id_Sub";
             SqlParameter[] para = new SqlParameter[]
             {
                 new SqlParameter("Id_Sub", s.Id_Sub),
+                new SqlParameter("Sym_Sub", s.Sym_Sub),
                 new SqlParameter("name_Sub", s.Name_Sub)
             };
             int rowAffect = connectDatabase.ExecuteNonQuery(query, para);
