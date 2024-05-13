@@ -10,3 +10,6 @@ D:\Documents\Work\NganGiang\HAQUANGDUNG\Job32_EduManager\EduManager\obj\Debug\Ed
 D:\Documents\Work\NganGiang\HAQUANGDUNG\Job32_EduManager\EduManager\obj\Debug\EduManager.pdb
 D:\Documents\Work\NganGiang\HAQUANGDUNG\Job32_EduManager\EduManager\obj\Debug\EduManager.Views.Subjects.resources
 D:\Documents\Work\NganGiang\HAQUANGDUNG\Job32_EduManager\EduManager\obj\Debug\EduManager.Views.EduProgram_Form.resources
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job32_EduManager\EduManager\obj\Debug\EduManager.Views.LessonSubject_Form.resources
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job32_EduManager\EduManager\obj\Debug\EduManager.Views.LessonSubject_Edit_Form.resources
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job32_EduManager\EduManager\obj\Debug\EduManager.Views.LessonSubject_Add.resources

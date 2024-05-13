@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.btnEduManage = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnLessonSubject = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnEduManage
@@ -46,17 +46,18 @@
             this.btnEduManage.UseVisualStyleBackColor = true;
             this.btnEduManage.Click += new System.EventHandler(this.btnEduManage_Click);
             // 
-            // button1
+            // btnLessonSubject
             // 
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(125, 13);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(107, 122);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Phân phối chương trình học";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnLessonSubject.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnLessonSubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLessonSubject.Location = new System.Drawing.Point(125, 13);
+            this.btnLessonSubject.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnLessonSubject.Name = "btnLessonSubject";
+            this.btnLessonSubject.Size = new System.Drawing.Size(107, 122);
+            this.btnLessonSubject.TabIndex = 3;
+            this.btnLessonSubject.Text = "Phân phối chương trình học";
+            this.btnLessonSubject.UseVisualStyleBackColor = true;
+            this.btnLessonSubject.Click += new System.EventHandler(this.button1_Click);
             // 
             // Main
             // 
@@ -64,7 +65,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(699, 367);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnLessonSubject);
             this.Controls.Add(this.btnEduManage);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -79,7 +80,7 @@
 
         #endregion
         private System.Windows.Forms.Button btnEduManage;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnLessonSubject;
     }
 }
 

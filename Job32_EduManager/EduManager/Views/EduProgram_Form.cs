@@ -16,8 +16,6 @@ namespace EduManager.Views
         {
             InitializeComponent();
             dtgvEduProgram.RowTemplate.Height = 40;
-
-
         }
 
         // FORM LOAD

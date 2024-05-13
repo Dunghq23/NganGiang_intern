@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32_EduManager\\EduManager\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{56BD2D75-FE36-4353-92B9-4AB7B2030568}|EduManager.csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job32_edumanager\\edumanager\\views\\eduprogram_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56BD2D75-FE36-4353-92B9-4AB7B2030568}|EduManager.csproj|solutionrelative:views\\eduprogram_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56BD2D75-FE36-4353-92B9-4AB7B2030568}|EduManager.csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job32_edumanager\\edumanager\\views\\lessonsubject-add.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56BD2D75-FE36-4353-92B9-4AB7B2030568}|EduManager.csproj|solutionrelative:views\\lessonsubject-add.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56BD2D75-FE36-4353-92B9-4AB7B2030568}|EduManager.csproj|D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32_EduManager\\EduManager\\controllers\\subjectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56BD2D75-FE36-4353-92B9-4AB7B2030568}|EduManager.csproj|solutionrelative:controllers\\subjectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56BD2D75-FE36-4353-92B9-4AB7B2030568}|EduManager.csproj|D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32_EduManager\\EduManager\\views\\subjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56BD2D75-FE36-4353-92B9-4AB7B2030568}|EduManager.csproj|solutionrelative:views\\subjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56BD2D75-FE36-4353-92B9-4AB7B2030568}|EduManager.csproj|D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32_EduManager\\EduManager\\views\\subjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{56BD2D75-FE36-4353-92B9-4AB7B2030568}|EduManager.csproj|solutionrelative:views\\subjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56BD2D75-FE36-4353-92B9-4AB7B2030568}|EduManager.csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job32_edumanager\\edumanager\\views\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{56BD2D75-FE36-4353-92B9-4AB7B2030568}|EduManager.csproj|solutionrelative:views\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{56BD2D75-FE36-4353-92B9-4AB7B2030568}|EduManager.csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job32_edumanager\\edumanager\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{56BD2D75-FE36-4353-92B9-4AB7B2030568}|EduManager.csproj|solutionrelative:properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,64 +23,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EduProgram_Form.cs",
-              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32_EduManager\\EduManager\\Views\\EduProgram_Form.cs",
-              "RelativeDocumentMoniker": "Views\\EduProgram_Form.cs",
-              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32_EduManager\\EduManager\\Views\\EduProgram_Form.cs",
-              "RelativeToolTip": "Views\\EduProgram_Form.cs",
-              "ViewState": "AQIAAOIAAAAAAAAAAAAiwOsAAABQAAAA",
+              "Title": "LessonSubject-Add.cs [Design]",
+              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32_EduManager\\EduManager\\Views\\LessonSubject-Add.cs",
+              "RelativeDocumentMoniker": "Views\\LessonSubject-Add.cs",
+              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32_EduManager\\EduManager\\Views\\LessonSubject-Add.cs [Design]",
+              "RelativeToolTip": "Views\\LessonSubject-Add.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T01:43:46.414Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Main.cs [Design]",
-              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32_EduManager\\EduManager\\Views\\Main.cs",
-              "RelativeDocumentMoniker": "Views\\Main.cs",
-              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32_EduManager\\EduManager\\Views\\Main.cs [Design]",
-              "RelativeToolTip": "Views\\Main.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T01:29:23.469Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Subjects.cs [Design]",
-              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32_EduManager\\EduManager\\Views\\Subjects.cs",
-              "RelativeDocumentMoniker": "Views\\Subjects.cs",
-              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32_EduManager\\EduManager\\Views\\Subjects.cs [Design]",
-              "RelativeToolTip": "Views\\Subjects.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T04:40:02.658Z",
+              "WhenOpened": "2024-05-10T04:46:42.633Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SubjectController.cs",
-              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32_EduManager\\EduManager\\Controllers\\SubjectController.cs",
-              "RelativeDocumentMoniker": "Controllers\\SubjectController.cs",
-              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32_EduManager\\EduManager\\Controllers\\SubjectController.cs",
-              "RelativeToolTip": "Controllers\\SubjectController.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAiwB4AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T21:11:50.449Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Subjects.cs",
-              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32_EduManager\\EduManager\\Views\\Subjects.cs",
-              "RelativeDocumentMoniker": "Views\\Subjects.cs",
-              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32_EduManager\\EduManager\\Views\\Subjects.cs",
-              "RelativeToolTip": "Views\\Subjects.cs",
-              "ViewState": "AQIAAHsAAAAAAAAAAAAqwH8AAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T21:03:37.933Z",
+              "Title": "Resources.resx",
+              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32_EduManager\\EduManager\\Properties\\Resources.resx",
+              "RelativeDocumentMoniker": "Properties\\Resources.resx",
+              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32_EduManager\\EduManager\\Properties\\Resources.resx",
+              "RelativeToolTip": "Properties\\Resources.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-05-10T04:42:00.998Z",
               "EditorCaption": ""
             }
           ]

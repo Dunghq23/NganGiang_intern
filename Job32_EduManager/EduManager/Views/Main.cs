@@ -32,6 +32,16 @@ namespace EduManager
 
             // Chỉnh văn bản hiển thị phía dưới hình ảnh
             btnEduManage.TextImageRelation = TextImageRelation.ImageAboveText;
+
+
+            // Điều chỉnh kích thước hình ảnh để vừa với nút
+            Image BookIcon = ResizeImage(Properties.Resources.ICON_PPCT, new Size(buttonSize.Width, buttonSize.Height / 2)); // Chia đôi chiều cao
+
+            // Gán hình ảnh đã được điều chỉnh vào nút
+            btnLessonSubject.Image = BookIcon;
+
+            // Chỉnh văn bản hiển thị phía dưới hình ảnh
+            btnLessonSubject.TextImageRelation = TextImageRelation.ImageAboveText;
         }
 
         private Image ResizeImage(Image img, Size newSize)
@@ -42,6 +52,14 @@ namespace EduManager
                 g.DrawImage(img, 0, 0, newSize.Width, newSize.Height);
             }
             return resizedImage;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            LessonSubject_Form f = new LessonSubject_Form();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
         }
     }
 }

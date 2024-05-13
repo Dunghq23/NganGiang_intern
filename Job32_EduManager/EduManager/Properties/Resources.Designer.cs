@@ -93,6 +93,16 @@ namespace EduManager.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ICON_PPCT {
+            get {
+                object obj = ResourceManager.GetObject("ICON_PPCT", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ICON_TRASH {
             get {
                 object obj = ResourceManager.GetObject("ICON_TRASH", resourceCulture);
