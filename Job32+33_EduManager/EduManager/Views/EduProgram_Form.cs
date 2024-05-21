@@ -32,7 +32,7 @@ namespace EduManager.Views
 
         }
 
-        // LOAD DATA
+        #region LOAD DATA
         public void LoadData()
         {
             EduProgramController.Instance().ShowData(dtgvEduProgram);
@@ -41,8 +41,9 @@ namespace EduManager.Views
             ConfigureColumnAlignment(dtgvEduProgram, new string[] { "Mã môn học", "Ký hiệu", "Lý thuyết", "Bài tập", "Thực hành" });
             AddActionColumns(dtgvEduProgram); 
         }
+        #endregion
 
-        // ADD & CONFIGURATION DATAGRIDVIEW
+        #region ADD & CONFIGURATION DATAGRIDVIEW
 
         private void AddActionColumns(DataGridView dgv)
         {
@@ -111,8 +112,9 @@ namespace EduManager.Views
                 }
             }
         }
+#endregion
 
-        // EVENT HANDLERS
+        #region EVENT HANDLERS
         private void dtgvEduProgram_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex < 0) return; // Bỏ qua khi click vào tiêu đề
@@ -137,7 +139,7 @@ namespace EduManager.Views
 
             // Xác nhận trước khi xóa
             var confirmation = MessageBox.Show(
-                $"Bạn có chắc chắn muốn xóa môn \"{subjectName}\"?",
+                $"Bạn có chắc chắn muốn xóa môn \"{subjectName}\"? Thao tác này sẽ xóa toàn bộ bài học của môn học (nếu có).",
                 "Xác nhận",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question // Thay đổi biểu tượng để cho biết đây là một câu hỏi xác nhận
@@ -145,8 +147,10 @@ namespace EduManager.Views
 
             if (confirmation == DialogResult.Yes)
             {
-                var isDeleted = EduProgramController.Instance().RemoveAllData(new EduProgram(subjectId)) &&
+                var isDeleted = LessonSubjectController.Instance().DeleteAllLessonSubject(subjectId) && 
+                                EduProgramController.Instance().RemoveAllData(new EduProgram(subjectId)) &&
                                 SubjectController.Instance().RemoveData(new Subject(subjectId));
+                                
 
                 if (isDeleted)
                 {
@@ -170,9 +174,9 @@ namespace EduManager.Views
             var exerciseHours = Convert.ToInt32(dgv.Rows[rowIndex].Cells[4].Value);
             var practiceHours = Convert.ToInt32(dgv.Rows[rowIndex].Cells[5].Value);
 
-            if(SubjectController.Instance().checkDuplicate(subjectSymbol, subjectId) > 0 )
+            if(SubjectController.Instance().checkDuplicate(subjectSymbol, subjectId, subjectName) > 0 )
             {
-                MessageBox.Show("Ký hiệu môn học đã tồn tại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Ký hiệu hoặc tên môn học đã tồn tại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -202,8 +206,9 @@ namespace EduManager.Views
             var subjectForm = new Subjects(this);
             subjectForm.ShowDialog(); 
         }
+        #endregion
 
-        // VALIDATION
+        #region VALIDATION
         private object previousValue;
         private void dtgvEduProgram_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
         {
@@ -268,6 +273,6 @@ namespace EduManager.Views
                 lbMessage.Text = "";
             }
         }
-
+#endregion
     }
 }

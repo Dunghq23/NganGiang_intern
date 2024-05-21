@@ -17,7 +17,7 @@ namespace EduManager.Views
             _lessonSubjectForm = lessonSubjectForm;
         }
 
-        // ==== Sự kiện (Event Handlers) ====
+        #region ==== Sự kiện (Event Handlers) ====
         private void LessonSubject_Add_Load(object sender, EventArgs e)
         {
             txbSym_Sub.Text = _lessonSubjectForm.GetSym_Sub();
@@ -27,6 +27,11 @@ namespace EduManager.Views
         {
             string subjectSymbol = txbSym_Sub.Text;
             int subjectId = LessonSubjectController.Instance().GetIDSub(subjectSymbol);
+            if (txbLesson.Text.Length > 10)
+            {
+                   MessageBox.Show("Tên tiết học không được quá 10 ký tự", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
             if (IsOverLimit(subjectSymbol))
             {
@@ -41,8 +46,9 @@ namespace EduManager.Views
             _lessonSubjectForm.LoadData(); // Cập nhật dữ liệu giao diện
             MessageBox.Show("Thêm thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+        #endregion
 
-        // ==== Xử lý dữ liệu (Data Processing) ====
+        #region ==== Xử lý dữ liệu (Data Processing) ====
         private bool IsOverLimit(string subjectSymbol)
         {
             DataTable lessonData = LessonSubjectController.Instance().ShowLessonList(subjectSymbol);
@@ -86,8 +92,9 @@ namespace EduManager.Views
                 LessonSubjectController.Instance().AddLessonSubject(newLessonSubject);
             }
         }
+#endregion
 
-        // ==== Giao diện người dùng (UI) ====
+        #region ==== Giao diện người dùng (UI) ====
         private void DisplayWarning(string subjectType, int limit)
         {
             MessageBox.Show(
@@ -97,8 +104,9 @@ namespace EduManager.Views
                 MessageBoxIcon.Warning
             );
         }
+        #endregion
 
-        // ==== Hàm tiện ích (Utility Functions) ====
+        #region ==== Hàm tiện ích (Utility Functions) ====
         public static int CalculateColumnSum(DataTable dataTable, string columnName)
         {
             if (!dataTable.Columns.Contains(columnName))
@@ -110,5 +118,7 @@ namespace EduManager.Views
                 .Where(row => row[columnName] != DBNull.Value)
                 .Sum(row => Convert.ToInt32(row[columnName]));
         }
+        #endregion
+
     }
 }

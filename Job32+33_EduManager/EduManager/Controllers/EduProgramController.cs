@@ -31,10 +31,7 @@ namespace EduManager.Controllers
             dgv.Columns.Clear();
             dgv.DataSource = ConnectDatabase.getInstance().ExecuteQuery(query);
         }
-
-
         
-
         // Thêm dữ liệu
         public bool AddData(EduProgram ep)
         {

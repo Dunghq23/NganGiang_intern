@@ -44,6 +44,12 @@ namespace EduManager.Views
             // Lấy ID mới
             int subjectID = SubjectController.Instance().getNewID();
 
+            if (SubjectController.Instance().checkDuplicate(txbSym_Sub.Text.ToUpper(), subjectID, txbName_Sub.Text) > 0)
+            {
+                MessageBox.Show("Ký hiệu hoặc tên môn học đã tồn tại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             var subjectAdded = AddSubject(subjectID);
 
             // Thêm chương trình giáo dục cho các checkbox được chọn

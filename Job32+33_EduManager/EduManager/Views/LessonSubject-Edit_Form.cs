@@ -12,8 +12,9 @@ namespace EduManager.Views
     {
         private readonly LessonSubject_Form _lessonSubjectForm;
         private int _ltOldValue, _btOldValue, _thOldValue;
+        private string _oldLessonUnit = "";
 
-        // === Nhóm hàm khởi tạo và thiết lập ===
+        #region === Nhóm hàm khởi tạo và thiết lập ===
         public LessonSubject_Edit_Form(LessonSubject_Form lessonSubjectForm, string lesson, string lessonName, int lt, int bt, int th)
         {
             InitializeComponent();
@@ -36,26 +37,45 @@ namespace EduManager.Views
             _ltOldValue = (int)nmLT.Value;
             _btOldValue = (int)nmBT.Value;
             _thOldValue = (int)nmTH.Value;
+            _oldLessonUnit = txbLesson.Text;
         }
+        #endregion
 
-        // === Nhóm hàm xử lý sự kiện ===
+        #region === Nhóm hàm xử lý sự kiện ===
         private void btnSave_Click(object sender, EventArgs e)
         {
             var lessonUpdates = CreateLessonUpdates();
 
             if (ValidateHours(lessonUpdates))
             {
-                bool success = lessonUpdates.All(LessonSubjectController.Instance().EditLessonSubject);
+                bool EditLT = false, EditBT = false, EditTH = false;
+                for (int i = 1; i <= 3; i++)
+                {
+                    MessageBox.Show(_oldLessonUnit, "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (i == 1)
+                    {
+                        EditLT = LessonSubjectController.Instance().EditLessonSubject(lessonUpdates[i - 1], _oldLessonUnit);
+                    }
+                    else if (i == 2)
+                    {
+                        EditBT = LessonSubjectController.Instance().EditLessonSubject(lessonUpdates[i - 1], _oldLessonUnit);
+                    }
+                    else
+                    {
+                        EditTH = LessonSubjectController.Instance().EditLessonSubject(lessonUpdates[i - 1], _oldLessonUnit);
+                    }
+                }
 
-                if (success)
+                if (EditBT && EditLT && EditTH)
                 {
                     _lessonSubjectForm.LoadData();
                     ShowMessage("Sửa thành công", "Thông báo", MessageBoxIcon.Information);
                 }
             }
         }
+        #endregion
 
-        // === Nhóm hàm tiện ích ===
+        #region === Nhóm hàm tiện ích ===
         private List<LessonSubject> CreateLessonUpdates()
         {
             string lessonName = txbLessonName.Text;
@@ -136,5 +156,6 @@ namespace EduManager.Views
                             .Where(row => row[columnName] != DBNull.Value)
                             .Sum(row => Convert.ToInt32(row[columnName]));
         }
+        #endregion
     }
 }

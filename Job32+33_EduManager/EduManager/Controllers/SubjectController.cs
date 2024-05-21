@@ -30,15 +30,17 @@ namespace EduManager.Controllers
             return value; 
         }
 
-        public int checkDuplicate(String sym_sub, int subjectId)
+        public int checkDuplicate(String sym_sub, int subjectId, String name_sub)
         {
-            string query = $"SELECT COUNT(*) FROM subjects WHERE Sym_Sub = '{sym_sub}' AND Id_Sub <> {subjectId};";
+            string query = $"SELECT COUNT(*) FROM subjects " +
+                           $"WHERE (Sym_Sub LIKE '{sym_sub}' OR Name_Sub LIKE N'{name_sub}')\r\n  AND Id_Sub <> {subjectId};";
             
             string result = connectDatabase.GetValue(query);
             int value = int.Parse(result);
             return value;
         }
 
+        #region CRUD
         // Thêm dữ liệu
         public bool addSubject(Subject subject)
         {
@@ -87,5 +89,6 @@ namespace EduManager.Controllers
 
             return rowAffect > 0 ? true : false;
         }
+        #endregion
     }
 }

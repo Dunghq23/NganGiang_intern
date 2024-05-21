@@ -62,3 +62,35 @@ DROP TABLE LessonSub
 DROP TABLE EduProgram
 DROP TABLE Subjects
 DROP TABLE LearningStyle
+
+
+
+
+SELECT *
+FROM subjects
+WHERE (Sym_Sub LIKE 'H1' OR Name_Sub LIKE N'Tư tưởng hồ Chí Minh')
+  AND Id_Sub <> 8;
+
+
+SELECT *
+FROM subjects
+WHERE Name_Sub LIKE N'Kinh tế chính trị Mác - Lênin'
+  AND Id_Sub <> 'H1';
+
+SELECT COUNT(*)
+FROM subjects
+WHERE (Sym_Sub LIKE 'H1')
+  AND Id_Sub <> 8;
+
+
+
+SELECT * FROM LessonSub
+
+UPDATE LessonSub SET Les_Unit = N'Bài 3', Les_Name = N'Giới thiệu sửa', FK_Id_Sub = 1, FK_Id_LS = 1, NumHour = 10
+WHERE Les_Unit = N'Bài 1' AND FK_Id_LS = 1
+
+DELETE FROM LessonSub
+WHERE FK_Id_Sub = 1
+
+DELETE FROM Subjects
+WHERE Id_Sub = 1

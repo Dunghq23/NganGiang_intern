@@ -26,7 +26,7 @@ namespace EduManager.Controllers
             return instance;
         }
 
-        // == Nhóm hàm thao tác CRUD (CREATE, READ, UPDATE, DELETE) ==
+        #region == Nhóm hàm thao tác CRUD (CREATE, READ, UPDATE, DELETE) ==
         public bool AddLessonSubject(LessonSubject leSub)
         {
             //les_Unit, int les_Name, int fK_Id_Sub, int fK_Id_LS, int numHour
@@ -41,16 +41,17 @@ namespace EduManager.Controllers
             };
             return connectDatabase.ExecuteNonQuery(query, para) > 0;
         }
-        public bool EditLessonSubject(LessonSubject leSub)
+        public bool EditLessonSubject(LessonSubject leSub, string oldLes_Unit)
         {
-            string query = "UPDATE LessonSub SET Les_Name = @Les_Name, FK_Id_Sub = @FK_Id_Sub, FK_Id_LS = @FK_Id_LS, NumHour = @NumHour WHERE Les_Unit = @Les_Unit AND FK_Id_LS = @FK_Id_LS";
+            string query = "UPDATE LessonSub SET Les_Unit = @Les_Unit, Les_Name = @Les_Name, FK_Id_Sub = @FK_Id_Sub, FK_Id_LS = @FK_Id_LS, NumHour = @NumHour " +
+                            $"WHERE Les_Unit = N'{oldLes_Unit}' AND FK_Id_LS = @FK_Id_LS";
             SqlParameter[] para = new SqlParameter[]
             {
-                new SqlParameter("Les_Name", leSub.Les_Name),
-                new SqlParameter("FK_Id_Sub", leSub.FK_Id_Sub),
-                new SqlParameter("FK_Id_LS", leSub.FK_Id_LS),
-                new SqlParameter("NumHour", leSub.NumHour),
-                new SqlParameter("Les_Unit", leSub.Les_Unit)
+        new SqlParameter("Les_Name", leSub.Les_Name),
+        new SqlParameter("FK_Id_Sub", leSub.FK_Id_Sub),
+        new SqlParameter("FK_Id_LS", leSub.FK_Id_LS),
+        new SqlParameter("NumHour", leSub.NumHour),
+        new SqlParameter("Les_Unit", leSub.Les_Unit)
             };
             return connectDatabase.ExecuteNonQuery(query, para) > 0;
         }
@@ -60,7 +61,16 @@ namespace EduManager.Controllers
             return connectDatabase.ExecuteNonQuery(query) > 0;
         }
 
-        // == Nhóm hàm đọc dữ liệu ==
+        public bool DeleteAllLessonSubject(int FK_Id_sub)
+        {
+            string query = $"DELETE FROM LessonSub WHERE FK_Id_Sub = {FK_Id_sub}";
+            return connectDatabase.ExecuteNonQuery(query) > 0;
+        }
+
+
+        #endregion
+
+        #region == Nhóm hàm đọc dữ liệu ==
         public void ShowSubjectsList(DataGridView dgv)
         {
             string query = "SELECT Sym_Sub AS [Ký hiệu], Name_Sub AS [Tên môn học] FROM Subjects ";
@@ -106,8 +116,9 @@ namespace EduManager.Controllers
             DataTable dataTable = ConnectDatabase.getInstance().ExecuteQuery(query);
             return dataTable;
         }
+        #endregion
 
-        // == Nhóm hàm khác ==
+        #region == Nhóm hàm khác ==
         public int GetIDSub(string sym_sub)
         {
             string query = $"SELECT Id_Sub FROM Subjects WHERE Sym_Sub = '{sym_sub}'";
@@ -120,5 +131,6 @@ namespace EduManager.Controllers
             string result = ConnectDatabase.getInstance().GetValue(query);
             return Convert.ToInt32(result);
         }
+        #endregion
     }
 }
