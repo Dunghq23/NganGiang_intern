@@ -27,16 +27,7 @@ namespace EduManager.Views
         {
             string subjectSymbol = txbSym_Sub.Text;
             int subjectId = LessonSubjectController.Instance().GetIDSub(subjectSymbol);
-            if (txbLesson.Text.Length > 10)
-            {
-                   MessageBox.Show("Tên tiết học không được quá 10 ký tự", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            if (IsOverLimit(subjectSymbol))
-            {
-                return; // Dừng lại nếu quá giới hạn
-            }
+            if (!Validate()) return;
 
             string lesson = txbLesson.Text;
             string lessonName = txbLessonName.Text;
@@ -45,6 +36,11 @@ namespace EduManager.Views
 
             _lessonSubjectForm.LoadData(); // Cập nhật dữ liệu giao diện
             MessageBox.Show("Thêm thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            txbLesson.Text = "";
+            txbLessonName.Text = "";
+            nmLT.Value = 0;
+            nmBT.Value = 0;
+            nmTH.Value = 0;
         }
         #endregion
 
@@ -117,6 +113,68 @@ namespace EduManager.Views
             return dataTable.AsEnumerable()
                 .Where(row => row[columnName] != DBNull.Value)
                 .Sum(row => Convert.ToInt32(row[columnName]));
+        }
+
+        private bool Validate()
+        {
+            string subjectSymbol = txbSym_Sub.Text;
+            if (txbLesson.Text == "")
+            {
+                MessageBox.Show("Tên bài học không được để trống", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+            if (txbLesson.Text.Length > 10)
+            {
+                MessageBox.Show("Tên bài học không được quá 10 ký tự", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+            if (txbLessonName.Text == "")
+            {
+                MessageBox.Show("Tên tiết học không được để trống", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+            if (IsOverLimit(subjectSymbol))
+            {
+                return false;
+            }
+            if(LessonSubjectController.Instance().CheckDuplicateLessonUnit(txbSym_Sub.Text, txbLesson.Text) > 0)
+            {
+                MessageBox.Show("Bài học đã tồn tại. Vui lòng nhập nội dung mới!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+            if (LessonSubjectController.Instance().CheckDuplicateLessonName(txbSym_Sub.Text, txbLessonName.Text) > 0)
+            {
+                MessageBox.Show("Tên bài học đã tồn tại. Vui lòng nhập nội dung mới!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+            return true;
+        }
+
+
+        private void txbLessonName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Danh sách các ký tự đặc biệt cần chặn
+            char[] specialChars = { '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '=', '+', '[', ']', '{', '}', '\\', '|', ';', ':', '\'', '\"', ',', '<', '.', '>', '/', '?' };
+
+            // Kiểm tra nếu ký tự là ký tự đặc biệt
+            if (Array.Exists(specialChars, element => element == e.KeyChar))
+            {
+                // Ngăn chặn ký tự đặc biệt
+                e.Handled = true;
+            }
+        }
+
+        private void txbLesson_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Danh sách các ký tự đặc biệt cần chặn
+            char[] specialChars = { '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '=', '+', '[', ']', '{', '}', '\\', '|', ';', ':', '\'', '\"', ',', '<', '.', '>', '/', '?' };
+
+            // Kiểm tra nếu ký tự là ký tự đặc biệt
+            if (Array.Exists(specialChars, element => element == e.KeyChar))
+            {
+                // Ngăn chặn ký tự đặc biệt
+                e.Handled = true;
+            }
         }
         #endregion
 

@@ -11,7 +11,8 @@ namespace EduManager.Views
 {
     public partial class EduProgram_Form : Form
     {
-
+        private object previousValue;
+        private int rowIndex, columnIndex;
         public EduProgram_Form()
         {
             InitializeComponent();
@@ -39,7 +40,7 @@ namespace EduManager.Views
             ConfigureDataGridViewReadOnly(dtgvEduProgram, "Mã môn học");
             ConfigureColumnHeaders(dtgvEduProgram);
             ConfigureColumnAlignment(dtgvEduProgram, new string[] { "Mã môn học", "Ký hiệu", "Lý thuyết", "Bài tập", "Thực hành" });
-            AddActionColumns(dtgvEduProgram); 
+            AddActionColumns(dtgvEduProgram);
         }
         #endregion
 
@@ -112,7 +113,7 @@ namespace EduManager.Views
                 }
             }
         }
-#endregion
+        #endregion
 
         #region EVENT HANDLERS
         private void dtgvEduProgram_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -147,10 +148,9 @@ namespace EduManager.Views
 
             if (confirmation == DialogResult.Yes)
             {
-                var isDeleted = LessonSubjectController.Instance().DeleteAllLessonSubject(subjectId) && 
-                                EduProgramController.Instance().RemoveAllData(new EduProgram(subjectId)) &&
+                var isDeleted = EduProgramController.Instance().RemoveAllData(new EduProgram(subjectId)) &&
                                 SubjectController.Instance().RemoveData(new Subject(subjectId));
-                                
+
 
                 if (isDeleted)
                 {
@@ -174,9 +174,10 @@ namespace EduManager.Views
             var exerciseHours = Convert.ToInt32(dgv.Rows[rowIndex].Cells[4].Value);
             var practiceHours = Convert.ToInt32(dgv.Rows[rowIndex].Cells[5].Value);
 
-            if(SubjectController.Instance().checkDuplicate(subjectSymbol, subjectId, subjectName) > 0 )
+            if (SubjectController.Instance().checkDuplicate(subjectSymbol, subjectId, subjectName) > 0)
             {
                 MessageBox.Show("Ký hiệu hoặc tên môn học đã tồn tại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                dtgvEduProgram[columnIndex, rowIndex].Value = previousValue; // Khôi phục giá trị trước đó
                 return;
             }
 
@@ -204,12 +205,12 @@ namespace EduManager.Views
         private void btnAddSubject_Click(object sender, EventArgs e)
         {
             var subjectForm = new Subjects(this);
-            subjectForm.ShowDialog(); 
+            subjectForm.ShowDialog();
         }
         #endregion
 
         #region VALIDATION
-        private object previousValue;
+        
         private void dtgvEduProgram_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
         {
             previousValue = dtgvEduProgram[e.ColumnIndex, e.RowIndex].Value;
@@ -218,6 +219,8 @@ namespace EduManager.Views
         private void dtgvEduProgram_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
             var currentValue = dtgvEduProgram[e.ColumnIndex, e.RowIndex].Value;
+            rowIndex = e.RowIndex;
+            columnIndex = e.ColumnIndex;
 
             // Kiểm tra nếu giá trị rỗng hoặc chỉ có dấu cách
             if (currentValue == null || string.IsNullOrWhiteSpace(currentValue.ToString()))
@@ -242,6 +245,7 @@ namespace EduManager.Views
             }
         }
 
+        // Chỉ bật phím Số cho các cột có chỉ số
         private void dtgvEduProgram_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
         {
             var textBox = e.Control as TextBox;
@@ -256,7 +260,7 @@ namespace EduManager.Views
                 if (numericColumns.Contains(columnIndex))
                 {
                     textBox.KeyPress += TextBox_KeyPress;
-                } 
+                }
             }
         }
 
@@ -273,6 +277,6 @@ namespace EduManager.Views
                 lbMessage.Text = "";
             }
         }
-#endregion
+        #endregion
     }
 }

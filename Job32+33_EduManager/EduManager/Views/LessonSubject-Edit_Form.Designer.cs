@@ -231,6 +231,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Sửa bài học";
             this.Load += new System.EventHandler(this.LessonSubject_Edit_Form_Load);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.LessonSubject_Edit_Form_KeyPress);
             ((System.ComponentModel.ISupportInitialize)(this.nmBT)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmTH)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmLT)).EndInit();

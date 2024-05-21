@@ -178,6 +178,7 @@
             this.txbLessonName.Name = "txbLessonName";
             this.txbLessonName.Size = new System.Drawing.Size(546, 27);
             this.txbLessonName.TabIndex = 30;
+            this.txbLessonName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbLessonName_KeyPress);
             // 
             // txbLesson
             // 
@@ -187,6 +188,7 @@
             this.txbLesson.Name = "txbLesson";
             this.txbLesson.Size = new System.Drawing.Size(228, 27);
             this.txbLesson.TabIndex = 44;
+            this.txbLesson.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbLesson_KeyPress);
             // 
             // LessonSubject_Add
             // 

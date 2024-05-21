@@ -13,6 +13,7 @@ namespace EduManager.Views
         private readonly LessonSubject_Form _lessonSubjectForm;
         private int _ltOldValue, _btOldValue, _thOldValue;
         private string _oldLessonUnit = "";
+        private string _oldLessonName = "";
 
         #region === Nhóm hàm khởi tạo và thiết lập ===
         public LessonSubject_Edit_Form(LessonSubject_Form lessonSubjectForm, string lesson, string lessonName, int lt, int bt, int th)
@@ -34,16 +35,20 @@ namespace EduManager.Views
 
         private void LessonSubject_Edit_Form_Load(object sender, EventArgs e)
         {
+           
             _ltOldValue = (int)nmLT.Value;
             _btOldValue = (int)nmBT.Value;
             _thOldValue = (int)nmTH.Value;
             _oldLessonUnit = txbLesson.Text;
+            _oldLessonName = txbLessonName.Text;
         }
         #endregion
 
         #region === Nhóm hàm xử lý sự kiện ===
         private void btnSave_Click(object sender, EventArgs e)
         {
+            if (!Validate()) return;
+
             var lessonUpdates = CreateLessonUpdates();
 
             if (ValidateHours(lessonUpdates))
@@ -51,7 +56,6 @@ namespace EduManager.Views
                 bool EditLT = false, EditBT = false, EditTH = false;
                 for (int i = 1; i <= 3; i++)
                 {
-                    MessageBox.Show(_oldLessonUnit, "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (i == 1)
                     {
                         EditLT = LessonSubjectController.Instance().EditLessonSubject(lessonUpdates[i - 1], _oldLessonUnit);
@@ -70,6 +74,7 @@ namespace EduManager.Views
                 {
                     _lessonSubjectForm.LoadData();
                     ShowMessage("Sửa thành công", "Thông báo", MessageBoxIcon.Information);
+                    this.Close();
                 }
             }
         }
@@ -140,9 +145,23 @@ namespace EduManager.Views
             MessageBox.Show(message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
+
         private static void ShowMessage(string message, string title, MessageBoxIcon icon)
         {
             MessageBox.Show(message, title, MessageBoxButtons.OK, icon);
+        }
+
+        private void LessonSubject_Edit_Form_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Danh sách các ký tự đặc biệt cần chặn
+            char[] specialChars = { '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '=', '+', '[', ']', '{', '}', '\\', '|', ';', ':', '\'', '\"', ',', '<', '.', '>', '/', '?' };
+
+            // Kiểm tra nếu ký tự là ký tự đặc biệt
+            if (Array.Exists(specialChars, element => element == e.KeyChar))
+            {
+                // Ngăn chặn ký tự đặc biệt
+                e.Handled = true;
+            }
         }
 
         public static int CalculateColumnSum(DataTable dataTable, string columnName)
@@ -155,6 +174,38 @@ namespace EduManager.Views
             return dataTable.AsEnumerable()
                             .Where(row => row[columnName] != DBNull.Value)
                             .Sum(row => Convert.ToInt32(row[columnName]));
+        }
+
+        private bool Validate()
+        {
+            if (txbLessonName.Text == "" || txbLesson.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+            if (txbLesson.Text.Length > 10)
+            {
+                MessageBox.Show("Bài học cần ít hơn 10 ký tự!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+            if (_oldLessonName != txbLessonName.Text)
+            {
+                if (LessonSubjectController.Instance().CheckDuplicateLessonName(txbSym_Sub.Text, txbLessonName.Text) > 0)
+                {
+                    MessageBox.Show("Tên bài học đã tồn tại. Vui lòng nhập nội dung mới!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return false;
+                }
+            }
+
+            if (_oldLessonUnit != txbLesson.Text)
+            {
+                if (LessonSubjectController.Instance().CheckDuplicateLessonUnit(txbSym_Sub.Text, txbLesson.Text) > 0)
+                {
+                    MessageBox.Show("Bài học đã tồn tại. Vui lòng nhập nội dung mới!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return false;
+                }
+            }
+            return true;
         }
         #endregion
     }

@@ -61,12 +61,6 @@ namespace EduManager.Controllers
             return connectDatabase.ExecuteNonQuery(query) > 0;
         }
 
-        public bool DeleteAllLessonSubject(int FK_Id_sub)
-        {
-            string query = $"DELETE FROM LessonSub WHERE FK_Id_Sub = {FK_Id_sub}";
-            return connectDatabase.ExecuteNonQuery(query) > 0;
-        }
-
 
         #endregion
 
@@ -130,6 +124,28 @@ namespace EduManager.Controllers
             string query = $"SELECT [{learningStyle}] FROM EduProgramView WHERE [Ký hiệu] = '{sym_sub}'";
             string result = ConnectDatabase.getInstance().GetValue(query);
             return Convert.ToInt32(result);
+        }
+
+        public int CheckDuplicateLessonUnit(string symSub, string lessonUnit)
+        {
+            string query = "SELECT COUNT(*) FROM LessonSub AS L " +
+                           "INNER JOIN Subjects AS S ON L.FK_Id_Sub = S.Id_Sub " +
+                          $"WHERE Les_Unit LIKE N'{lessonUnit}' " +
+                          $"AND S.Sym_Sub = '{symSub}';";
+            string result = connectDatabase.GetValue(query);
+            int value = int.Parse(result);
+            return value;
+        }
+
+        public int CheckDuplicateLessonName(string symSub, string lessonName)
+        {
+            string query = "SELECT COUNT(*) FROM LessonSub AS L " +
+                           "INNER JOIN Subjects AS S ON L.FK_Id_Sub = S.Id_Sub " +
+                          $"WHERE Les_Name LIKE N'{lessonName}' " +
+                          $"AND S.Sym_Sub = '{symSub}';";
+            string result = connectDatabase.GetValue(query);
+            int value = int.Parse(result);
+            return value;
         }
         #endregion
     }
