@@ -11,7 +11,7 @@ namespace MilitaryUnitManagement.Services
     internal class ConnectDatabase
     {
         private static ConnectDatabase instance;
-        private string _connectionString = @"Data Source=DESKTOP-H4PJOLD;Initial Catalog=MilitaryUnitManagement;Integrated Security=True";
+        private string _connectionString = @"Data Source=DUNGHAQUANG;Initial Catalog=MilitaryUnitManagement;Integrated Security=True";
 
         private ConnectDatabase() { }
 

@@ -1,4 +1,5 @@
 ﻿CREATE DATABASE MilitaryUnitManagement;
+GO
 
 USE MilitaryUnitManagement;
 GO
@@ -29,9 +30,6 @@ CREATE TABLE Platoon (
 GO
 
 
-DROP TABLE Platoon
-DROP TABLE Company
-DROP TABLE Battalion
 
 
 INSERT INTO Battalion (Name, Description) VALUES
@@ -57,7 +55,14 @@ GO
 
 
 
-SELECT * FROM Platoon
+SELECT * FROM Platoon INNER JOIN Company ON Platoon.FK_CompanyID = Company.ID
+WHERE 
 SELECT * FROM Company
 SELECT * FROM Battalion
 
+
+
+
+DROP TABLE Platoon
+DROP TABLE Company
+DROP TABLE Battalion

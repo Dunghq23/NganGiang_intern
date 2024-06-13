@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32\u002B33_EduManager\\EduManager\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{56BD2D75-FE36-4353-92B9-4AB7B2030568}|EduManager.csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job32\u002B33_edumanager\\edumanager\\models\\eduprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56BD2D75-FE36-4353-92B9-4AB7B2030568}|EduManager.csproj|solutionrelative:models\\eduprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56BD2D75-FE36-4353-92B9-4AB7B2030568}|EduManager.csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job32\u002B33_edumanager\\edumanager\\views\\eduprogram_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56BD2D75-FE36-4353-92B9-4AB7B2030568}|EduManager.csproj|solutionrelative:views\\eduprogram_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56BD2D75-FE36-4353-92B9-4AB7B2030568}|EduManager.csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job32\u002B33_edumanager\\edumanager\\services\\connectdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56BD2D75-FE36-4353-92B9-4AB7B2030568}|EduManager.csproj|solutionrelative:services\\connectdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56BD2D75-FE36-4353-92B9-4AB7B2030568}|EduManager.csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job32\u002B33_edumanager\\edumanager\\views\\eduprogram_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56BD2D75-FE36-4353-92B9-4AB7B2030568}|EduManager.csproj|solutionrelative:views\\eduprogram_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,28 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EduProgram.cs",
-              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32\u002B33_EduManager\\EduManager\\Models\\EduProgram.cs",
-              "RelativeDocumentMoniker": "Models\\EduProgram.cs",
-              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32\u002B33_EduManager\\EduManager\\Models\\EduProgram.cs",
-              "RelativeToolTip": "Models\\EduProgram.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "EduProgram_Form.cs",
+              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32\u002B33_EduManager\\EduManager\\Views\\EduProgram_Form.cs",
+              "RelativeDocumentMoniker": "Views\\EduProgram_Form.cs",
+              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32\u002B33_EduManager\\EduManager\\Views\\EduProgram_Form.cs",
+              "RelativeToolTip": "Views\\EduProgram_Form.cs",
+              "ViewState": "AQIAAMkAAAAAAAAAAAArwNQAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T20:39:23.584Z",
+              "WhenOpened": "2024-06-13T15:31:53.915Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ConnectDatabase.cs",
-              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32\u002B33_EduManager\\EduManager\\Services\\ConnectDatabase.cs",
-              "RelativeDocumentMoniker": "Services\\ConnectDatabase.cs",
-              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32\u002B33_EduManager\\EduManager\\Services\\ConnectDatabase.cs",
-              "RelativeToolTip": "Services\\ConnectDatabase.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAdAAAA",
+              "Title": "EduProgram_Form.cs [Design]",
+              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32\u002B33_EduManager\\EduManager\\Views\\EduProgram_Form.cs",
+              "RelativeDocumentMoniker": "Views\\EduProgram_Form.cs",
+              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32\u002B33_EduManager\\EduManager\\Views\\EduProgram_Form.cs [Design]",
+              "RelativeToolTip": "Views\\EduProgram_Form.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T20:12:48.46Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-13T15:31:51.096Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

@@ -53,6 +53,7 @@
             this.btnCompany.TabIndex = 1;
             this.btnCompany.Text = "Đại đội";
             this.btnCompany.UseVisualStyleBackColor = true;
+            this.btnCompany.Click += new System.EventHandler(this.btnCompany_Click);
             // 
             // btnPlatoon
             // 
@@ -63,12 +64,13 @@
             this.btnPlatoon.TabIndex = 2;
             this.btnPlatoon.Text = "Trung đội";
             this.btnPlatoon.UseVisualStyleBackColor = true;
+            this.btnPlatoon.Click += new System.EventHandler(this.btnPlatoon_Click);
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(752, 391);
+            this.ClientSize = new System.Drawing.Size(655, 269);
             this.Controls.Add(this.btnPlatoon);
             this.Controls.Add(this.btnCompany);
             this.Controls.Add(this.btnBattalion);
@@ -76,7 +78,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Military Unit Management";
+            this.Text = "Quản lý đơn vị quân đội";
             this.ResumeLayout(false);
 
         }

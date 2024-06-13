@@ -25,5 +25,21 @@ namespace MilitaryUnitManagement
             f.ShowDialog(this);
             this.Show();
         }
+
+        private void btnCompany_Click(object sender, EventArgs e)
+        {
+            CompanyForm f = new CompanyForm();
+            this.Hide();
+            f.ShowDialog(this);
+            this.Show();
+        }
+
+        private void btnPlatoon_Click(object sender, EventArgs e)
+        {
+            PlatoonForm f = new PlatoonForm();
+            this.Hide();
+            f.ShowDialog(this);
+            this.Show();
+        }
     }
 }
