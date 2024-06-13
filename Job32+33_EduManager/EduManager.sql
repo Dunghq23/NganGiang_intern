@@ -35,7 +35,7 @@ CREATE TABLE LessonSub (
 	FK_Id_Sub INT,
     FK_Id_LS INT,
     NumHour INT DEFAULT 0,
-    FOREIGN KEY (FK_Id_Sub) REFERENCES Subjects(Id_Sub),
+    FOREIGN KEY (FK_Id_Sub) REFERENCES Subjects(Id_Sub) ON DELETE CASCADE,
     FOREIGN KEY (FK_Id_LS) REFERENCES LearningStyle(Id_LS)
 );
 
@@ -94,3 +94,17 @@ WHERE FK_Id_Sub = 1
 
 DELETE FROM Subjects
 WHERE Id_Sub = 1
+
+
+
+SELECT COUNT(*) FROM LessonSub AS L 
+INNER JOIN Subjects AS S ON L.FK_Id_Sub = S.Id_Sub 
+WHERE ((Les_Unit LIKE N'Bài 1') OR (Les_Name LIKE N'Đạo hàm'))
+  AND S.Sym_Sub = 'H2';
+
+
+  
+SELECT * FROM LessonSub AS L 
+INNER JOIN Subjects AS S ON L.FK_Id_Sub = S.Id_Sub 
+WHERE ((Les_Unit LIKE N'Bài 1') OR (Les_Name LIKE N'Đạo hàm'))
+  AND S.Sym_Sub = 'H2';
