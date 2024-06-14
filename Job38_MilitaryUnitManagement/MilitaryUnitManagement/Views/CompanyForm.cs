@@ -1,13 +1,8 @@
 ﻿using MilitaryUnitManagement.Controllers;
+using MilitaryUnitManagement.Models;
 using MilitaryUnitManagement.Services;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MilitaryUnitManagement.Views
@@ -28,7 +23,6 @@ namespace MilitaryUnitManagement.Views
 
         private void CompanyForm_Load(object sender, EventArgs e)
         {
-            
             CompanyController.Instance().LoadComboBoxData(cb);
         }
 
@@ -71,5 +65,78 @@ namespace MilitaryUnitManagement.Views
                 MessageBox.Show("Vui lòng chọn ID hợp lệ.");
             }
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            CompanyAddEditForm f = new CompanyAddEditForm();
+            f.ShowDialog();
+            loadData(selectedValue);
+        }
+
+
+        private void dtgv_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0) return; // Bỏ qua khi click vào tiêu đề
+
+            var dgv = sender as DataGridView;
+            var headerText = dgv.Columns[e.ColumnIndex].HeaderText;
+
+            if (headerText == "Xóa")
+            {
+                HandleDelete(dgv, e.RowIndex);
+            }
+            else if (headerText == "Sửa")
+            {
+                HandleEdit(dgv, e.RowIndex);
+            }
+        }
+
+        private void HandleDelete(DataGridView dgv, int rowIndex)
+        {
+            int Id = int.Parse(dgv.Rows[rowIndex].Cells[0].Value.ToString());
+            var Name = dgv.Rows[rowIndex].Cells[1].Value.ToString();
+
+            // Xác nhận trước khi xóa
+            var confirmation = MessageBox.Show(
+                $"Bạn có chắc chắn muốn xóa \"{Name}\"? Thao tác này sẽ xóa toàn bộ các Trung đội của của Đại đội này (nếu có).",
+                "Xác nhận",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (confirmation == DialogResult.Yes)
+            {
+                if (CompanyController.Instance().RemoveData(new Company(Id)))
+                {
+                    loadData(selectedValue); // Tải lại dữ liệu
+                    MessageBox.Show("Xóa Đại đội thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Xóa Đại đội thất bại.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void HandleEdit(DataGridView dgv, int rowIndex)
+        {
+            var Id = int.Parse(dgv.Rows[rowIndex].Cells[0].Value.ToString());
+            var Name = dgv.Rows[rowIndex].Cells[1].Value.ToString();
+            var Description = dgv.Rows[rowIndex].Cells[2].Value.ToString();
+            var FK_BattalionID = Convert.ToInt32(cb.SelectedValue);
+
+            //if (SubjectController.Instance().checkDuplicate(subjectSymbol, subjectId, subjectName) > 0)
+            //{
+            //    MessageBox.Show("Ký hiệu hoặc tên môn học đã tồn tại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    dtgvEduProgram[columnIndex, rowIndex].Value = previousValue; // Khôi phục giá trị trước đó
+            //    return;
+            //}
+
+            CompanyAddEditForm f = new CompanyAddEditForm(new Company(Id, Name, Description, FK_BattalionID));
+            f.ShowDialog();
+            loadData(selectedValue);
+
+        }
+
     }
 }

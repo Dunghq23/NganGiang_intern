@@ -16,7 +16,7 @@ CREATE TABLE Company (
     Name NVARCHAR(255) NOT NULL,
     FK_BattalionID INT,
     Description NTEXT,
-    FOREIGN KEY (FK_BattalionID) REFERENCES Battalion(ID)
+    FOREIGN KEY (FK_BattalionID) REFERENCES Battalion(ID) ON DELETE CASCADE
 );
 GO
 
@@ -25,7 +25,7 @@ CREATE TABLE Platoon (
     Name NVARCHAR(255) NOT NULL,
     FK_CompanyID INT,
     Description NTEXT,
-    FOREIGN KEY (FK_CompanyID) REFERENCES Company(ID)
+    FOREIGN KEY (FK_CompanyID) REFERENCES Company(ID) ON DELETE CASCADE
 );
 GO
 
@@ -56,7 +56,6 @@ GO
 
 
 SELECT * FROM Platoon INNER JOIN Company ON Platoon.FK_CompanyID = Company.ID
-WHERE 
 SELECT * FROM Company
 SELECT * FROM Battalion
 

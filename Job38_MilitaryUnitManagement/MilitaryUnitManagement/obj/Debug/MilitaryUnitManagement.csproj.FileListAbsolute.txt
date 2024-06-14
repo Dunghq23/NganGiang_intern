@@ -22,3 +22,22 @@ D:\Documents\Work\NganGiang\HAQUANGDUNG\Job38_MilitaryUnitManagement\MilitaryUni
 D:\Documents\Work\NganGiang\HAQUANGDUNG\Job38_MilitaryUnitManagement\MilitaryUnitManagement\obj\Debug\MilitaryUnitManagement.pdb
 D:\Documents\Work\NganGiang\HAQUANGDUNG\Job38_MilitaryUnitManagement\MilitaryUnitManagement\obj\Debug\MilitaryUnitManagement.Views.PlatoonForm.resources
 D:\Documents\Work\NganGiang\HAQUANGDUNG\Job38_MilitaryUnitManagement\MilitaryUnitManagement\obj\Debug\MilitaryUnitManagement.Views.BattalionForm.resources
+C:\Users\Windows 10\Desktop\NganGiang_intern\Job38_MilitaryUnitManagement\MilitaryUnitManagement\bin\Debug\MilitaryUnitManagement.exe.config
+C:\Users\Windows 10\Desktop\NganGiang_intern\Job38_MilitaryUnitManagement\MilitaryUnitManagement\bin\Debug\MilitaryUnitManagement.exe
+C:\Users\Windows 10\Desktop\NganGiang_intern\Job38_MilitaryUnitManagement\MilitaryUnitManagement\bin\Debug\MilitaryUnitManagement.pdb
+C:\Users\Windows 10\Desktop\NganGiang_intern\Job38_MilitaryUnitManagement\MilitaryUnitManagement\obj\Debug\MilitaryUnitManagement.csproj.AssemblyReference.cache
+C:\Users\Windows 10\Desktop\NganGiang_intern\Job38_MilitaryUnitManagement\MilitaryUnitManagement\obj\Debug\MilitaryUnitManagement.Properties.Resources.resources
+C:\Users\Windows 10\Desktop\NganGiang_intern\Job38_MilitaryUnitManagement\MilitaryUnitManagement\obj\Debug\MilitaryUnitManagement.Views.BattalionForm.resources
+C:\Users\Windows 10\Desktop\NganGiang_intern\Job38_MilitaryUnitManagement\MilitaryUnitManagement\obj\Debug\MilitaryUnitManagement.Views.CompanyForm.resources
+C:\Users\Windows 10\Desktop\NganGiang_intern\Job38_MilitaryUnitManagement\MilitaryUnitManagement\obj\Debug\MilitaryUnitManagement.MainForm.resources
+C:\Users\Windows 10\Desktop\NganGiang_intern\Job38_MilitaryUnitManagement\MilitaryUnitManagement\obj\Debug\MilitaryUnitManagement.Views.PlatoonForm.resources
+C:\Users\Windows 10\Desktop\NganGiang_intern\Job38_MilitaryUnitManagement\MilitaryUnitManagement\obj\Debug\MilitaryUnitManagement.csproj.GenerateResource.cache
+C:\Users\Windows 10\Desktop\NganGiang_intern\Job38_MilitaryUnitManagement\MilitaryUnitManagement\obj\Debug\MilitaryUnitManagement.csproj.CoreCompileInputs.cache
+C:\Users\Windows 10\Desktop\NganGiang_intern\Job38_MilitaryUnitManagement\MilitaryUnitManagement\obj\Debug\MilitaryUnitManagement.exe
+C:\Users\Windows 10\Desktop\NganGiang_intern\Job38_MilitaryUnitManagement\MilitaryUnitManagement\obj\Debug\MilitaryUnitManagement.pdb
+C:\Users\Windows 10\Desktop\NganGiang_intern\Job38_MilitaryUnitManagement\MilitaryUnitManagement\obj\Debug\MilitaryUnitManagement.Views.BattalionAddEditForm.resources
+C:\Users\Windows 10\Desktop\NganGiang_intern\Job38_MilitaryUnitManagement\MilitaryUnitManagement\obj\Debug\MilitaryUnitManagement.Views.CompanyAddEditForm.resources
+C:\Users\Windows 10\Desktop\NganGiang_intern\Job38_MilitaryUnitManagement\MilitaryUnitManagement\obj\Debug\MilitaryUnitManagement.Views.PlatoonAddEditForm.resources
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job38_MilitaryUnitManagement\MilitaryUnitManagement\obj\Debug\MilitaryUnitManagement.Views.BattalionAddEditForm.resources
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job38_MilitaryUnitManagement\MilitaryUnitManagement\obj\Debug\MilitaryUnitManagement.Views.CompanyAddEditForm.resources
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job38_MilitaryUnitManagement\MilitaryUnitManagement\obj\Debug\MilitaryUnitManagement.Views.PlatoonAddEditForm.resources

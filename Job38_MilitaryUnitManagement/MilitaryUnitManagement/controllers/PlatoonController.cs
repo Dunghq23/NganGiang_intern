@@ -1,12 +1,8 @@
 ﻿using MilitaryUnitManagement.Services;
-using System;
-using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using MilitaryUnitManagement.Models;
 
 namespace MilitaryUnitManagement.Controllers
 {
@@ -17,7 +13,6 @@ namespace MilitaryUnitManagement.Controllers
 
         private PlatoonController() { }
 
-        // Khởi tạo một instance mới nếu chưa tồn tại, ngược lại trả về instance hiện tại
         public static PlatoonController Instance()
         {
             if (instance == null)
@@ -28,9 +23,9 @@ namespace MilitaryUnitManagement.Controllers
         }
 
         // Hiển thị dữ liệu
-        public void ShowData(DataGridView dgv, int FK_BattalionID,  int FK_CompanyID)
+        public void ShowData(DataGridView dgv, int FK_BattalionID, int FK_CompanyID)
         {
-            string query = "SELECT Platoon.ID, Platoon.Name, Platoon.Description FROM Platoon INNER JOIN Company ON Platoon.FK_CompanyID = Company.ID "+
+            string query = "SELECT Platoon.ID, Platoon.Name, Platoon.Description FROM Platoon INNER JOIN Company ON Platoon.FK_CompanyID = Company.ID " +
                            "WHERE Company.FK_BattalionID = @FK_BattalionID AND Platoon.FK_CompanyID = @FK_CompanyID";
 
             // Tạo các tham số SqlParameter
@@ -59,9 +54,59 @@ namespace MilitaryUnitManagement.Controllers
             SqlParameter parameter = new SqlParameter("@FK_BattalionID", selectedBattalion);
             DataTable dataTable = connectDatabase.ExecuteQuery(query, new SqlParameter[] { parameter });
 
-            comboBox.DataSource = dataTable;
-            comboBox.DisplayMember = "Name"; // Column to display
-            comboBox.ValueMember = "Id";     // Column for value
+            if (dataTable.Rows.Count != 0)
+            {
+                comboBox.DataSource = dataTable;
+                comboBox.DisplayMember = "Name"; // Column to display
+                comboBox.ValueMember = "Id";     // Column for value
+            }
+
+        }
+        
+        // Thêm dữ liệu
+        public bool AddData(Platoon p)
+        {
+            string query = "INSERT INTO Platoon(Name, Description, FK_CompanyID) VALUES (@Name, @Description, @FK_CompanyID)";
+            SqlParameter[] para = new SqlParameter[]
+            {
+                new SqlParameter("Name", p.Name),
+                new SqlParameter("Description", p.Description),
+                new SqlParameter("FK_CompanyID", p.FK_CompanyID)
+            };
+            return connectDatabase.ExecuteNonQuery(query, para) > 0;
+        }
+
+        // Sửa dữ liệu
+        public bool EditData(Platoon p)
+        {
+            string query = "UPDATE Platoon " +
+                           "SET Name = @Name, " +
+                           "Description = @Description, " +
+                           "FK_CompanyID = @FK_CompanyID " +
+                           "WHERE ID = @ID";
+
+            SqlParameter[] para = new SqlParameter[]
+            {
+                new SqlParameter("ID", p.ID),
+                new SqlParameter("Name", p.Name),
+                new SqlParameter("Description", p.Description),
+                new SqlParameter("FK_CompanyID", p.FK_CompanyID)
+            };
+            int rowAffect = connectDatabase.ExecuteNonQuery(query, para);
+            return rowAffect > 0 ? true : false;
+        }
+
+        // Xóa dữ liệu
+        public bool RemoveData(Platoon p)
+        {
+            string query = "DELETE FROM Platoon WHERE ID = @ID";
+            SqlParameter[] para = new SqlParameter[]
+            {
+                new SqlParameter("ID", p.ID)
+            };
+            int rowAffect = connectDatabase.ExecuteNonQuery(query, para);
+
+            return rowAffect > 0 ? true : false;
         }
     }
 }

@@ -10,8 +10,10 @@ namespace MilitaryUnitManagement.Services
 {
     internal class ConnectDatabase
     {
+        // laptop = "DUNGHAQUANG";
+        // desktop = "DESKTOP-001";
         private static ConnectDatabase instance;
-        private string _connectionString = @"Data Source=DUNGHAQUANG;Initial Catalog=MilitaryUnitManagement;Integrated Security=True";
+        private string _connectionString = $"Data Source=DUNGHAQUANG;Initial Catalog=MilitaryUnitManagement;Integrated Security=True";
 
         private ConnectDatabase() { }
 
