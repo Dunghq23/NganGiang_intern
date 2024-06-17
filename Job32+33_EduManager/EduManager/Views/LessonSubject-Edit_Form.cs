@@ -35,7 +35,6 @@ namespace EduManager.Views
 
         private void LessonSubject_Edit_Form_Load(object sender, EventArgs e)
         {
-           
             _ltOldValue = (int)nmLT.Value;
             _btOldValue = (int)nmBT.Value;
             _thOldValue = (int)nmTH.Value;

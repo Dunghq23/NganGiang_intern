@@ -19,7 +19,6 @@ namespace EduManager.Views
             dtgvEduProgram.RowTemplate.Height = 40;
         }
 
-        // FORM LOAD
         private void EduProgram_Load(object sender, EventArgs e)
         {
             LoadData();
@@ -210,7 +209,7 @@ namespace EduManager.Views
         #endregion
 
         #region VALIDATION
-        
+
         private void dtgvEduProgram_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
         {
             previousValue = dtgvEduProgram[e.ColumnIndex, e.RowIndex].Value;

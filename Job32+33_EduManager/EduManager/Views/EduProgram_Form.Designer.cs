@@ -30,8 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EduProgram_Form));
             this.dtgvEduProgram = new System.Windows.Forms.DataGridView();
-            this.btnAddSubject = new System.Windows.Forms.Button();
-            this.lbMessage = new System.Windows.Forms.Label();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,6 +38,8 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnAddSubject = new System.Windows.Forms.Button();
+            this.lbMessage = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvEduProgram)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,29 +73,6 @@
             this.dtgvEduProgram.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvEduProgram_CellClick);
             this.dtgvEduProgram.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvEduProgram_CellEndEdit);
             this.dtgvEduProgram.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dtgvEduProgram_EditingControlShowing);
-            // 
-            // btnAddSubject
-            // 
-            this.btnAddSubject.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAddSubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddSubject.Location = new System.Drawing.Point(13, 13);
-            this.btnAddSubject.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAddSubject.Name = "btnAddSubject";
-            this.btnAddSubject.Size = new System.Drawing.Size(182, 59);
-            this.btnAddSubject.TabIndex = 19;
-            this.btnAddSubject.Text = "Thêm môn học";
-            this.btnAddSubject.UseVisualStyleBackColor = true;
-            this.btnAddSubject.Click += new System.EventHandler(this.btnAddSubject_Click);
-            // 
-            // lbMessage
-            // 
-            this.lbMessage.AutoSize = true;
-            this.lbMessage.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbMessage.ForeColor = System.Drawing.Color.Red;
-            this.lbMessage.Location = new System.Drawing.Point(195, 32);
-            this.lbMessage.Name = "lbMessage";
-            this.lbMessage.Size = new System.Drawing.Size(0, 26);
-            this.lbMessage.TabIndex = 20;
             // 
             // Column1
             // 
@@ -161,6 +138,29 @@
             this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
             // 
+            // btnAddSubject
+            // 
+            this.btnAddSubject.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAddSubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddSubject.Location = new System.Drawing.Point(13, 13);
+            this.btnAddSubject.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAddSubject.Name = "btnAddSubject";
+            this.btnAddSubject.Size = new System.Drawing.Size(182, 59);
+            this.btnAddSubject.TabIndex = 19;
+            this.btnAddSubject.Text = "Thêm môn học";
+            this.btnAddSubject.UseVisualStyleBackColor = true;
+            this.btnAddSubject.Click += new System.EventHandler(this.btnAddSubject_Click);
+            // 
+            // lbMessage
+            // 
+            this.lbMessage.AutoSize = true;
+            this.lbMessage.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbMessage.ForeColor = System.Drawing.Color.Red;
+            this.lbMessage.Location = new System.Drawing.Point(195, 32);
+            this.lbMessage.Name = "lbMessage";
+            this.lbMessage.Size = new System.Drawing.Size(0, 26);
+            this.lbMessage.TabIndex = 20;
+            // 
             // EduProgram_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
@@ -195,5 +195,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+       
     }
 }

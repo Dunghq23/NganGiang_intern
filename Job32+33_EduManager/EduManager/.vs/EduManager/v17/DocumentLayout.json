@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32\u002B33_EduManager\\EduManager\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{56BD2D75-FE36-4353-92B9-4AB7B2030568}|EduManager.csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job32\u002B33_edumanager\\edumanager\\views\\eduprogram_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56BD2D75-FE36-4353-92B9-4AB7B2030568}|EduManager.csproj|solutionrelative:views\\eduprogram_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56BD2D75-FE36-4353-92B9-4AB7B2030568}|EduManager.csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job32\u002B33_edumanager\\edumanager\\views\\lessonsubject-add.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56BD2D75-FE36-4353-92B9-4AB7B2030568}|EduManager.csproj|solutionrelative:views\\lessonsubject-add.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56BD2D75-FE36-4353-92B9-4AB7B2030568}|EduManager.csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job32\u002B33_edumanager\\edumanager\\views\\eduprogram_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{56BD2D75-FE36-4353-92B9-4AB7B2030568}|EduManager.csproj|solutionrelative:views\\eduprogram_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{56BD2D75-FE36-4353-92B9-4AB7B2030568}|EduManager.csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job32\u002B33_edumanager\\edumanager\\views\\lessonsubject_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56BD2D75-FE36-4353-92B9-4AB7B2030568}|EduManager.csproj|solutionrelative:views\\lessonsubject_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56BD2D75-FE36-4353-92B9-4AB7B2030568}|EduManager.csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job32\u002B33_edumanager\\edumanager\\views\\lessonsubject_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56BD2D75-FE36-4353-92B9-4AB7B2030568}|EduManager.csproj|solutionrelative:views\\lessonsubject_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56BD2D75-FE36-4353-92B9-4AB7B2030568}|EduManager.csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job32\u002B33_edumanager\\edumanager\\views\\subjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56BD2D75-FE36-4353-92B9-4AB7B2030568}|EduManager.csproj|solutionrelative:views\\subjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56BD2D75-FE36-4353-92B9-4AB7B2030568}|EduManager.csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job32\u002B33_edumanager\\edumanager\\views\\subjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56BD2D75-FE36-4353-92B9-4AB7B2030568}|EduManager.csproj|solutionrelative:views\\subjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,26 +35,64 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EduProgram_Form.cs",
-              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32\u002B33_EduManager\\EduManager\\Views\\EduProgram_Form.cs",
-              "RelativeDocumentMoniker": "Views\\EduProgram_Form.cs",
-              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32\u002B33_EduManager\\EduManager\\Views\\EduProgram_Form.cs",
-              "RelativeToolTip": "Views\\EduProgram_Form.cs",
-              "ViewState": "AQIAAMkAAAAAAAAAAAArwNQAAAAIAAAA",
+              "Title": "LessonSubject-Add.cs",
+              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32\u002B33_EduManager\\EduManager\\Views\\LessonSubject-Add.cs",
+              "RelativeDocumentMoniker": "Views\\LessonSubject-Add.cs",
+              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32\u002B33_EduManager\\EduManager\\Views\\LessonSubject-Add.cs",
+              "RelativeToolTip": "Views\\LessonSubject-Add.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAqwA0AAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T15:31:53.915Z",
+              "WhenOpened": "2024-06-17T20:59:43.604Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EduProgram_Form.cs [Design]",
-              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32\u002B33_EduManager\\EduManager\\Views\\EduProgram_Form.cs",
-              "RelativeDocumentMoniker": "Views\\EduProgram_Form.cs",
-              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32\u002B33_EduManager\\EduManager\\Views\\EduProgram_Form.cs [Design]",
-              "RelativeToolTip": "Views\\EduProgram_Form.cs [Design]",
+              "DocumentIndex": 3,
+              "Title": "Subjects.cs",
+              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32\u002B33_EduManager\\EduManager\\Views\\Subjects.cs",
+              "RelativeDocumentMoniker": "Views\\Subjects.cs",
+              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32\u002B33_EduManager\\EduManager\\Views\\Subjects.cs",
+              "RelativeToolTip": "Views\\Subjects.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T15:31:51.096Z",
+              "WhenOpened": "2024-06-17T20:57:23.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Subjects.cs [Design]",
+              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32\u002B33_EduManager\\EduManager\\Views\\Subjects.cs",
+              "RelativeDocumentMoniker": "Views\\Subjects.cs",
+              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32\u002B33_EduManager\\EduManager\\Views\\Subjects.cs [Design]",
+              "RelativeToolTip": "Views\\Subjects.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T20:57:21.689Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LessonSubject_Form.cs",
+              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32\u002B33_EduManager\\EduManager\\Views\\LessonSubject_Form.cs",
+              "RelativeDocumentMoniker": "Views\\LessonSubject_Form.cs",
+              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32\u002B33_EduManager\\EduManager\\Views\\LessonSubject_Form.cs",
+              "RelativeToolTip": "Views\\LessonSubject_Form.cs",
+              "ViewState": "AQIAAHQAAAAAAAAAAAAcwK8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T20:50:02.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LessonSubject_Form.cs [Design]",
+              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32\u002B33_EduManager\\EduManager\\Views\\LessonSubject_Form.cs",
+              "RelativeDocumentMoniker": "Views\\LessonSubject_Form.cs",
+              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job32\u002B33_EduManager\\EduManager\\Views\\LessonSubject_Form.cs [Design]",
+              "RelativeToolTip": "Views\\LessonSubject_Form.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T20:45:36.296Z",
               "EditorCaption": " [Design]"
             }
           ]
