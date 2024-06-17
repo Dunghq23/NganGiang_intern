@@ -42,7 +42,7 @@ def encode_images_in_dataset(datasetPath, output_file, trainedPath, name):
             file.write('')
 
     image_files = [f for f in os.listdir(
-        datasetPath) if f.endswith('.jpg') or f.endswith('.png')]
+        datasetPath) if f.endswith('.jpg') or f.endswith('.png') or f.endswith('.JPEG')]
 
     with open(output_file, 'a') as encoding_file:
         for image_file in image_files:

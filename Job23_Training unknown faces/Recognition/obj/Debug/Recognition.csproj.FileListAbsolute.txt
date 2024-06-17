@@ -78,3 +78,20 @@ D:\Workspace\Job23_\Recognition\obj\Debug\Recognition.csproj.CoreCompileInputs.c
 D:\Workspace\Job23_\Recognition\obj\Debug\Recognition.csproj.CopyComplete
 D:\Workspace\Job23_\Recognition\obj\Debug\Recognition.exe
 D:\Workspace\Job23_\Recognition\obj\Debug\Recognition.pdb
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job23_Training unknown faces\Recognition\bin\Debug\Recognition.exe.config
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job23_Training unknown faces\Recognition\bin\Debug\Recognition.exe
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job23_Training unknown faces\Recognition\bin\Debug\Recognition.pdb
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job23_Training unknown faces\Recognition\bin\Debug\AForge.dll
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job23_Training unknown faces\Recognition\bin\Debug\AForge.Video.dll
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job23_Training unknown faces\Recognition\bin\Debug\AForge.Video.DirectShow.dll
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job23_Training unknown faces\Recognition\obj\Debug\Recognition.csproj.AssemblyReference.cache
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job23_Training unknown faces\Recognition\obj\Debug\Recognition.MainForm.resources
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job23_Training unknown faces\Recognition\obj\Debug\Recognition.Properties.Resources.resources
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job23_Training unknown faces\Recognition\obj\Debug\Recognition.RecognizeForm.resources
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job23_Training unknown faces\Recognition\obj\Debug\Recognition.TrainForm.resources
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job23_Training unknown faces\Recognition\obj\Debug\Recognition.WrongIdentificationForm.resources
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job23_Training unknown faces\Recognition\obj\Debug\Recognition.csproj.GenerateResource.cache
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job23_Training unknown faces\Recognition\obj\Debug\Recognition.csproj.CoreCompileInputs.cache
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job23_Training unknown faces\Recognition\obj\Debug\Recognition.exe
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job23_Training unknown faces\Recognition\obj\Debug\Recognition.pdb
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job23_Training unknown faces\Recognition\obj\Debug\Recognit.B930ECDE.Up2Date

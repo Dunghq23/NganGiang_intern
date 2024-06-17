@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "+um16CVtmmxeFCHNfTJMrhBRSuPI48ZeH+zEMaMnhRVwa4PZ6OR01hIBlcQ0BxKWSVlv8EOouXZKthxQsMzy3Q==",
+  "dgSpecHash": "yfL2K5YI2WR/LBuc+bOBy4xPy2yISfu30m/yp6Mjz19NdyemnHD7LHtradikh132yj4eo64jiSn9/YfwMV2mDQ==",
   "success": true,
-  "projectFilePath": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job23_\\Recognition\\Recognition.csproj",
+  "projectFilePath": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job23_Training unknown faces\\Recognition\\Recognition.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Admin\\.nuget\\packages\\aforge\\2.2.5\\aforge.2.2.5.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\aforge.video\\2.2.5\\aforge.video.2.2.5.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\aforge.video.directshow\\2.2.5\\aforge.video.directshow.2.2.5.nupkg.sha512"
+    "C:\\Users\\QUANG DUNG\\.nuget\\packages\\aforge\\2.2.5\\aforge.2.2.5.nupkg.sha512",
+    "C:\\Users\\QUANG DUNG\\.nuget\\packages\\aforge.video\\2.2.5\\aforge.video.2.2.5.nupkg.sha512",
+    "C:\\Users\\QUANG DUNG\\.nuget\\packages\\aforge.video.directshow\\2.2.5\\aforge.video.directshow.2.2.5.nupkg.sha512"
   ],
   "logs": []
 }
