@@ -41,6 +41,6 @@ D:\Documents\Work\NganGiang\HAQUANGDUNG\Job23_\Recognition\obj\Debug\Recognition
 D:\Documents\Work\NganGiang\HAQUANGDUNG\Job23_\Recognition\obj\Debug\Recognition.TrainForm.resources
 D:\Documents\Work\NganGiang\HAQUANGDUNG\Job23_\Recognition\obj\Debug\Recognition.csproj.GenerateResource.cache
 D:\Documents\Work\NganGiang\HAQUANGDUNG\Job23_\Recognition\obj\Debug\Recognition.csproj.CoreCompileInputs.cache
-D:\Documents\Work\NganGiang\HAQUANGDUNG\Job23_\Recognition\obj\Debug\Recognition.csproj.CopyComplete
 D:\Documents\Work\NganGiang\HAQUANGDUNG\Job23_\Recognition\obj\Debug\Recognition.exe
 D:\Documents\Work\NganGiang\HAQUANGDUNG\Job23_\Recognition\obj\Debug\Recognition.pdb
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job23_\Recognition\obj\Debug\Recognit.B930ECDE.Up2Date
