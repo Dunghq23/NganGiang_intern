@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0A4A3C67-1DB6-48A4-BF27-EF003C74D07A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Management</RootNamespace>
+    <AssemblyName>Management</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\Military\BattalionController.cs" />
+    <Compile Include="Controllers\Military\CompanyController.cs" />
+    <Compile Include="Controllers\Education\EduProgramController.cs" />
+    <Compile Include="Controllers\Education\LessonSubjectController.cs" />
+    <Compile Include="Controllers\Military\PlatoonController.cs" />
+    <Compile Include="Controllers\Education\SubjectController.cs" />
+    <Compile Include="Models\Military\Battalion.cs" />
+    <Compile Include="Models\Military\Company.cs" />
+    <Compile Include="Models\Education\EduProgram.cs" />
+    <Compile Include="Models\Education\LessonSubject.cs" />
+    <Compile Include="Models\Military\Platoon.cs" />
+    <Compile Include="Models\Education\Subject.cs" />
+    <Compile Include="Views\EducationManagement\EduProgramForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\EducationManagement\EduProgramForm.Designer.cs">
+      <DependentUpon>EduProgramForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EducationManagement\LessonSubjectAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\EducationManagement\LessonSubjectAddForm.Designer.cs">
+      <DependentUpon>LessonSubjectAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EducationManagement\LessonSubjectEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\EducationManagement\LessonSubjectEditForm.Designer.cs">
+      <DependentUpon>LessonSubjectEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EducationManagement\LessonSubjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\EducationManagement\LessonSubjectForm.Designer.cs">
+      <DependentUpon>LessonSubjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EducationManagement\SubjectAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\EducationManagement\SubjectAddForm.Designer.cs">
+      <DependentUpon>SubjectAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ConfigView.cs" />
+    <Compile Include="Services\ConnectDatabase.cs" />
+    <Compile Include="Views\MilitaryUnitManagement\BattalionAddEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MilitaryUnitManagement\BattalionAddEditForm.Designer.cs">
+      <DependentUpon>BattalionAddEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MilitaryUnitManagement\BattalionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MilitaryUnitManagement\BattalionForm.Designer.cs">
+      <DependentUpon>BattalionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MilitaryUnitManagement\CompanyAddEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MilitaryUnitManagement\CompanyAddEditForm.Designer.cs">
+      <DependentUpon>CompanyAddEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MilitaryUnitManagement\CompanyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MilitaryUnitManagement\CompanyForm.Designer.cs">
+      <DependentUpon>CompanyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MilitaryUnitManagement\PlatoonAddEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MilitaryUnitManagement\PlatoonAddEditForm.Designer.cs">
+      <DependentUpon>PlatoonAddEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MilitaryUnitManagement\PlatoonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MilitaryUnitManagement\PlatoonForm.Designer.cs">
+      <DependentUpon>PlatoonForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Views\EducationManagement\EduProgramForm.resx">
+      <DependentUpon>EduProgramForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\EducationManagement\LessonSubjectAddForm.resx">
+      <DependentUpon>LessonSubjectAddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\EducationManagement\LessonSubjectEditForm.resx">
+      <DependentUpon>LessonSubjectEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\EducationManagement\LessonSubjectForm.resx">
+      <DependentUpon>LessonSubjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\EducationManagement\SubjectAddForm.resx">
+      <DependentUpon>SubjectAddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Views\MilitaryUnitManagement\BattalionAddEditForm.resx">
+      <DependentUpon>BattalionAddEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MilitaryUnitManagement\BattalionForm.resx">
+      <DependentUpon>BattalionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MilitaryUnitManagement\CompanyAddEditForm.resx">
+      <DependentUpon>CompanyAddEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MilitaryUnitManagement\CompanyForm.resx">
+      <DependentUpon>CompanyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MilitaryUnitManagement\PlatoonAddEditForm.resx">
+      <DependentUpon>PlatoonAddEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MilitaryUnitManagement\PlatoonForm.resx">
+      <DependentUpon>PlatoonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ICON_ADD-24x24.png" />
+    <Content Include="Resources\ICON_EDIT-24x24.png" />
+    <Content Include="Resources\ICON_TRASH-24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

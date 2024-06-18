@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job38_MilitaryUnitManagement\\MilitaryUnitManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4F730E0D-C7A1-4332-B264-FC4DF89E3376}|MilitaryUnitManagement.csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job38_militaryunitmanagement\\militaryunitmanagement\\services\\configview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F730E0D-C7A1-4332-B264-FC4DF89E3376}|MilitaryUnitManagement.csproj|solutionrelative:services\\configview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4F730E0D-C7A1-4332-B264-FC4DF89E3376}|MilitaryUnitManagement.csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job38_militaryunitmanagement\\militaryunitmanagement\\views\\platoonform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F730E0D-C7A1-4332-B264-FC4DF89E3376}|MilitaryUnitManagement.csproj|solutionrelative:views\\platoonform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F730E0D-C7A1-4332-B264-FC4DF89E3376}|MilitaryUnitManagement.csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job38_militaryunitmanagement\\militaryunitmanagement\\views\\platoonform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4F730E0D-C7A1-4332-B264-FC4DF89E3376}|MilitaryUnitManagement.csproj|solutionrelative:views\\platoonform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F730E0D-C7A1-4332-B264-FC4DF89E3376}|MilitaryUnitManagement.csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job38_militaryunitmanagement\\militaryunitmanagement\\views\\platoonaddeditform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F730E0D-C7A1-4332-B264-FC4DF89E3376}|MilitaryUnitManagement.csproj|solutionrelative:views\\platoonaddeditform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F730E0D-C7A1-4332-B264-FC4DF89E3376}|MilitaryUnitManagement.csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job38_militaryunitmanagement\\militaryunitmanagement\\views\\platoonaddeditform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4F730E0D-C7A1-4332-B264-FC4DF89E3376}|MilitaryUnitManagement.csproj|solutionrelative:views\\platoonaddeditform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,15 +31,52 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ConfigView.cs",
-              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job38_MilitaryUnitManagement\\MilitaryUnitManagement\\Services\\ConfigView.cs",
-              "RelativeDocumentMoniker": "Services\\ConfigView.cs",
-              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job38_MilitaryUnitManagement\\MilitaryUnitManagement\\Services\\ConfigView.cs",
-              "RelativeToolTip": "Services\\ConfigView.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAiwBAAAAAiAAAA",
+              "Title": "PlatoonForm.cs",
+              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job38_MilitaryUnitManagement\\MilitaryUnitManagement\\Views\\PlatoonForm.cs",
+              "RelativeDocumentMoniker": "Views\\PlatoonForm.cs",
+              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job38_MilitaryUnitManagement\\MilitaryUnitManagement\\Views\\PlatoonForm.cs",
+              "RelativeToolTip": "Views\\PlatoonForm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJMAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T16:12:01.397Z",
+              "WhenOpened": "2024-06-17T21:30:20.632Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlatoonForm.cs [Design]",
+              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job38_MilitaryUnitManagement\\MilitaryUnitManagement\\Views\\PlatoonForm.cs",
+              "RelativeDocumentMoniker": "Views\\PlatoonForm.cs",
+              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job38_MilitaryUnitManagement\\MilitaryUnitManagement\\Views\\PlatoonForm.cs [Design]",
+              "RelativeToolTip": "Views\\PlatoonForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T21:29:45.443Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlatoonAddEditForm.cs",
+              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job38_MilitaryUnitManagement\\MilitaryUnitManagement\\Views\\PlatoonAddEditForm.cs",
+              "RelativeDocumentMoniker": "Views\\PlatoonAddEditForm.cs",
+              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job38_MilitaryUnitManagement\\MilitaryUnitManagement\\Views\\PlatoonAddEditForm.cs",
+              "RelativeToolTip": "Views\\PlatoonAddEditForm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T21:28:47.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlatoonAddEditForm.cs [Design]",
+              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job38_MilitaryUnitManagement\\MilitaryUnitManagement\\Views\\PlatoonAddEditForm.cs",
+              "RelativeDocumentMoniker": "Views\\PlatoonAddEditForm.cs",
+              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job38_MilitaryUnitManagement\\MilitaryUnitManagement\\Views\\PlatoonAddEditForm.cs [Design]",
+              "RelativeToolTip": "Views\\PlatoonAddEditForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T21:28:45.344Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

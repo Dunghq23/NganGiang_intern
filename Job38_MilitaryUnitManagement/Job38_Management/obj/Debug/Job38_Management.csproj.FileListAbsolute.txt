@@ -1,0 +1,11 @@
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job38_MilitaryUnitManagement\Job38_Management\bin\Debug\Job38_Management.exe.config
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job38_MilitaryUnitManagement\Job38_Management\bin\Debug\Job38_Management.exe
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job38_MilitaryUnitManagement\Job38_Management\bin\Debug\Job38_Management.pdb
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job38_MilitaryUnitManagement\Job38_Management\obj\Debug\Job38_Management.csproj.AssemblyReference.cache
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job38_MilitaryUnitManagement\Job38_Management\obj\Debug\Job38_Management.Properties.Resources.resources
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job38_MilitaryUnitManagement\Job38_Management\obj\Debug\Job38_Management.csproj.GenerateResource.cache
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job38_MilitaryUnitManagement\Job38_Management\obj\Debug\Job38_Management.csproj.CoreCompileInputs.cache
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job38_MilitaryUnitManagement\Job38_Management\obj\Debug\Job38_Management.exe
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job38_MilitaryUnitManagement\Job38_Management\obj\Debug\Job38_Management.pdb
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job38_MilitaryUnitManagement\Job38_Management\obj\Debug\Job38_Management.Views.EduProgramForm.resources
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job38_MilitaryUnitManagement\Job38_Management\obj\Debug\Job38_Management.MainForm.resources
