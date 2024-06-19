@@ -1,0 +1,2 @@
+C:\laragon\www\Job39\SumProgram\bin\Release\net8.0\win-x64\publish\SumProgram.pdb
+C:\laragon\www\Job39\SumProgram\bin\Release\net8.0\win-x64\publish\SumProgram.exe

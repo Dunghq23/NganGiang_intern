@@ -1,0 +1,18 @@
+C:\laragon\www\Job39_PHP Script to Execute EXE with Parameters and Display Result\SumForm\bin\Debug\SumForm.exe.config
+C:\laragon\www\Job39_PHP Script to Execute EXE with Parameters and Display Result\SumForm\bin\Debug\SumForm.exe
+C:\laragon\www\Job39_PHP Script to Execute EXE with Parameters and Display Result\SumForm\bin\Debug\SumForm.pdb
+C:\laragon\www\Job39_PHP Script to Execute EXE with Parameters and Display Result\SumForm\obj\Debug\SumForm.csproj.AssemblyReference.cache
+C:\laragon\www\Job39_PHP Script to Execute EXE with Parameters and Display Result\SumForm\obj\Debug\SumForm.Properties.Resources.resources
+C:\laragon\www\Job39_PHP Script to Execute EXE with Parameters and Display Result\SumForm\obj\Debug\SumForm.csproj.GenerateResource.cache
+C:\laragon\www\Job39_PHP Script to Execute EXE with Parameters and Display Result\SumForm\obj\Debug\SumForm.csproj.CoreCompileInputs.cache
+C:\laragon\www\Job39_PHP Script to Execute EXE with Parameters and Display Result\SumForm\obj\Debug\SumForm.exe
+C:\laragon\www\Job39_PHP Script to Execute EXE with Parameters and Display Result\SumForm\obj\Debug\SumForm.pdb
+C:\laragon\www\Job39\SumForm\bin\Debug\SumForm.exe.config
+C:\laragon\www\Job39\SumForm\bin\Debug\SumForm.exe
+C:\laragon\www\Job39\SumForm\bin\Debug\SumForm.pdb
+C:\laragon\www\Job39\SumForm\obj\Debug\SumForm.csproj.AssemblyReference.cache
+C:\laragon\www\Job39\SumForm\obj\Debug\SumForm.Properties.Resources.resources
+C:\laragon\www\Job39\SumForm\obj\Debug\SumForm.csproj.GenerateResource.cache
+C:\laragon\www\Job39\SumForm\obj\Debug\SumForm.csproj.CoreCompileInputs.cache
+C:\laragon\www\Job39\SumForm\obj\Debug\SumForm.exe
+C:\laragon\www\Job39\SumForm\obj\Debug\SumForm.pdb
