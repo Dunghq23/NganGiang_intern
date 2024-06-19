@@ -1,0 +1,13 @@
+        var roads = {!! json_encode($roads) !!};
+         var roadsLayerGroup = L.layerGroup().addTo(mymap);
+        
+        // roads.forEach(function(r) {
+        //     L.geoJSON(r, {
+        //         style: {
+        //             fillColor: 'yellow',
+        //             fillOpacity: 0.3,
+        //             color: 'red',
+        //             weight: 2
+        //         }
+        //     }).addTo(roadsLayerGroup);
+        // });
