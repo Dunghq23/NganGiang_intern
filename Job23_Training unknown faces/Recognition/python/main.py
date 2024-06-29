@@ -38,13 +38,16 @@ def is_single_face(image_path):
 
 def encode_images_in_dataset(datasetPath, output_file, trainedPath, name):
     if not os.path.isfile(output_file):
-        with open(output_file, 'w') as file:
+        with open(output_file, 'w', encoding='utf-8') as file:
             file.write('')
+
+    # if not os.path.exists(trained_dir):
+    #     os.makedirs(trained_dir)
 
     image_files = [f for f in os.listdir(
         datasetPath) if f.endswith('.jpg') or f.endswith('.png') or f.endswith('.JPEG')]
 
-    with open(output_file, 'a') as encoding_file:
+    with open(output_file, 'a', encoding='utf-8') as encoding_file:
         for image_file in image_files:
             image_path = os.path.join(datasetPath, image_file)
 

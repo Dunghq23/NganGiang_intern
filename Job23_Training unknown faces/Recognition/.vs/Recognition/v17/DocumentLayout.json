@@ -26,6 +26,10 @@
           "Children": [
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
@@ -35,10 +39,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Bookmark",
@@ -75,7 +75,7 @@
               "RelativeDocumentMoniker": "TrainForm.cs",
               "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job23_Training unknown faces\\Recognition\\TrainForm.cs",
               "RelativeToolTip": "TrainForm.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAApwKwAAAB1AAAA",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAWwBEAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-26T02:27:37.191Z",
               "EditorCaption": ""

@@ -59,7 +59,7 @@ $(document).ready(function () {
         // Lấy dữ liệu ảnh từ canvas dưới dạng base64
         const imageBase64 = canvas.toDataURL('image/png');
         $('#loadingIndicator').removeClass('d-none').addClass('d-block');
-
+        $('#personName').text("");
         // Gửi dữ liệu ảnh base64 đến máy chủ qua AJAX
         $.ajax({
             url: '/save-photo',
