@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recognition List</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Unknown Recognition List</h2>
+
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Serial Number</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">Recognition Date</th>
+                    <th scope="col">Action Train</th>
+                    <th scope="col">Action Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach($unknownRecognitions as $recognition)
+                    <tr>
+                        <td>{{ $recognition['id'] }}</td>
+                        <td><img src="{{ $recognition['image'] }}" class="img-thumbnail" alt="Image" style="max-width: 100px;"></td>
+                        <td>{{ $recognition['date'] }}</td>
+                        <td><a href="#" class="btn btn-primary">Train</a></td>
+                        <td><a href="#" class="btn btn-danger">Delete</a></td>
+                    </tr>
+                @endforeach
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript code can go here if needed
+    </script>
+</body>
+
+</html>
