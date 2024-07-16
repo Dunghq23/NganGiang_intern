@@ -93,6 +93,9 @@
                 } else {
                     startCamera();
                     $('#Recognize').removeClass('d-none').addClass('d-block');
+                    setTimeout(function() {
+                        takephoto();
+                    }, 1000);
                 }
             });
 
@@ -157,7 +160,6 @@
                     }),
                     success: function(response) {
                         console.log('Tên người được nhận dạng:', response.recognizedName);
-                        console.log(response.command);
                         $('#personName').text(response.recognizedName).removeClass('d-none').addClass(
                             'd-block');
                     },

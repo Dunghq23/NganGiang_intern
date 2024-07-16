@@ -54,7 +54,7 @@ class TrainController extends Controller
 
     public function TrainAllFace(Request $request)
     {
-        ini_set('max_execution_time', 180);
+        ini_set('max_execution_time', 300);
         if ($request->ajax()) {
             $username = $request->input('username');
 
