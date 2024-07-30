@@ -24,7 +24,7 @@
                                 <label for="password">Mật khẩu:</label>
                                 <input type="password" class="form-control" id="password" name="password" required>
                             </div>
-                            <button type="submit" class="btn btn-primary">Đăng nhập</button>
+                            <button id="ButtonLogin" type="submit" class="btn btn-primary">Đăng nhập</button>
 
                             @error('loginError')
                                 <div class="text-danger mt-2">{{ $message }}</div>
@@ -53,6 +53,27 @@
                 </div>
             </div>
         </div>
+
+        @if (session('message') && session('type'))
+            <div class="toast-container rounded position-fixed bottom-0 end-0 p-3">
+                <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-body bg-{{ session('type') }} d-flex align-items-center justify-content-between">
+                        <div class="d-flex justify-content-center align-items-center gap-2">
+                            @if (session('type') == 'success')
+                                <i class="fas fa-check-circle text-light fs-5"></i>
+                            @elseif(session('type') == 'danger' || session('type') == 'warning')
+                                <i class="fas fa-times-circle text-light fs-5"></i>
+                            @elseif(session('type') == 'info' || session('type') == 'secondary')
+                                <i class="fas fa-info-circle text-light fs-5"></i>
+                            @endif
+                            <h6 class="h6 text-white m-0">{{ session('message') }}</h6>
+                        </div>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast"
+                            aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+        @endif
     </div>
 @endsection
 
@@ -147,7 +168,6 @@
             }
 
             function recognizeFace(imagePath) {
-
                 $.ajax({
                     url: '/recognize-face',
                     method: 'POST',
@@ -162,12 +182,22 @@
                         console.log('Tên người được nhận dạng:', response.recognizedName);
                         $('#personName').text(response.recognizedName).removeClass('d-none').addClass(
                             'd-block');
+
+                        if (response.recognizedName !== 'Unknown' && response.recognizedName !==
+                            'Không có khuôn mặt được tìm thấy!' && response.recognizeFace !=
+                            'Phát hiện 2 khuôn mặt, vui lòng thử lại!') {
+                            window.location.href = '/';
+                        } else {
+                            alert('Tên đăng nhập hoặc mật khẩu không chính xác!');
+                        }
+
                     },
                     error: function(xhr, status, error) {
                         console.error('Lỗi:', error);
                     },
                     complete: function() {
                         $('#loadingIndicator').removeClass('d-block').addClass('d-none');
+
                     }
                 });
             }

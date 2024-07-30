@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 
 class AuthController extends Controller
@@ -16,7 +18,31 @@ class AuthController extends Controller
     // Xử lý đăng nhập
     public function login(Request $request)
     {
-        return redirect('/welcome'); // Thay thế '/dashboard' bằng route bạn muốn chuyển hướng đến khi đăng nhập thành công
+        $username = $request->input('username');
+        $password = $request->input('password');
+
+        // Sử dụng DB::table để truy vấn dữ liệu từ bảng 'dbo.User' và áp dụng điều kiện where
+        $user = DB::table('dbo.User')
+            ->where('UserName', $username)
+            ->first();
+
+        if ($user) {
+            // So sánh mật khẩu
+            if ($password === $user->Password) {
+                return redirect('/')->with(['message' => 'Đăng nhập thành công', 'type' => 'success']);
+
+            } else {
+                return back()->with([
+                    'message' => 'Mật khẩu không chính xác.',
+                    'type' => 'danger'
+                ]);
+            }
+        } else {
+            return back()->with([
+                'message' => 'Tên đăng nhập không chính xác.',
+                'type' => 'danger'
+            ]);
+        }
     }
 
     public function savePhoto(Request $request)
@@ -82,7 +108,7 @@ class AuthController extends Controller
                         $newImagePath = public_path('Storage/ImageUnknown') . '/' . basename($imagePath);
                         copy($imagePath, $newImagePath);
                     }
-                    
+
                     return response()->json([
                         'command' => $command,
                         'recognizedName' => $recognizedName,
@@ -97,6 +123,18 @@ class AuthController extends Controller
             } else {
                 return response()->json(['error' => 'Không có dữ liệu imagePath được gửi lên.'], 400);
             }
+        }
+    }
+
+    public function loginWithFace(Request $request)
+    {
+        $username = $request->input('username');
+        $user = DB::table('dbo.User')
+            ->where('UserName', $username)
+            ->first();
+
+        if ($user) {
+            return redirect('/')->with(['message' => 'Đăng nhập thành công', 'type' => 'success']);
         }
     }
 }
