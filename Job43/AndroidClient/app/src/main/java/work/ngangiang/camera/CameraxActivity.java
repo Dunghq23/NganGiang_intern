@@ -4,6 +4,7 @@ import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
@@ -13,7 +14,6 @@ import android.util.Log;
 import android.view.ScaleGestureDetector;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -41,7 +41,7 @@ import com.google.common.util.concurrent.ListenableFuture;
 import java.util.Objects;
 import java.util.concurrent.ExecutionException;
 
-import work.ngangiang.camera.Services.FTPClientHelper;
+import work.ngangiang.camera.Services.FileTransferTask;
 
 public class CameraxActivity extends AppCompatActivity {
     private static final String TAG = "CameraxActivity";
@@ -53,13 +53,8 @@ public class CameraxActivity extends AppCompatActivity {
     private ImageButton btnCapture, btnFlash, btnSend, btnClose;
     private int currentAspectRatio = AspectRatio.RATIO_4_3;
     private ProcessCameraProvider cameraProvider;
+    private Uri imageUri;
 
-    private static final String FTP_SERVER = "192.168.3.151"; // Địa chỉ IP của server FTP
-    private static final int FTP_PORT = 21;
-    private static final String FTP_USER = "username";
-    private static final String FTP_PASS = "123";
-
-    private FTPClientHelper ftpClientHelper;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -97,38 +92,22 @@ public class CameraxActivity extends AppCompatActivity {
             findViewById(R.id.linearLayout).setVisibility(LinearLayout.VISIBLE);
 
         });
+        btnSend.setOnClickListener(v -> {
+            if (imageUri != null) {
+                // Gửi file ảnh
+                new FileTransferTask(CameraxActivity.this).execute(imageUri);
+                bindPreview();
+                btnCapture.setVisibility(Button.VISIBLE);
+                btnSend.setVisibility(Button.GONE);
+                btnClose.setVisibility(Button.GONE);
+                findViewById(R.id.linearLayout).setVisibility(LinearLayout.VISIBLE);
+            }
+        });
 
         // Bỏ qua lỗi mạng trên main thread (không khuyến khích trong ứng dụng thực tế)
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
 
-//        ftpClientHelper = new FTPClientHelper();
-//
-//        if (ftpClientHelper.connect(FTP_SERVER, FTP_PORT, FTP_PASS)) {
-//            Toast.makeText(this, "Kết nối thành công!", Toast.LENGTH_SHORT).show();
-//
-////            // Upload file
-////            String localFilePath = "/path/to/local/file.jpg";
-////            String remoteFilePath = "/remote/path/file.jpg";
-////            if (ftpClientHelper.uploadFile(localFilePath, remoteFilePath)) {
-////                Toast.makeText(this, "Tải lên thành công!", Toast.LENGTH_SHORT).show();
-////            } else {
-////                Toast.makeText(this, "Tải lên thất bại!", Toast.LENGTH_SHORT).show();
-////            }
-////
-////            // Download file
-////            String downloadLocalPath = "/path/to/download/file.jpg";
-////            String downloadRemotePath = "/remote/path/file.jpg";
-////            if (ftpClientHelper.downloadFile(downloadRemotePath, downloadLocalPath)) {
-////                Toast.makeText(this, "Tải xuống thành công!", Toast.LENGTH_SHORT).show();
-////            } else {
-////                Toast.makeText(this, "Tải xuống thất bại!", Toast.LENGTH_SHORT).show();
-////            }
-//
-//            ftpClientHelper.disconnect();
-//        } else {
-//            Toast.makeText(this, "Kết nối thất bại!", Toast.LENGTH_SHORT).show();
-//        }
     }
 
     private void initViews() {
@@ -232,8 +211,15 @@ public class CameraxActivity extends AppCompatActivity {
         imageCapture.takePicture(outputOptions, ContextCompat.getMainExecutor(this), new ImageCapture.OnImageSavedCallback() {
             @Override
             public void onImageSaved(@NonNull ImageCapture.OutputFileResults outputFileResults) {
-                String msg = "Photo capture succeeded: " + outputFileResults.getSavedUri();
-                Log.d(TAG, msg);
+                imageUri = outputFileResults.getSavedUri(); // Gán URI vào biến imageUri
+
+                if (imageUri != null) {
+                    String msg = "Photo capture succeeded: " + imageUri.toString();
+                    Log.d(TAG, msg);
+                } else {
+                    Log.e(TAG, "Photo capture succeeded but URI is null");
+                }
+
                 // Dừng camera sau khi chụp
                 if (cameraProvider != null) {
                     cameraProvider.unbindAll();
