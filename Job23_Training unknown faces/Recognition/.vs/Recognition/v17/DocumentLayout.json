@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job23_Training unknown faces\\Recognition\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6536F6FA-95B7-4361-9030-A5B35ED474BF}|Recognition.csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job23_training unknown faces\\recognition\\recognizeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6536F6FA-95B7-4361-9030-A5B35ED474BF}|Recognition.csproj|solutionrelative:recognizeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6536F6FA-95B7-4361-9030-A5B35ED474BF}|Recognition.csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job23_training unknown faces\\recognition\\recognizeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6536F6FA-95B7-4361-9030-A5B35ED474BF}|Recognition.csproj|solutionrelative:recognizeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6536F6FA-95B7-4361-9030-A5B35ED474BF}|Recognition.csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job23_training unknown faces\\recognition\\trainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6536F6FA-95B7-4361-9030-A5B35ED474BF}|Recognition.csproj|solutionrelative:trainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -22,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1473,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,7 +50,32 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RecognizeForm.cs",
+              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job23_Training unknown faces\\Recognition\\RecognizeForm.cs",
+              "RelativeDocumentMoniker": "RecognizeForm.cs",
+              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job23_Training unknown faces\\Recognition\\RecognizeForm.cs",
+              "RelativeToolTip": "RecognizeForm.cs",
+              "ViewState": "AQIAANgAAAAAAAAAAAAIwOYAAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T02:04:39.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "RecognizeForm.cs [Design]",
+              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job23_Training unknown faces\\Recognition\\RecognizeForm.cs",
+              "RelativeDocumentMoniker": "RecognizeForm.cs",
+              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job23_Training unknown faces\\Recognition\\RecognizeForm.cs [Design]",
+              "RelativeToolTip": "RecognizeForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T02:04:37.294Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "WrongIdentificationForm.cs",
               "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job23_Training unknown faces\\Recognition\\WrongIdentificationForm.cs",
               "RelativeDocumentMoniker": "WrongIdentificationForm.cs",
@@ -54,7 +87,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job23_Training unknown faces\\Recognition\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
@@ -65,13 +98,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "TrainForm.cs",
               "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job23_Training unknown faces\\Recognition\\TrainForm.cs",
               "RelativeDocumentMoniker": "TrainForm.cs",
               "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job23_Training unknown faces\\Recognition\\TrainForm.cs",
               "RelativeToolTip": "TrainForm.cs",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAWwBEAAAAWAAAA",
+              "ViewState": "AQIAAAcBAAAAAAAAAAASwFYAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-26T02:27:37.191Z",
               "EditorCaption": ""

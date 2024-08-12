@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "4MQ4BTqgoDZjrEChfIlPllpd1GT1WTAFJXgjIpG6LSxvnGJJ8sk214K52j7zcSvypTHBY83HrFqpmFDOboHn0g==",
+  "success": true,
+  "projectFilePath": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job45\\FileTransferServerCsharp\\FileTransferServerCsharp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\QUANG DUNG\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0\\microsoft.win32.systemevents.8.0.0.nupkg.sha512",
+    "C:\\Users\\QUANG DUNG\\.nuget\\packages\\system.drawing.common\\8.0.7\\system.drawing.common.8.0.7.nupkg.sha512"
+  ],
+  "logs": []
+}

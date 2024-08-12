@@ -228,7 +228,7 @@ namespace Recognition
             string ordinImage = Path.Combine("temp", "original_picture.jpg");
             
 
-            string text = RunPythonScript("python", $"\"{fullPathPythonScript}\" recognize_faces_out \"{ordinImage}\" \"{encodingFilePath}\"");
+            string text = RunPythonScript("python", $"\"{fullPathPythonScript}\" Recognize \"{ordinImage}\" \"{encodingFilePath}\"");
 
             isRecognizing = false;
 

@@ -71,14 +71,11 @@ namespace Recognition
                 CreateNoWindow = true // Không hiển thị cửa sổ dòng lệnh
             };
 
-            // Khởi chạy tiến trình
             using (Process process = Process.Start(start))
             {
-                // Đọc đầu ra tiêu chuẩn của tiến trình
                 using (StreamReader reader = process.StandardOutput)
                 {
                     string result = reader.ReadToEnd();
-                    // Hiển thị đầu ra trên màn hình console
                     Console.WriteLine(result);
                     return result;
                 }

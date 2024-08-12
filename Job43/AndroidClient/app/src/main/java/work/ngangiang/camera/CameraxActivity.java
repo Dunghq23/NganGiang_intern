@@ -4,6 +4,7 @@ import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -14,6 +15,7 @@ import android.util.Log;
 import android.view.ScaleGestureDetector;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -38,10 +40,14 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.google.common.util.concurrent.ListenableFuture;
 
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
 import java.util.Objects;
 import java.util.concurrent.ExecutionException;
 
 import work.ngangiang.camera.Services.FileTransferTask;
+import work.ngangiang.camera.Services.ImageRotator;
 
 public class CameraxActivity extends AppCompatActivity {
     private static final String TAG = "CameraxActivity";
@@ -50,7 +56,9 @@ public class CameraxActivity extends AppCompatActivity {
     private ImageCapture imageCapture;
     private CameraControl cameraControl;
     private CameraInfo cameraInfo;
-    private ImageButton btnCapture, btnFlash, btnSend, btnClose;
+    private ImageButton btnCapture, btnFlash, btnSend, btnClose, btnSwitchCamera;
+    private ImageView imgv;
+    private boolean isFrontCamera = false;
     private int currentAspectRatio = AspectRatio.RATIO_4_3;
     private ProcessCameraProvider cameraProvider;
     private Uri imageUri;
@@ -84,24 +92,18 @@ public class CameraxActivity extends AppCompatActivity {
 
         btnCapture.setOnClickListener(v -> takePhoto());
         btnFlash.setOnClickListener(v -> toggleFlash());
-        btnClose.setOnClickListener(v -> {
-            bindPreview();
-            btnCapture.setVisibility(Button.VISIBLE);
-            btnSend.setVisibility(Button.GONE);
-            btnClose.setVisibility(Button.GONE);
-            findViewById(R.id.linearLayout).setVisibility(LinearLayout.VISIBLE);
-
-        });
+        btnClose.setOnClickListener(v -> returnToCamera());
         btnSend.setOnClickListener(v -> {
             if (imageUri != null) {
                 // Gửi file ảnh
-                new FileTransferTask(CameraxActivity.this).execute(imageUri);
-                bindPreview();
-                btnCapture.setVisibility(Button.VISIBLE);
+                new FileTransferTask(CameraxActivity.this, imgv).execute(imageUri);
                 btnSend.setVisibility(Button.GONE);
-                btnClose.setVisibility(Button.GONE);
                 findViewById(R.id.linearLayout).setVisibility(LinearLayout.VISIBLE);
             }
+        });
+        btnSwitchCamera.setOnClickListener(v -> {
+            isFrontCamera = !isFrontCamera;
+            bindPreview();
         });
 
         // Bỏ qua lỗi mạng trên main thread (không khuyến khích trong ứng dụng thực tế)
@@ -116,6 +118,8 @@ public class CameraxActivity extends AppCompatActivity {
         btnFlash = findViewById(R.id.btnFlash);
         btnSend = findViewById(R.id.btnSend);
         btnClose = findViewById(R.id.btnClose);
+        btnSwitchCamera = findViewById(R.id.btn_switch_camera);
+        imgv = findViewById(R.id.imgv);
 
         findViewById(R.id.btnAspectRatio3_4).setOnClickListener(v -> setAspectRatio(AspectRatio.RATIO_4_3)); // 3:4
         findViewById(R.id.btnAspectRatio9_16).setOnClickListener(v -> setAspectRatio(AspectRatio.RATIO_16_9)); // 9:16
@@ -147,7 +151,7 @@ public class CameraxActivity extends AppCompatActivity {
     }
 
     private void bindPreview() {
-        if (cameraProvider == null) return; // Add this check
+        if (cameraProvider == null) return;
 
         Preview preview = new Preview.Builder()
                 .setTargetAspectRatio(currentAspectRatio)
@@ -155,7 +159,7 @@ public class CameraxActivity extends AppCompatActivity {
         preview.setSurfaceProvider(previewView.getSurfaceProvider());
 
         CameraSelector cameraSelector = new CameraSelector.Builder()
-                .requireLensFacing(CameraSelector.LENS_FACING_BACK)
+                .requireLensFacing(isFrontCamera ? CameraSelector.LENS_FACING_FRONT : CameraSelector.LENS_FACING_BACK)
                 .build();
 
         imageCapture = new ImageCapture.Builder()
@@ -216,6 +220,10 @@ public class CameraxActivity extends AppCompatActivity {
                 if (imageUri != null) {
                     String msg = "Photo capture succeeded: " + imageUri.toString();
                     Log.d(TAG, msg);
+                    // Xoay ảnh sau khi lưu
+                    ImageRotator.rotateAndFlipImage(getContentResolver(), imageUri, 270, true);
+                    // Giảm dung lượng ảnh
+                    reduceImageSize(imageUri);
                 } else {
                     Log.e(TAG, "Photo capture succeeded but URI is null");
                 }
@@ -235,6 +243,34 @@ public class CameraxActivity extends AppCompatActivity {
             }
         });
     }
+
+    private void reduceImageSize(Uri imageUri) {
+        try {
+            // Bước 1: Tải ảnh từ URI
+            Bitmap bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), imageUri);
+
+            // Bước 2: Giảm kích thước ảnh (giả sử giảm kích thước xuống một nửa)
+            int width = bitmap.getWidth() / 6;
+            int height = bitmap.getHeight() / 6;
+            Bitmap resizedBitmap = Bitmap.createScaledBitmap(bitmap, width, height, true);
+
+            // Bước 3: Nén ảnh
+            ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+//            resizedBitmap.compress(Bitmap.CompressFormat.JPEG, 80, outputStream); // Chất lượng 12 (100 là chất lượng gốc)
+
+            // Bước 4: Ghi đè ảnh đã nén lên ảnh gốc
+            OutputStream imageOutputStream = getContentResolver().openOutputStream(imageUri, "w");
+            if (imageOutputStream != null) {
+                imageOutputStream.write(outputStream.toByteArray());
+                imageOutputStream.close();
+                Log.d(TAG, "Compressed photo overwritten: " + imageUri.toString());
+            }
+
+        } catch (IOException e) {
+            Log.e(TAG, "Error reducing image size: " + e.getMessage());
+        }
+    }
+
 
     private void toggleFlash() {
         int flashMode = imageCapture.getFlashMode() == ImageCapture.FLASH_MODE_OFF
@@ -256,4 +292,15 @@ public class CameraxActivity extends AppCompatActivity {
 
         btnFlash.setImageResource(R.drawable.ic_flash_off);
     }
+
+    public void returnToCamera() {
+        btnCapture.setVisibility(Button.VISIBLE);
+        btnSend.setVisibility(Button.GONE);
+        btnClose.setVisibility(Button.GONE);
+        imgv.setVisibility(ImageView.GONE);
+        bindPreview();
+        findViewById(R.id.linearLayout).setVisibility(LinearLayout.VISIBLE);
+    }
 }
+
+
