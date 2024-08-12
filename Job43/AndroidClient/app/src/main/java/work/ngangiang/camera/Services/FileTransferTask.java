@@ -28,7 +28,7 @@ import work.ngangiang.camera.CameraxActivity;
 
 public class FileTransferTask extends AsyncTask<Uri, Void, String> {
     private Uri FILEURI;
-    private static final String SERVER_IP = "192.168.1.7"; // Địa chỉ IP của server
+    private static final String SERVER_IP = "192.168.2.103"; // Địa chỉ IP của server
     private static final int SERVER_PORT = 100; // Cổng của server
     private Context context;
     private ImageView imageView;
@@ -132,7 +132,7 @@ public class FileTransferTask extends AsyncTask<Uri, Void, String> {
         // Vẽ hình chữ nhật
         paint.setColor(Color.RED);
         paint.setStyle(Paint.Style.STROKE);
-        paint.setStrokeWidth(10);
+        paint.setStrokeWidth(20);
 
         String[] parts = boundingBoxInfo.split("[(), ]+");
         int y1 = Integer.parseInt(parts[1]);
@@ -145,8 +145,8 @@ public class FileTransferTask extends AsyncTask<Uri, Void, String> {
         // Vẽ tên
         paint.setColor(Color.RED);
         paint.setStyle(Paint.Style.FILL);
-        paint.setTextSize(80);
-        canvas.drawText(parts[0], x2, y2 + 10, paint);
+        paint.setTextSize(200);
+        canvas.drawText(parts[0], x2, y2 + 200, paint);
 
         return mutableBitmap;
     }
