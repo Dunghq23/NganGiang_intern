@@ -130,9 +130,9 @@ public class FileTransferTask extends AsyncTask<Uri, Void, String> {
         Paint paint = new Paint();
 
         // Vẽ hình chữ nhật
-        paint.setColor(Color.GREEN);
+        paint.setColor(Color.RED);
         paint.setStyle(Paint.Style.STROKE);
-        paint.setStrokeWidth(5);
+        paint.setStrokeWidth(10);
 
         String[] parts = boundingBoxInfo.split("[(), ]+");
         int y1 = Integer.parseInt(parts[1]);
@@ -145,8 +145,8 @@ public class FileTransferTask extends AsyncTask<Uri, Void, String> {
         // Vẽ tên
         paint.setColor(Color.RED);
         paint.setStyle(Paint.Style.FILL);
-        paint.setTextSize(50);
-        canvas.drawText(parts[0], x2, y2 - 10, paint);
+        paint.setTextSize(80);
+        canvas.drawText(parts[0], x2, y2 + 10, paint);
 
         return mutableBitmap;
     }
