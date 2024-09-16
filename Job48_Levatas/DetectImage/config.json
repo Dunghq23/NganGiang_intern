@@ -1,0 +1,9 @@
+{
+    "data_path": "DetectImage\\data",
+    "model_path": "/path/to/model",
+    "epochs": 10,
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "gpu_enabled": true
+  }
+  
