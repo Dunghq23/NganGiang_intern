@@ -1,0 +1,12 @@
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job55\J55\Main\bin\Release\Main.exe.config
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job55\J55\Main\bin\Release\Main.exe
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job55\J55\Main\bin\Release\Main.pdb
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job55\J55\Main\bin\Release\Algorithms.dll
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job55\J55\Main\bin\Release\Common.dll
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job55\J55\Main\bin\Release\Algorithms.pdb
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job55\J55\Main\bin\Release\Common.pdb
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job55\J55\Main\obj\Release\Main.csproj.AssemblyReference.cache
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job55\J55\Main\obj\Release\Main.csproj.CoreCompileInputs.cache
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job55\J55\Main\obj\Release\Main.csproj.Up2Date
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job55\J55\Main\obj\Release\Main.exe
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job55\J55\Main\obj\Release\Main.pdb
