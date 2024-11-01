@@ -1,0 +1,135 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job23_\\Recognition\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6536F6FA-95B7-4361-9030-A5B35ED474BF}|Recognition.csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job23_\\recognition\\trainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6536F6FA-95B7-4361-9030-A5B35ED474BF}|Recognition.csproj|solutionrelative:trainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6536F6FA-95B7-4361-9030-A5B35ED474BF}|Recognition.csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job23_\\recognition\\trainform.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{6536F6FA-95B7-4361-9030-A5B35ED474BF}|Recognition.csproj|solutionrelative:trainform.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6536F6FA-95B7-4361-9030-A5B35ED474BF}|Recognition.csproj|D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job23_\\Recognition\\trainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6536F6FA-95B7-4361-9030-A5B35ED474BF}|Recognition.csproj|solutionrelative:trainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6536F6FA-95B7-4361-9030-A5B35ED474BF}|Recognition.csproj|D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job23_\\Recognition\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6536F6FA-95B7-4361-9030-A5B35ED474BF}|Recognition.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6536F6FA-95B7-4361-9030-A5B35ED474BF}|Recognition.csproj|D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job23_\\Recognition\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6536F6FA-95B7-4361-9030-A5B35ED474BF}|Recognition.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6536F6FA-95B7-4361-9030-A5B35ED474BF}|Recognition.csproj|D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job23_\\Recognition\\recognizeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6536F6FA-95B7-4361-9030-A5B35ED474BF}|Recognition.csproj|solutionrelative:recognizeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6536F6FA-95B7-4361-9030-A5B35ED474BF}|Recognition.csproj|D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job23_\\Recognition\\recognizeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6536F6FA-95B7-4361-9030-A5B35ED474BF}|Recognition.csproj|solutionrelative:recognizeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 1473,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TrainForm.resx",
+              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job23_\\Recognition\\TrainForm.resx",
+              "RelativeDocumentMoniker": "TrainForm.resx",
+              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job23_\\Recognition\\TrainForm.resx",
+              "RelativeToolTip": "TrainForm.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-06-17T23:40:35.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TrainForm.cs",
+              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job23_\\Recognition\\TrainForm.cs",
+              "RelativeDocumentMoniker": "TrainForm.cs",
+              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job23_\\Recognition\\TrainForm.cs",
+              "RelativeToolTip": "TrainForm.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAgwA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-16T08:36:09.972Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TrainForm.cs [Design]",
+              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job23_\\Recognition\\TrainForm.cs",
+              "RelativeDocumentMoniker": "TrainForm.cs",
+              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job23_\\Recognition\\TrainForm.cs [Design]",
+              "RelativeToolTip": "TrainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-16T08:36:06.803Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job23_\\Recognition\\MainForm.cs",
+              "RelativeDocumentMoniker": "MainForm.cs",
+              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job23_\\Recognition\\MainForm.cs",
+              "RelativeToolTip": "MainForm.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwDMAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-16T02:38:07.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job23_\\Recognition\\MainForm.cs",
+              "RelativeDocumentMoniker": "MainForm.cs",
+              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job23_\\Recognition\\MainForm.cs [Design]",
+              "RelativeToolTip": "MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-16T02:38:05.05Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RecognizeForm.cs",
+              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job23_\\Recognition\\RecognizeForm.cs",
+              "RelativeDocumentMoniker": "RecognizeForm.cs",
+              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job23_\\Recognition\\RecognizeForm.cs",
+              "RelativeToolTip": "RecognizeForm.cs",
+              "ViewState": "AQIAAF4AAAAAAAAAAAAkwGoBAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-16T02:04:29.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RecognizeForm.cs [Design]",
+              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job23_\\Recognition\\RecognizeForm.cs",
+              "RelativeDocumentMoniker": "RecognizeForm.cs",
+              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job23_\\Recognition\\RecognizeForm.cs [Design]",
+              "RelativeToolTip": "RecognizeForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-16T01:29:19.126Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
