@@ -1,0 +1,230 @@
+GetItemSet000
+GetItemSet111
+GetItemSet222
+Sau GetItemSet
+
+Frequent ItemSet (Length = 1, Support >= 2):
+Item: A, Count: 6
+Item: B, Count: 5
+Item: C, Count: 4
+Item: D, Count: 4
+Item: F, Count: 6
+Item: S, Count: 4
+k = 2, count = 1
+GetItemSet000
+GetItemSet111
+GetItemSet222
+Sau GetItemSet
+
+Frequent ItemSet (Length = 2, Support >= 2):
+Item: A, B, Count: 3
+Item: A, C, Count: 3
+Item: A, D, Count: 3
+Item: A, F, Count: 4
+Item: B, A, Count: 3
+Item: B, C, Count: 2
+Item: B, F, Count: 3
+Item: B, S, Count: 2
+Item: C, A, Count: 3
+Item: C, B, Count: 2
+Item: C, F, Count: 2
+Item: D, A, Count: 3
+Item: D, F, Count: 2
+Item: D, S, Count: 2
+Item: F, A, Count: 4
+Item: F, B, Count: 3
+Item: F, C, Count: 2
+Item: F, D, Count: 2
+Item: F, S, Count: 3
+Item: S, B, Count: 2
+Item: S, D, Count: 2
+Item: S, F, Count: 3
+
+Association Rules:
+Rule: A => F, Support: 44,44%, Confidence: 66,67%
+Rule: F => A, Support: 44,44%, Confidence: 66,67%
+Rule: F => A, Support: 44,44%, Confidence: 66,67%
+Rule: A => F, Support: 44,44%, Confidence: 66,67%
+Rule: C => A, Support: 33,33%, Confidence: 75%
+Rule: D => A, Support: 33,33%, Confidence: 75%
+Rule: C => A, Support: 33,33%, Confidence: 75%
+Rule: D => A, Support: 33,33%, Confidence: 75%
+Rule: S => F, Support: 33,33%, Confidence: 75%
+Rule: S => F, Support: 33,33%, Confidence: 75%
+Rule: B => A, Support: 33,33%, Confidence: 60%
+Rule: B => A, Support: 33,33%, Confidence: 60%
+Rule: B => F, Support: 33,33%, Confidence: 60%
+Rule: B => F, Support: 33,33%, Confidence: 60%
+Rule: A => B, Support: 33,33%, Confidence: 50%
+Rule: A => C, Support: 33,33%, Confidence: 50%
+Rule: A => D, Support: 33,33%, Confidence: 50%
+Rule: A => B, Support: 33,33%, Confidence: 50%
+Rule: F => B, Support: 33,33%, Confidence: 50%
+Rule: A => C, Support: 33,33%, Confidence: 50%
+Rule: A => D, Support: 33,33%, Confidence: 50%
+Rule: F => B, Support: 33,33%, Confidence: 50%
+Rule: F => S, Support: 33,33%, Confidence: 50%
+Rule: F => S, Support: 33,33%, Confidence: 50%
+Rule: C => B, Support: 22,22%, Confidence: 50%
+Rule: S => B, Support: 22,22%, Confidence: 50%
+Rule: C => B, Support: 22,22%, Confidence: 50%
+Rule: C => F, Support: 22,22%, Confidence: 50%
+Rule: D => F, Support: 22,22%, Confidence: 50%
+Rule: D => S, Support: 22,22%, Confidence: 50%
+Rule: S => D, Support: 22,22%, Confidence: 50%
+Rule: C => F, Support: 22,22%, Confidence: 50%
+Rule: D => F, Support: 22,22%, Confidence: 50%
+Rule: S => B, Support: 22,22%, Confidence: 50%
+Rule: S => D, Support: 22,22%, Confidence: 50%
+Rule: D => S, Support: 22,22%, Confidence: 50%
+Rule: B => C, Support: 22,22%, Confidence: 40%
+Rule: B => S, Support: 22,22%, Confidence: 40%
+Rule: B => C, Support: 22,22%, Confidence: 40%
+Rule: B => S, Support: 22,22%, Confidence: 40%
+Rule: F => C, Support: 22,22%, Confidence: 33,33%
+Rule: F => D, Support: 22,22%, Confidence: 33,33%
+Rule: F => C, Support: 22,22%, Confidence: 33,33%
+Rule: F => D, Support: 22,22%, Confidence: 33,33%
+k = 3, count = 2
+GetItemSet000
+GetItemSet111
+GetItemSet222
+Sau GetItemSet
+
+Frequent ItemSet (Length = 3, Support >= 2):
+Item: A, B, F, Count: 2
+Item: A, C, F, Count: 2
+Item: A, F, B, Count: 2
+Item: A, F, C, Count: 2
+Item: B, A, F, Count: 2
+Item: B, F, A, Count: 2
+Item: C, A, F, Count: 2
+Item: C, F, A, Count: 2
+Item: D, F, S, Count: 2
+Item: D, S, F, Count: 2
+Item: F, A, B, Count: 2
+Item: F, A, C, Count: 2
+Item: F, B, A, Count: 2
+Item: F, C, A, Count: 2
+Item: F, D, S, Count: 2
+Item: F, S, D, Count: 2
+Item: S, D, F, Count: 2
+Item: S, F, D, Count: 2
+
+Association Rules:
+Rule: C, F => A, Support: 22,22%, Confidence: 100%
+Rule: F, C => A, Support: 22,22%, Confidence: 100%
+Rule: C, F => A, Support: 22,22%, Confidence: 100%
+Rule: C, F => A, Support: 22,22%, Confidence: 100%
+Rule: D, S => F, Support: 22,22%, Confidence: 100%
+Rule: D, F => S, Support: 22,22%, Confidence: 100%
+Rule: D, F => S, Support: 22,22%, Confidence: 100%
+Rule: D, S => F, Support: 22,22%, Confidence: 100%
+Rule: F, C => A, Support: 22,22%, Confidence: 100%
+Rule: F, C => A, Support: 22,22%, Confidence: 100%
+Rule: D, S => F, Support: 22,22%, Confidence: 100%
+Rule: F, D => S, Support: 22,22%, Confidence: 100%
+Rule: S, D => F, Support: 22,22%, Confidence: 100%
+Rule: F, D => S, Support: 22,22%, Confidence: 100%
+Rule: D, F => S, Support: 22,22%, Confidence: 100%
+Rule: S, D => F, Support: 22,22%, Confidence: 100%
+Rule: F, D => S, Support: 22,22%, Confidence: 100%
+Rule: S, D => F, Support: 22,22%, Confidence: 100%
+Rule: B, F => A, Support: 22,22%, Confidence: 66,67%
+Rule: A, B => F, Support: 22,22%, Confidence: 66,67%
+Rule: A, C => F, Support: 22,22%, Confidence: 66,67%
+Rule: F, B => A, Support: 22,22%, Confidence: 66,67%
+Rule: A, B => F, Support: 22,22%, Confidence: 66,67%
+Rule: A, C => F, Support: 22,22%, Confidence: 66,67%
+Rule: B, F => A, Support: 22,22%, Confidence: 66,67%
+Rule: B, A => F, Support: 22,22%, Confidence: 66,67%
+Rule: B, A => F, Support: 22,22%, Confidence: 66,67%
+Rule: B, F => A, Support: 22,22%, Confidence: 66,67%
+Rule: C, A => F, Support: 22,22%, Confidence: 66,67%
+Rule: C, A => F, Support: 22,22%, Confidence: 66,67%
+Rule: F, S => D, Support: 22,22%, Confidence: 66,67%
+Rule: S, F => D, Support: 22,22%, Confidence: 66,67%
+Rule: A, B => F, Support: 22,22%, Confidence: 66,67%
+Rule: F, B => A, Support: 22,22%, Confidence: 66,67%
+Rule: A, C => F, Support: 22,22%, Confidence: 66,67%
+Rule: B, A => F, Support: 22,22%, Confidence: 66,67%
+Rule: F, B => A, Support: 22,22%, Confidence: 66,67%
+Rule: C, A => F, Support: 22,22%, Confidence: 66,67%
+Rule: F, S => D, Support: 22,22%, Confidence: 66,67%
+Rule: F, S => D, Support: 22,22%, Confidence: 66,67%
+Rule: S, F => D, Support: 22,22%, Confidence: 66,67%
+Rule: S, F => D, Support: 22,22%, Confidence: 66,67%
+Rule: A, F => B, Support: 22,22%, Confidence: 50%
+Rule: C => A, F, Support: 22,22%, Confidence: 50%
+Rule: A, F => C, Support: 22,22%, Confidence: 50%
+Rule: A, F => B, Support: 22,22%, Confidence: 50%
+Rule: C => A, F, Support: 22,22%, Confidence: 50%
+Rule: A, F => C, Support: 22,22%, Confidence: 50%
+Rule: A, F => B, Support: 22,22%, Confidence: 50%
+Rule: F, A => B, Support: 22,22%, Confidence: 50%
+Rule: C => A, F, Support: 22,22%, Confidence: 50%
+Rule: A, F => C, Support: 22,22%, Confidence: 50%
+Rule: C => F, A, Support: 22,22%, Confidence: 50%
+Rule: F, A => C, Support: 22,22%, Confidence: 50%
+Rule: D => F, S, Support: 22,22%, Confidence: 50%
+Rule: S => D, F, Support: 22,22%, Confidence: 50%
+Rule: D => S, F, Support: 22,22%, Confidence: 50%
+Rule: S => D, F, Support: 22,22%, Confidence: 50%
+Rule: F, A => B, Support: 22,22%, Confidence: 50%
+Rule: C => F, A, Support: 22,22%, Confidence: 50%
+Rule: F, A => C, Support: 22,22%, Confidence: 50%
+Rule: F, A => B, Support: 22,22%, Confidence: 50%
+Rule: C => F, A, Support: 22,22%, Confidence: 50%
+Rule: F, A => C, Support: 22,22%, Confidence: 50%
+Rule: D => F, S, Support: 22,22%, Confidence: 50%
+Rule: S => F, D, Support: 22,22%, Confidence: 50%
+Rule: S => F, D, Support: 22,22%, Confidence: 50%
+Rule: D => F, S, Support: 22,22%, Confidence: 50%
+Rule: S => D, F, Support: 22,22%, Confidence: 50%
+Rule: D => S, F, Support: 22,22%, Confidence: 50%
+Rule: S => F, D, Support: 22,22%, Confidence: 50%
+Rule: D => S, F, Support: 22,22%, Confidence: 50%
+Rule: B => A, F, Support: 22,22%, Confidence: 40%
+Rule: B => A, F, Support: 22,22%, Confidence: 40%
+Rule: B => A, F, Support: 22,22%, Confidence: 40%
+Rule: B => F, A, Support: 22,22%, Confidence: 40%
+Rule: B => F, A, Support: 22,22%, Confidence: 40%
+Rule: B => F, A, Support: 22,22%, Confidence: 40%
+Rule: A => B, F, Support: 22,22%, Confidence: 33,33%
+Rule: F => A, B, Support: 22,22%, Confidence: 33,33%
+Rule: A => C, F, Support: 22,22%, Confidence: 33,33%
+Rule: F => A, C, Support: 22,22%, Confidence: 33,33%
+Rule: A => F, B, Support: 22,22%, Confidence: 33,33%
+Rule: F => A, B, Support: 22,22%, Confidence: 33,33%
+Rule: A => F, C, Support: 22,22%, Confidence: 33,33%
+Rule: F => A, C, Support: 22,22%, Confidence: 33,33%
+Rule: A => B, F, Support: 22,22%, Confidence: 33,33%
+Rule: F => B, A, Support: 22,22%, Confidence: 33,33%
+Rule: F => B, A, Support: 22,22%, Confidence: 33,33%
+Rule: A => B, F, Support: 22,22%, Confidence: 33,33%
+Rule: A => C, F, Support: 22,22%, Confidence: 33,33%
+Rule: F => C, A, Support: 22,22%, Confidence: 33,33%
+Rule: F => C, A, Support: 22,22%, Confidence: 33,33%
+Rule: A => C, F, Support: 22,22%, Confidence: 33,33%
+Rule: F => D, S, Support: 22,22%, Confidence: 33,33%
+Rule: F => D, S, Support: 22,22%, Confidence: 33,33%
+Rule: F => A, B, Support: 22,22%, Confidence: 33,33%
+Rule: A => F, B, Support: 22,22%, Confidence: 33,33%
+Rule: F => A, C, Support: 22,22%, Confidence: 33,33%
+Rule: A => F, C, Support: 22,22%, Confidence: 33,33%
+Rule: F => B, A, Support: 22,22%, Confidence: 33,33%
+Rule: A => F, B, Support: 22,22%, Confidence: 33,33%
+Rule: F => C, A, Support: 22,22%, Confidence: 33,33%
+Rule: A => F, C, Support: 22,22%, Confidence: 33,33%
+Rule: F => D, S, Support: 22,22%, Confidence: 33,33%
+Rule: F => S, D, Support: 22,22%, Confidence: 33,33%
+Rule: F => S, D, Support: 22,22%, Confidence: 33,33%
+Rule: F => S, D, Support: 22,22%, Confidence: 33,33%
+k = 4, count = 3
+GetItemSet000
+GetItemSet111
+GetItemSet222
+Sau GetItemSet
+Thoi gian thuc hien: 0 giay.
+
+Press any key to exit...

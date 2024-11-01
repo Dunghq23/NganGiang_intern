@@ -1,0 +1,6 @@
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job54\AssociationRuleFinder\Common\bin\Debug\Common.dll
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job54\AssociationRuleFinder\Common\bin\Debug\Common.pdb
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job54\AssociationRuleFinder\Common\obj\Debug\Common.csproj.AssemblyReference.cache
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job54\AssociationRuleFinder\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job54\AssociationRuleFinder\Common\obj\Debug\Common.dll
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job54\AssociationRuleFinder\Common\obj\Debug\Common.pdb
