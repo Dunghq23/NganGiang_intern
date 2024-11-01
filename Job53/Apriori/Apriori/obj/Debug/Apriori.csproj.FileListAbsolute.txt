@@ -1,0 +1,6 @@
+D:\HAQUANGDUNG\Apriori\Apriori\bin\Debug\Apriori.dll
+D:\HAQUANGDUNG\Apriori\Apriori\bin\Debug\Apriori.pdb
+D:\HAQUANGDUNG\Apriori\Apriori\obj\Debug\Apriori.csproj.AssemblyReference.cache
+D:\HAQUANGDUNG\Apriori\Apriori\obj\Debug\Apriori.csproj.CoreCompileInputs.cache
+D:\HAQUANGDUNG\Apriori\Apriori\obj\Debug\Apriori.dll
+D:\HAQUANGDUNG\Apriori\Apriori\obj\Debug\Apriori.pdb

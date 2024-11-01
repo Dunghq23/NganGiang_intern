@@ -1,0 +1,6 @@
+D:\[01]Work\[07]Job\Job22\Apriori\Apriori\bin\Release\Apriori.dll
+D:\[01]Work\[07]Job\Job22\Apriori\Apriori\bin\Release\Apriori.pdb
+D:\[01]Work\[07]Job\Job22\Apriori\Apriori\obj\Release\AprioriAlgorithm.csproj.AssemblyReference.cache
+D:\[01]Work\[07]Job\Job22\Apriori\Apriori\obj\Release\AprioriAlgorithm.csproj.CoreCompileInputs.cache
+D:\[01]Work\[07]Job\Job22\Apriori\Apriori\obj\Release\Apriori.dll
+D:\[01]Work\[07]Job\Job22\Apriori\Apriori\obj\Release\Apriori.pdb

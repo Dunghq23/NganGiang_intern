@@ -1,0 +1,10 @@
+D:\[01]Work\[07]Job\Job22\Apriori\ConsoleApp\bin\Release\ConsoleApp.exe.config
+D:\[01]Work\[07]Job\Job22\Apriori\ConsoleApp\bin\Release\ConsoleApp.exe
+D:\[01]Work\[07]Job\Job22\Apriori\ConsoleApp\bin\Release\ConsoleApp.pdb
+D:\[01]Work\[07]Job\Job22\Apriori\ConsoleApp\bin\Release\Apriori.dll
+D:\[01]Work\[07]Job\Job22\Apriori\ConsoleApp\bin\Release\Apriori.pdb
+D:\[01]Work\[07]Job\Job22\Apriori\ConsoleApp\obj\Release\ConsoleApp.csproj.AssemblyReference.cache
+D:\[01]Work\[07]Job\Job22\Apriori\ConsoleApp\obj\Release\ConsoleApp.csproj.CoreCompileInputs.cache
+D:\[01]Work\[07]Job\Job22\Apriori\ConsoleApp\obj\Release\ConsoleApp.csproj.Up2Date
+D:\[01]Work\[07]Job\Job22\Apriori\ConsoleApp\obj\Release\ConsoleApp.exe
+D:\[01]Work\[07]Job\Job22\Apriori\ConsoleApp\obj\Release\ConsoleApp.pdb

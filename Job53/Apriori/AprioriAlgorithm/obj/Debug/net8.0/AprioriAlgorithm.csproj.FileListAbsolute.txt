@@ -1,0 +1,11 @@
+D:\HAQUANGDUNG\Apriori\AprioriAlgorithm\bin\Debug\net8.0\AprioriAlgorithm.deps.json
+D:\HAQUANGDUNG\Apriori\AprioriAlgorithm\bin\Debug\net8.0\AprioriAlgorithm.dll
+D:\HAQUANGDUNG\Apriori\AprioriAlgorithm\bin\Debug\net8.0\AprioriAlgorithm.pdb
+D:\HAQUANGDUNG\Apriori\AprioriAlgorithm\obj\Debug\net8.0\AprioriAlgorithm.GeneratedMSBuildEditorConfig.editorconfig
+D:\HAQUANGDUNG\Apriori\AprioriAlgorithm\obj\Debug\net8.0\AprioriAlgorithm.AssemblyInfoInputs.cache
+D:\HAQUANGDUNG\Apriori\AprioriAlgorithm\obj\Debug\net8.0\AprioriAlgorithm.AssemblyInfo.cs
+D:\HAQUANGDUNG\Apriori\AprioriAlgorithm\obj\Debug\net8.0\AprioriAlgorithm.csproj.CoreCompileInputs.cache
+D:\HAQUANGDUNG\Apriori\AprioriAlgorithm\obj\Debug\net8.0\AprioriAlgorithm.dll
+D:\HAQUANGDUNG\Apriori\AprioriAlgorithm\obj\Debug\net8.0\refint\AprioriAlgorithm.dll
+D:\HAQUANGDUNG\Apriori\AprioriAlgorithm\obj\Debug\net8.0\AprioriAlgorithm.pdb
+D:\HAQUANGDUNG\Apriori\AprioriAlgorithm\obj\Debug\net8.0\ref\AprioriAlgorithm.dll
