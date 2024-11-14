@@ -12,6 +12,11 @@ namespace VehicleDetection.src.CSharp.Models
         public int TotalVehicles { get; set; } // Tổng số phương tiện
 
         [JsonPropertyName("vehicle_counts")]
-        public Dictionary<string, int> VehicleCounts { get; set; } // Số lượng các loại phương tiện
+        public Dictionary<string, int> VehicleCounts { get; set; } = new Dictionary<string, int>();
+        public Bitmap image { get; set; }
+
+        public double PreprocessTime { get; set; }
+        public double DetectTime { get; set; }
+        public double DrawBoxTime { get; set; }
     }
 }

@@ -44,6 +44,7 @@
             label3 = new Label();
             lbTotalVehicles = new Label();
             lbTotalTime = new Label();
+            btnStopExtraction = new Button();
             ((System.ComponentModel.ISupportInitialize)wmpVideo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -143,6 +144,7 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(btnStopExtraction);
             panel1.Controls.Add(dataGridView1);
             panel1.Controls.Add(lbProcessed);
             panel1.Controls.Add(label3);
@@ -201,6 +203,16 @@
             lbTotalTime.TabIndex = 0;
             lbTotalTime.Text = "Tổng thời gian thực hiện";
             // 
+            // btnStopExtraction
+            // 
+            btnStopExtraction.Location = new Point(388, 9);
+            btnStopExtraction.Name = "btnStopExtraction";
+            btnStopExtraction.Size = new Size(85, 81);
+            btnStopExtraction.TabIndex = 5;
+            btnStopExtraction.Text = "Dừng";
+            btnStopExtraction.UseVisualStyleBackColor = true;
+            btnStopExtraction.Click += btnStopExtraction_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -241,5 +253,6 @@
         private Label label3;
         private Label lbTotalVehicles;
         private Label lbTotalTime;
+        private Button btnStopExtraction;
     }
 }
