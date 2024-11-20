@@ -1,0 +1,8 @@
+# Bỏ qua thư mục Video
+Video/
+
+# Bỏ qua thư mục Output
+Output/
+
+# Bỏ qua thư mục Model
+Model/
