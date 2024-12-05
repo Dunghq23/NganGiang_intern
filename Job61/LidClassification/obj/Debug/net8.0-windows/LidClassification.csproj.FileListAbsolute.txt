@@ -1,0 +1,17 @@
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job61\LidClassification\bin\Debug\net8.0-windows\LidClassification.exe
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job61\LidClassification\bin\Debug\net8.0-windows\LidClassification.deps.json
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job61\LidClassification\bin\Debug\net8.0-windows\LidClassification.runtimeconfig.json
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job61\LidClassification\bin\Debug\net8.0-windows\LidClassification.dll
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job61\LidClassification\bin\Debug\net8.0-windows\LidClassification.pdb
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job61\LidClassification\obj\Debug\net8.0-windows\LidClassification.Form1.resources
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job61\LidClassification\obj\Debug\net8.0-windows\LidClassification.csproj.GenerateResource.cache
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job61\LidClassification\obj\Debug\net8.0-windows\LidClassification.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job61\LidClassification\obj\Debug\net8.0-windows\LidClassification.AssemblyInfoInputs.cache
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job61\LidClassification\obj\Debug\net8.0-windows\LidClassification.AssemblyInfo.cs
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job61\LidClassification\obj\Debug\net8.0-windows\LidClassification.csproj.CoreCompileInputs.cache
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job61\LidClassification\obj\Debug\net8.0-windows\LidClassification.sourcelink.json
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job61\LidClassification\obj\Debug\net8.0-windows\LidClassification.dll
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job61\LidClassification\obj\Debug\net8.0-windows\refint\LidClassification.dll
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job61\LidClassification\obj\Debug\net8.0-windows\LidClassification.pdb
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job61\LidClassification\obj\Debug\net8.0-windows\LidClassification.genruntimeconfig.cache
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job61\LidClassification\obj\Debug\net8.0-windows\ref\LidClassification.dll
