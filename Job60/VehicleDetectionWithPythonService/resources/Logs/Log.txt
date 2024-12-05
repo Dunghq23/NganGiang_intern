@@ -1,0 +1,67 @@
+[2024-11-28 07:23:40.071] [CSharp] Send Time (UTC): 2024-11-28T07:23:40.0419467Z
+[2024-11-28 07:23:42.489] [Python] Receive Time (UTC): 2024-11-28 07:23:42.241
+[2024-11-28 07:23:42.490] [Python] Process Time (UTC): 0,07606744766235352
+[2024-11-28 07:23:42.492] [CSharp] Response received successfully from http://localhost:5000/detect. Status: OK
+[2024-11-28 07:23:42.755] [CSharp] Send Time (UTC): 2024-11-28T07:23:42.7552139Z
+[2024-11-28 07:23:44.883] [Python] Receive Time (UTC): 2024-11-28 07:23:44.805
+[2024-11-28 07:23:44.883] [Python] Process Time (UTC): 0,07561230659484863
+[2024-11-28 07:23:44.884] [CSharp] Response received successfully from http://localhost:5000/detect. Status: OK
+[2024-11-28 07:23:44.981] [CSharp] Send Time (UTC): 2024-11-28T07:23:44.9809282Z
+[2024-11-28 07:23:47.099] [Python] Receive Time (UTC): 2024-11-28 07:23:47.027
+[2024-11-28 07:23:47.101] [Python] Process Time (UTC): 0,07014846801757812
+[2024-11-28 07:23:47.101] [CSharp] Response received successfully from http://localhost:5000/detect. Status: OK
+[2024-11-28 07:23:47.198] [CSharp] Send Time (UTC): 2024-11-28T07:23:47.1979169Z
+[2024-11-28 07:23:49.324] [Python] Receive Time (UTC): 2024-11-28 07:23:49.255
+[2024-11-28 07:23:49.325] [Python] Process Time (UTC): 0,06793904304504395
+[2024-11-28 07:23:49.325] [CSharp] Response received successfully from http://localhost:5000/detect. Status: OK
+[2024-11-28 07:23:49.418] [CSharp] Send Time (UTC): 2024-11-28T07:23:49.4173469Z
+[2024-11-28 07:23:51.547] [Python] Receive Time (UTC): 2024-11-28 07:23:51.471
+[2024-11-28 07:23:51.548] [Python] Process Time (UTC): 0,07340764999389648
+[2024-11-28 07:23:51.548] [CSharp] Response received successfully from http://localhost:5000/detect. Status: OK
+[2024-11-28 07:23:51.641] [CSharp] Send Time (UTC): 2024-11-28T07:23:51.6409102Z
+[2024-11-28 07:23:53.783] [Python] Receive Time (UTC): 2024-11-28 07:23:53.681
+[2024-11-28 07:23:53.783] [Python] Process Time (UTC): 0,09899663925170898
+[2024-11-28 07:23:53.783] [CSharp] Response received successfully from http://localhost:5000/detect. Status: OK
+[2024-11-28 07:23:53.870] [CSharp] Send Time (UTC): 2024-11-28T07:23:53.8702095Z
+[2024-11-28 07:23:55.993] [Python] Receive Time (UTC): 2024-11-28 07:23:55.915
+[2024-11-28 07:23:55.993] [Python] Process Time (UTC): 0,07594108581542969
+[2024-11-28 07:23:55.993] [CSharp] Response received successfully from http://localhost:5000/detect. Status: OK
+[2024-11-28 07:23:56.093] [CSharp] Send Time (UTC): 2024-11-28T07:23:56.0932901Z
+[2024-11-28 07:23:58.219] [Python] Receive Time (UTC): 2024-11-28 07:23:58.147
+[2024-11-28 07:23:58.220] [Python] Process Time (UTC): 0,0696258544921875
+[2024-11-28 07:23:58.220] [CSharp] Response received successfully from http://localhost:5000/detect. Status: OK
+[2024-12-02 07:08:47.903] [CSharp] Send Time (UTC): 2024-12-02T07:08:47.8756566Z
+[2024-12-02 07:12:47.930] [CSharp] Send Time (UTC): 2024-12-02T07:12:47.8862802Z
+[2024-12-02 07:16:06.703] [CSharp] Send Time (UTC): 2024-12-02T07:16:06.7017000Z
+[2024-12-02 07:20:56.943] [CSharp] Send Time (UTC): 2024-12-02T07:20:56.9254601Z
+[2024-12-02 07:21:01.849] [Python] Receive Time (UTC): 2024-12-02 07:20:59.171
+[2024-12-02 07:21:01.850] [Python] Process Time (UTC): 2,4880008697509766
+[2024-12-02 07:21:01.852] [CSharp] Response received successfully from http://localhost:5000/detect. Status: OK
+[2024-12-02 07:21:02.140] [CSharp] Send Time (UTC): 2024-12-02T07:21:02.1404788Z
+[2024-12-02 07:21:04.287] [Python] Receive Time (UTC): 2024-12-02 07:21:04.187
+[2024-12-02 07:21:04.288] [Python] Process Time (UTC): 0,09750866889953613
+[2024-12-02 07:21:04.289] [CSharp] Response received successfully from http://localhost:5000/detect. Status: OK
+[2024-12-02 07:21:04.387] [CSharp] Send Time (UTC): 2024-12-02T07:21:04.3875138Z
+[2024-12-02 07:21:06.537] [Python] Receive Time (UTC): 2024-12-02 07:21:06.445
+[2024-12-02 07:21:06.537] [Python] Process Time (UTC): 0,09014892578125
+[2024-12-02 07:21:06.538] [CSharp] Response received successfully from http://localhost:5000/detect. Status: OK
+[2024-12-02 07:21:06.636] [CSharp] Send Time (UTC): 2024-12-02T07:21:06.6366014Z
+[2024-12-02 07:21:08.786] [Python] Receive Time (UTC): 2024-12-02 07:21:08.695
+[2024-12-02 07:21:08.786] [Python] Process Time (UTC): 0,08832907676696777
+[2024-12-02 07:21:08.786] [CSharp] Response received successfully from http://localhost:5000/detect. Status: OK
+[2024-12-02 07:21:08.882] [CSharp] Send Time (UTC): 2024-12-02T07:21:08.8822426Z
+[2024-12-02 07:21:11.009] [Python] Receive Time (UTC): 2024-12-02 07:21:10.933
+[2024-12-02 07:21:11.010] [Python] Process Time (UTC): 0,07447314262390137
+[2024-12-02 07:21:11.010] [CSharp] Response received successfully from http://localhost:5000/detect. Status: OK
+[2024-12-02 07:21:11.100] [CSharp] Send Time (UTC): 2024-12-02T07:21:11.1001208Z
+[2024-12-02 07:21:13.358] [Python] Receive Time (UTC): 2024-12-02 07:21:13.156
+[2024-12-02 07:21:13.358] [Python] Process Time (UTC): 0,2009267807006836
+[2024-12-02 07:21:13.359] [CSharp] Response received successfully from http://localhost:5000/detect. Status: OK
+[2024-12-02 07:21:13.446] [CSharp] Send Time (UTC): 2024-12-02T07:21:13.4464833Z
+[2024-12-02 07:21:15.702] [Python] Receive Time (UTC): 2024-12-02 07:21:15.487
+[2024-12-02 07:21:15.702] [Python] Process Time (UTC): 0,21239924430847168
+[2024-12-02 07:21:15.703] [CSharp] Response received successfully from http://localhost:5000/detect. Status: OK
+[2024-12-02 07:21:15.794] [CSharp] Send Time (UTC): 2024-12-02T07:21:15.7939517Z
+[2024-12-02 07:21:18.051] [Python] Receive Time (UTC): 2024-12-02 07:21:17.839
+[2024-12-02 07:21:18.051] [Python] Process Time (UTC): 0,20860862731933594
+[2024-12-02 07:21:18.051] [CSharp] Response received successfully from http://localhost:5000/detect. Status: OK
