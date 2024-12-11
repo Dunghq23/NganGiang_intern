@@ -13,10 +13,10 @@ namespace VehicleDetection.src.CSharp.Models
 
         [JsonPropertyName("vehicle_counts")]
         public Dictionary<string, int> VehicleCounts { get; set; } = new Dictionary<string, int>();
-        public Bitmap image { get; set; }
+        //public Bitmap image { get; set; }
 
-        public double PreprocessTime { get; set; }
-        public double DetectTime { get; set; }
-        public double DrawBoxTime { get; set; }
+        //public double PreprocessTime { get; set; }
+        //public double DetectTime { get; set; }
+        //public double DrawBoxTime { get; set; }
     }
 }

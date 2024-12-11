@@ -7,16 +7,12 @@
       "RelativeMoniker": "D:0:0:{04945C25-676E-46CF-94AF-92400E8D4CED}|VehicleDetection(8.0).csproj|solutionrelative:src\\csharp\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04945C25-676E-46CF-94AF-92400E8D4CED}|VehicleDetection(8.0).csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job60\\vehicledetectionwithpythonservice\\src\\csharp\\services\\pythonexcutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04945C25-676E-46CF-94AF-92400E8D4CED}|VehicleDetection(8.0).csproj|solutionrelative:src\\csharp\\services\\pythonexcutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{04945C25-676E-46CF-94AF-92400E8D4CED}|VehicleDetection(8.0).csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job60\\vehicledetectionwithpythonservice\\src\\csharp\\services\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04945C25-676E-46CF-94AF-92400E8D4CED}|VehicleDetection(8.0).csproj|solutionrelative:src\\csharp\\services\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04945C25-676E-46CF-94AF-92400E8D4CED}|VehicleDetection(8.0).csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job60\\vehicledetectionwithpythonservice\\src\\csharp\\services\\portkiller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04945C25-676E-46CF-94AF-92400E8D4CED}|VehicleDetection(8.0).csproj|solutionrelative:src\\csharp\\services\\portkiller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{04945C25-676E-46CF-94AF-92400E8D4CED}|VehicleDetection(8.0).csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job60\\vehicledetectionwithpythonservice\\src\\python\\grpcserver.py||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{04945C25-676E-46CF-94AF-92400E8D4CED}|VehicleDetection(8.0).csproj|solutionrelative:src\\python\\grpcserver.py||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{04945C25-676E-46CF-94AF-92400E8D4CED}|VehicleDetection(8.0).csproj|D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job60\\VehicleDetectionWithPythonService\\src\\csharp\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{04945C25-676E-46CF-94AF-92400E8D4CED}|VehicleDetection(8.0).csproj|solutionrelative:src\\csharp\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 291,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,42 +30,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GRPCServer.py",
-              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job60\\VehicleDetectionWithPythonService\\src\\Python\\GRPCServer.py",
-              "RelativeDocumentMoniker": "src\\Python\\GRPCServer.py",
-              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job60\\VehicleDetectionWithPythonService\\src\\Python\\GRPCServer.py",
-              "RelativeToolTip": "src\\Python\\GRPCServer.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAHAAAAAAAAAA==",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMuSURBVDhPrVTPTxNREP627e7SQm0F2mKLUEVICP5IMBqUhB6NJ4/GGGPwoIf\u002BCR7VxBBPhnAxAeVC4kEuJB6Qi0Y8oCGKpoKQUpEWAhX6c7vb3X1Ol5UauzEc/JLJm31v3pdv5u0M/isYY5zpGohEIs8GBgZu8Dxv7tQik8mwbDb7YGpq6lEqlcqa2/twmOs\u002BBgcHEQgEzK9azMzMsHg8fsdut7Pp6enHKysrafPIQA1hBRRkelUQAcLhMEi9jTLxdnZ23pZl2elwOIYWFxe3zTBrwmAwaHpVcFy1OoIg8P39/c1Efo3KJquq\u002BpBEFCpnNiPiL9CFGvtd14rSyclJDA8P22dnZ1tcLlevKIp\u002B45BgqXBpacn0qqDUQGniXN9F9J6/AIeNg1TIyaOjo9/NEAOWhN3d3aZXRV5W8Sq2jY2sBElSwFNuR9x2x5HWtkabrZrogRXKDUEsb\u002BSxmSlg7tsG1LICX4PAX\u002Blpbff7/Q1mmHUNK6/5t2WKKt4uphBbS0NXy2QasvkiV1RtTrfb7TKvWhNWoGkaNHD4ulXGxNwmPibSOH3Ui95wI5rqeahESq8Ln7dwavLpjXe69HlB1/U2y5RXV1eNdb3E48VCDuvpHF1WoJWJhEyjdHWNVNKvJHBbgDQPlOZ74Ls7ZKmwq6vLsCKrw\u002BZu3lCjl1UquA6P0wGPi4eX7EzYhdNB6j5NoiL/AJS1S5YKY7GYsa6tS5BlUkOptTU6EI1IcNp3aQboNAh0eIUdhJybgFrcI9V2Pf9U2B4KQKCIisLbEQFnWz6gx7eMk/4VnGyOobU\u002BDk79SQF5IqNG4YM7loSKohjWfljE8WYn3KIdvkM6OKYBukIEMq2kkj7BiIJRF9Wd0iCEnlimnEwmjVUkuxU5jgzdD3jooUpEppWosT1kTlJE/S127UA89gV1J76Nj48PWRJ2dHSY3h4qg0HUkwz5AmcQajRc6vtIGRHam9aev1y/9/r1xNuRkZFiDeHY2Nj\u002BIPgTN69fThwVQ2Eon4iQHiD3HqzhPNOcvek3b\u002B7HK2Rm6MFAY\u002BoQ08uPWCmRYvl5ncnJBO29JLsajUbDe1HAL6CnYE1YMsFsAAAAAElFTkSuQmCC",
-              "WhenOpened": "2024-12-04T08:11:12.718Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PortKiller.cs",
-              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job60\\VehicleDetectionWithPythonService\\src\\CSharp\\Services\\PortKiller.cs",
-              "RelativeDocumentMoniker": "src\\CSharp\\Services\\PortKiller.cs",
-              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job60\\VehicleDetectionWithPythonService\\src\\CSharp\\Services\\PortKiller.cs",
-              "RelativeToolTip": "src\\CSharp\\Services\\PortKiller.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAQwFIAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T07:02:44.631Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PythonExcutor.cs",
-              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job60\\VehicleDetectionWithPythonService\\src\\CSharp\\Services\\PythonExcutor.cs",
-              "RelativeDocumentMoniker": "src\\CSharp\\Services\\PythonExcutor.cs",
-              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job60\\VehicleDetectionWithPythonService\\src\\CSharp\\Services\\PythonExcutor.cs",
-              "RelativeToolTip": "src\\CSharp\\Services\\PythonExcutor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAJAAAAAAAAAA==",
+              "Title": "Helper.cs",
+              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job60\\VehicleDetectionWithPythonService\\src\\CSharp\\Services\\Helper.cs",
+              "RelativeDocumentMoniker": "src\\CSharp\\Services\\Helper.cs",
+              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job60\\VehicleDetectionWithPythonService\\src\\CSharp\\Services\\Helper.cs",
+              "RelativeToolTip": "src\\CSharp\\Services\\Helper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T03:44:14.954Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-11T03:13:42.43Z"
             },
             {
               "$type": "Document",
@@ -79,10 +48,21 @@
               "RelativeDocumentMoniker": "src\\CSharp\\Views\\MainForm.cs",
               "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job60\\VehicleDetectionWithPythonService\\src\\CSharp\\Views\\MainForm.cs",
               "RelativeToolTip": "src\\CSharp\\Views\\MainForm.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAqwFoAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAYwFEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T03:27:33.887Z",
+              "WhenOpened": "2024-12-10T09:53:16.727Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job60\\VehicleDetectionWithPythonService\\src\\CSharp\\Views\\MainForm.cs",
+              "RelativeDocumentMoniker": "src\\CSharp\\Views\\MainForm.cs",
+              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job60\\VehicleDetectionWithPythonService\\src\\CSharp\\Views\\MainForm.cs [Design]",
+              "RelativeToolTip": "src\\CSharp\\Views\\MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T09:38:21.051Z"
             }
           ]
         }

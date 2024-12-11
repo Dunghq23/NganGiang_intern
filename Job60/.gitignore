@@ -1,0 +1,13 @@
+# Loại trừ thư mục debug
+debug/
+
+
+
+# Loại trừ tất cả ảnh trong thư mục gốc và các thư mục con
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.webp

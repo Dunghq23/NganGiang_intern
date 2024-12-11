@@ -52,10 +52,8 @@
 	<Folder Include="src\CSharp\Utils\" />
   </ItemGroup>
 
-
-
 	<ItemGroup>
-		<Protobuf Include="D:\Documents\Work\NganGiang\HAQUANGDUNG\Job60\Python\grpc\image_service.proto" GrpcServices="Client"  OutputDir="src/CSharp/Services/Generated" />
+		<Protobuf Include="src/Python/image_service.proto" GrpcServices="Client"/>
 	</ItemGroup>
 
 </Project>

@@ -27,6 +27,7 @@ namespace VehicleDetection_8._0_
         private Stopwatch stopwatch = new Stopwatch();
         private string _logFilePath;
         PythonExecutor pythonExecutor;
+        private string _modelPath;
 
         public MainForm()
         {
@@ -34,6 +35,7 @@ namespace VehicleDetection_8._0_
             _rootDir = Path.GetFullPath(Path.Combine("..", "..", ".."));
             _extractImageFolder = Path.Combine(_rootDir, "resources", "Image", "ExtractFromVideo");
             _logFilePath = Path.Combine(_rootDir, "resources", "Logs", "Log.txt");
+            _modelPath = Path.Combine(_rootDir, "model", "yolov8n.pt");
             _imageExtractor = new ImageExtractor(_extractImageFolder);
             _frameSkipQuantity = (int)nmrframeSkip.Value;
         }
@@ -110,11 +112,8 @@ namespace VehicleDetection_8._0_
                     stopwatch = Stopwatch.StartNew();
                     stopwatch.Start();
 
-
-
                     //var results = await SendImagePathToApi(file);
                     var results = await gRpc(file);
-
 
                     stopwatch.Stop();
 
@@ -207,7 +206,6 @@ namespace VehicleDetection_8._0_
                 }
             }
         }
-
         private async Task<List<dynamic>> gRpc(string imagePath)
         {
             try
@@ -219,7 +217,7 @@ namespace VehicleDetection_8._0_
                 var client = new ImageTransfer.ImageTransferClient(channel);
 
                 // Gửi yêu cầu tới server
-                var request = new ImageRequest { Path = imagePath };
+                var request = new ImageRequest { Path = imagePath, ModelPath = _modelPath };
                 var response = await client.SendImageAsync(request);
 
                 // Xử lý phản hồi
@@ -245,7 +243,6 @@ namespace VehicleDetection_8._0_
                 return new List<dynamic>(); // Trả về danh sách rỗng nếu có ngoại lệ
             }
         }
-
         private void DisplayImageWithBoundingBoxes(string filePath, dynamic boundingBoxes)
         {
             using (Image img = Image.FromFile(filePath))
@@ -310,8 +307,6 @@ namespace VehicleDetection_8._0_
             }));
         }
         #endregion
-
-
         #region Ghi Log
         private void WriteLog(string filePath, string message)
         {
@@ -338,7 +333,5 @@ namespace VehicleDetection_8._0_
             }
         }
         #endregion
-
-
     }
 }
