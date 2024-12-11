@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LidClassification")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b57a148602e052cd0dabd06b95d253f20f62530b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2990a38866c3e183938d5dfebb50eaa08472ef20")]
 [assembly: System.Reflection.AssemblyProductAttribute("LidClassification")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LidClassification")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

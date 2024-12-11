@@ -1,0 +1,6 @@
+grpcio
+opencv-python
+ultralytics
+numpy
+torch
+PyYAML
