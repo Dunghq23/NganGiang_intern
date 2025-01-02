@@ -7,3 +7,12 @@ D:\Documents\Work\NganGiang\HAQUANGDUNG\Job55\J55\Algorithms\obj\Release\Algorit
 D:\Documents\Work\NganGiang\HAQUANGDUNG\Job55\J55\Algorithms\obj\Release\Algorithms.csproj.Up2Date
 D:\Documents\Work\NganGiang\HAQUANGDUNG\Job55\J55\Algorithms\obj\Release\Algorithms.dll
 D:\Documents\Work\NganGiang\HAQUANGDUNG\Job55\J55\Algorithms\obj\Release\Algorithms.pdb
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job55\AssociationRuleFinder\Algorithms\bin\Release\Algorithms.dll
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job55\AssociationRuleFinder\Algorithms\bin\Release\Algorithms.pdb
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job55\AssociationRuleFinder\Algorithms\bin\Release\Common.dll
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job55\AssociationRuleFinder\Algorithms\bin\Release\Common.pdb
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job55\AssociationRuleFinder\Algorithms\obj\Release\Algorithms.csproj.AssemblyReference.cache
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job55\AssociationRuleFinder\Algorithms\obj\Release\Algorithms.csproj.CoreCompileInputs.cache
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job55\AssociationRuleFinder\Algorithms\obj\Release\Algorithms.csproj.Up2Date
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job55\AssociationRuleFinder\Algorithms\obj\Release\Algorithms.dll
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job55\AssociationRuleFinder\Algorithms\obj\Release\Algorithms.pdb

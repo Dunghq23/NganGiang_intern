@@ -1,4 +1,6 @@
-﻿namespace VehicleDetection.src.CSharp.Services
+﻿using System.Windows.Forms;
+
+namespace VehicleDetection.src.CSharp.Services
 {
     public static class Helper
     {
@@ -20,6 +22,51 @@
                 }
             }
             Console.WriteLine("Hoàn thành việc xóa ảnh.");
+        }
+        public static void WriteLog(string filePath, string message)
+        {
+            try
+            {
+                // Kiểm tra và tạo file nếu chưa tồn tại
+                if (!File.Exists(filePath))
+                {
+                    using (var fileStream = File.Create(filePath))
+                    {
+                        // Đảm bảo file được tạo trước khi đóng
+                    }
+                }
+
+                // Ghi log với timestamp
+                using (StreamWriter writer = new StreamWriter(filePath, true))
+                {
+                    writer.WriteLine($"[{DateTime.UtcNow:yyyy-MM-dd HH:mm:ss.fff}] {message}");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Lỗi khi ghi log: {ex.Message}");
+            }
+        }
+        public static Bitmap DrawBoundingBoxes(string filePath, dynamic boundingBoxes)
+        {
+            using (Image img = Image.FromFile(filePath))
+            {
+                Bitmap bitmap = new Bitmap(img);
+                using (Graphics g = Graphics.FromImage(bitmap))
+                {
+                    Color customColor = ColorTranslator.FromHtml("#33FF66");
+                    using (Pen pen = new Pen(customColor, 2)) // Độ dày là 2
+                    {
+                        foreach (var box in boundingBoxes)
+                        {
+                            int x = box.x, y = box.y, w = box.w, h = box.h;
+                            g.DrawRectangle(pen, x, y, w, h);
+                            g.DrawString(box.label.ToString(), new Font("Arial", 12), new SolidBrush(ColorTranslator.FromHtml("#33FF66")), x, y - 24);
+                        }
+                    }
+                }
+                return bitmap;
+            }
         }
     }
 }

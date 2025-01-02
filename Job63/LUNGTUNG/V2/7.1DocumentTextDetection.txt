@@ -1,0 +1,5 @@
+cd ai-vison/python-docs-samples/vision/cloud-client/document_text/
+
+sudo pip install -r requirements.txt
+
+python doctext.py ../detect/resources/chuviettay.jpg

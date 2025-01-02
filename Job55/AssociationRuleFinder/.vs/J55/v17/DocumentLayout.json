@@ -1,25 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job55\\J55\\",
+  "WorkspaceRootPath": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job55\\AssociationRuleFinder\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{699575BA-A215-4C10-BC86-D30C2BF66413}|Algorithms\\Algorithms.csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job55\\j55\\algorithms\\apriori\\apriori.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{699575BA-A215-4C10-BC86-D30C2BF66413}|Algorithms\\Algorithms.csproj|solutionrelative:algorithms\\apriori\\apriori.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A22001E1-77DE-4845-9C05-01FDE9F2775B}|Main\\Main.csproj|D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job55\\J55\\main\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A22001E1-77DE-4845-9C05-01FDE9F2775B}|Main\\Main.csproj|solutionrelative:main\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD9263BB-97BF-4A16-B3D8-57AC2736AE6C}|Common\\Common.csproj|D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job55\\J55\\common\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BD9263BB-97BF-4A16-B3D8-57AC2736AE6C}|Common\\Common.csproj|D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job55\\AssociationRuleFinder\\common\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD9263BB-97BF-4A16-B3D8-57AC2736AE6C}|Common\\Common.csproj|solutionrelative:common\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{699575BA-A215-4C10-BC86-D30C2BF66413}|Algorithms\\Algorithms.csproj|D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job55\\J55\\algorithms\\fpgrowth\\fpgrowth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{699575BA-A215-4C10-BC86-D30C2BF66413}|Algorithms\\Algorithms.csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job55\\associationrulefinder\\algorithms\\apriori\\apriori.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699575BA-A215-4C10-BC86-D30C2BF66413}|Algorithms\\Algorithms.csproj|solutionrelative:algorithms\\apriori\\apriori.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22001E1-77DE-4845-9C05-01FDE9F2775B}|Main\\Main.csproj|D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job55\\AssociationRuleFinder\\main\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A22001E1-77DE-4845-9C05-01FDE9F2775B}|Main\\Main.csproj|solutionrelative:main\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699575BA-A215-4C10-BC86-D30C2BF66413}|Algorithms\\Algorithms.csproj|D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job55\\AssociationRuleFinder\\algorithms\\fpgrowth\\fpgrowth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{699575BA-A215-4C10-BC86-D30C2BF66413}|Algorithms\\Algorithms.csproj|solutionrelative:algorithms\\fpgrowth\\fpgrowth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{699575BA-A215-4C10-BC86-D30C2BF66413}|Algorithms\\Algorithms.csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job55\\j55\\algorithms\\fpgrowth\\tree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{699575BA-A215-4C10-BC86-D30C2BF66413}|Algorithms\\Algorithms.csproj|D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job55\\AssociationRuleFinder\\algorithms\\fpgrowth\\tree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{699575BA-A215-4C10-BC86-D30C2BF66413}|Algorithms\\Algorithms.csproj|solutionrelative:algorithms\\fpgrowth\\tree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -33,69 +33,70 @@
           "SelectedChildIndex": 3,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Tree.cs",
-              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job55\\J55\\Algorithms\\FPGrowth\\Tree.cs",
+              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job55\\AssociationRuleFinder\\Algorithms\\FPGrowth\\Tree.cs",
               "RelativeDocumentMoniker": "Algorithms\\FPGrowth\\Tree.cs",
-              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job55\\J55\\Algorithms\\FPGrowth\\Tree.cs",
+              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job55\\AssociationRuleFinder\\Algorithms\\FPGrowth\\Tree.cs",
               "RelativeToolTip": "Algorithms\\FPGrowth\\Tree.cs",
               "ViewState": "AgIAAIUAAAAAAAAAAAAowJIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T03:28:01.567Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-01T03:28:01.567Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "FPGrowth.cs",
-              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job55\\J55\\Algorithms\\FPGrowth\\FPGrowth.cs",
+              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job55\\AssociationRuleFinder\\Algorithms\\FPGrowth\\FPGrowth.cs",
               "RelativeDocumentMoniker": "Algorithms\\FPGrowth\\FPGrowth.cs",
-              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job55\\J55\\Algorithms\\FPGrowth\\FPGrowth.cs",
+              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job55\\AssociationRuleFinder\\Algorithms\\FPGrowth\\FPGrowth.cs",
               "RelativeToolTip": "Algorithms\\FPGrowth\\FPGrowth.cs",
               "ViewState": "AgIAAAQBAAAAAAAAAAAawBMBAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T01:54:37.432Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-01T01:54:37.432Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Helper.cs",
-              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job55\\J55\\Common\\Helper.cs",
+              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job55\\AssociationRuleFinder\\Common\\Helper.cs",
               "RelativeDocumentMoniker": "Common\\Helper.cs",
-              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job55\\J55\\Common\\Helper.cs",
+              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job55\\AssociationRuleFinder\\Common\\Helper.cs",
               "RelativeToolTip": "Common\\Helper.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAgwGkAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-31T15:56:01.792Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Apriori.cs",
-              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job55\\J55\\Algorithms\\Apriori\\Apriori.cs",
+              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job55\\AssociationRuleFinder\\Algorithms\\Apriori\\Apriori.cs",
               "RelativeDocumentMoniker": "Algorithms\\Apriori\\Apriori.cs",
-              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job55\\J55\\Algorithms\\Apriori\\Apriori.cs",
+              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job55\\AssociationRuleFinder\\Algorithms\\Apriori\\Apriori.cs",
               "RelativeToolTip": "Algorithms\\Apriori\\Apriori.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAD8AAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAADsAAAAAAAAAAAAgwB0AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-31T12:47:01.013Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job55\\J55\\Main\\Program.cs",
+              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job55\\AssociationRuleFinder\\Main\\Program.cs",
               "RelativeDocumentMoniker": "Main\\Program.cs",
-              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job55\\J55\\Main\\Program.cs",
+              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job55\\AssociationRuleFinder\\Main\\Program.cs",
               "RelativeToolTip": "Main\\Program.cs",
               "ViewState": "AgIAADUAAAAAAAAAAAAQwD4AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T03:46:52.065Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T03:46:52.065Z"
             }
           ]
         }

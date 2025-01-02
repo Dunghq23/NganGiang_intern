@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job61\\LidClassification\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C51E6C69-A002-4E06-866C-3674CCBEDDFE}|LidClassification.csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job61\\lidclassification\\src\\csharp\\view\\cameraform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C51E6C69-A002-4E06-866C-3674CCBEDDFE}|LidClassification.csproj|solutionrelative:src\\csharp\\view\\cameraform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C51E6C69-A002-4E06-866C-3674CCBEDDFE}|LidClassification.csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job61\\lidclassification\\lidclassification.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C51E6C69-A002-4E06-866C-3674CCBEDDFE}|LidClassification.csproj|solutionrelative:lidclassification.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C51E6C69-A002-4E06-866C-3674CCBEDDFE}|LidClassification.csproj|D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job61\\LidClassification\\src\\csharp\\view\\cameraform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C51E6C69-A002-4E06-866C-3674CCBEDDFE}|LidClassification.csproj|solutionrelative:src\\csharp\\view\\cameraform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C51E6C69-A002-4E06-866C-3674CCBEDDFE}|LidClassification.csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job61\\lidclassification\\src\\csharp\\view\\cameraform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C51E6C69-A002-4E06-866C-3674CCBEDDFE}|LidClassification.csproj|solutionrelative:src\\csharp\\view\\cameraform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 291,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,28 +26,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CameraForm.cs [Design]",
-              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job61\\LidClassification\\src\\CSharp\\View\\CameraForm.cs",
-              "RelativeDocumentMoniker": "src\\CSharp\\View\\CameraForm.cs",
-              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job61\\LidClassification\\src\\CSharp\\View\\CameraForm.cs [Design]*",
-              "RelativeToolTip": "src\\CSharp\\View\\CameraForm.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T04:56:41.811Z",
-              "EditorCaption": " [Design]"
+              "DocumentIndex": 0,
+              "Title": "LidClassification.csproj",
+              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job61\\LidClassification\\LidClassification.csproj",
+              "RelativeDocumentMoniker": "LidClassification.csproj",
+              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job61\\LidClassification\\LidClassification.csproj",
+              "RelativeToolTip": "LidClassification.csproj",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAAB4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-17T14:48:12.373Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CameraForm.cs",
               "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job61\\LidClassification\\src\\CSharp\\View\\CameraForm.cs",
               "RelativeDocumentMoniker": "src\\CSharp\\View\\CameraForm.cs",
-              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job61\\LidClassification\\src\\CSharp\\View\\CameraForm.cs*",
-              "RelativeToolTip": "src\\CSharp\\View\\CameraForm.cs*",
-              "ViewState": "AgIAAFYAAAAAAAAAAIAwwIgAAAAaAAAAAAAAAA==",
+              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job61\\LidClassification\\src\\CSharp\\View\\CameraForm.cs",
+              "RelativeToolTip": "src\\CSharp\\View\\CameraForm.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAAwLYAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T10:01:10.636Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-17T09:13:21.032Z"
             }
           ]
         }

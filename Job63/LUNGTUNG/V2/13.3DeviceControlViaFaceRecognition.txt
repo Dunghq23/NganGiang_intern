@@ -1,0 +1,5 @@
+cd opencv/face/OpenCV-Python-Series/src
+
+sudo control_device_by_face.py
+
+python3 control_device_by_face.py

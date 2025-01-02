@@ -1,37 +1,37 @@
-﻿using Emgu.CV;
-using VehicleDetection.src.CSharp.Models;
+﻿using VehicleDetection.src.CSharp.Models;
 using VehicleDetection.src.CSharp.Services;
-using System.Net.Sockets;
 using System.Text;
 using Newtonsoft.Json;
 using System.Diagnostics;
-using System.IO.Pipes;
 using Grpc.Net.Client;
-using System.CodeDom.Compiler;
-using VehicleDetection_8._0_.src.CSharp.Services;
-
 
 namespace VehicleDetection_8._0_
 {
     public partial class MainForm : Form
     {
-        #region Thuộc tính và Khởi tạo
-        private readonly ImageExtractor _imageExtractor;
-        private readonly string _rootDir;
-        private readonly string _extractImageFolder;
-        private string _videoPath;
+        #region Thuộc tính
+        private PythonExecutor _pythonExecutor;
+        private ImageExtractor _imageExtractor;
         private int _frameSkipQuantity;
-        private Dictionary<string, DetectionResult> frameTimeExecute = new Dictionary<string, DetectionResult>();
-        private string host = "127.0.0.1";
-        private int port = 5000;
-        private Stopwatch stopwatch = new Stopwatch();
-        private string _logFilePath;
-        PythonExecutor pythonExecutor;
-        private string _modelPath;
+        private Dictionary<string, DetectionResult> _frameTimeExecute = new();
+        private Stopwatch _stopwatch = new();
 
+        // Đường dẫn thư mục và file
+        private string _rootDir;
+        private string _extractImageFolder;
+        private string _logFilePath;
+        private string _modelPath;
+        private string _videoPath;
+        #endregion
+
+        #region Nhóm hàm khởi tạo
         public MainForm()
         {
             InitializeComponent();
+            InitializePaths();
+        }
+        private void InitializePaths()
+        {
             _rootDir = Path.GetFullPath(Path.Combine("..", "..", ".."));
             _extractImageFolder = Path.Combine(_rootDir, "resources", "Image", "ExtractFromVideo");
             _logFilePath = Path.Combine(_rootDir, "resources", "Logs", "Log.txt");
@@ -41,45 +41,19 @@ namespace VehicleDetection_8._0_
         }
         #endregion
 
+        #region Nhóm hàm sự kiện
         private async void Form1_Load(object sender, EventArgs e)
         {
-            string scriptPath = Path.Combine(_rootDir, "src", "Python", "GRPCServer.py");
-            string modelPath = Path.Combine(_rootDir, "model", "yolov8n.pt");
-            string outputPath = Path.Combine(_rootDir, "resources", "Image", "OutputDetection", "vehicle_image_detected.jpg");
-
-            //var pythonExecutor = new PythonExecutor("python", scriptPath);
-            //string arr = "";
-            //var result = pythonExecutor.Execute(arr);
-
-            pythonExecutor = new PythonExecutor("python", scriptPath);
-            pythonExecutor.Execute("");
+            StartPythonGRPCServer();
         }
-
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             //PortKiller.KillAllProcessesAndConnectionsOnPort(50051);
         }
-
-        #region Chọn File Video
         private void btnSelectFile_Click(object sender, EventArgs e)
         {
-            using (var openFileDialog = new OpenFileDialog
-            {
-                Title = "Chọn File Video",
-                Filter = "Video Files|*.mp4;*.avi;*.mov;*.mkv|All Files|*.*"
-            })
-            {
-                if (openFileDialog.ShowDialog() == DialogResult.OK)
-                {
-                    _videoPath = openFileDialog.FileName;
-                    wmpVideo.URL = _videoPath;
-                    wmpVideo.Ctlcontrols.play();
-                }
-            }
+            SelectVideoFile();
         }
-        #endregion
-
-        #region Trích xuất Hình ảnh
         private void btnExtractImages_Click(object sender, EventArgs e)
         {
             if (_videoPath == null)
@@ -88,37 +62,60 @@ namespace VehicleDetection_8._0_
                 return;
             }
 
-            stopwatch = Stopwatch.StartNew();
+            _stopwatch = Stopwatch.StartNew();
             Task.Factory.StartNew(() => ProcessImage());
         }
+        private void nmrframeSkip_ValueChanged(object sender, EventArgs e)
+        {
+            _frameSkipQuantity = (int)nmrframeSkip.Value;
+        }
 
+        #endregion
+
+        #region Nhóm hàm xử lý chính
+        private void SelectVideoFile()
+        {
+            using var openFileDialog = new OpenFileDialog
+            {
+                Title = "Chọn File Video",
+                Filter = "Video Files|*.mp4;*.avi;*.mov;*.mkv|All Files|*.*"
+            };
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                _videoPath = openFileDialog.FileName;
+                wmpVideo.URL = _videoPath;
+                wmpVideo.Ctlcontrols.play();
+            }
+        }
+        private void StartPythonGRPCServer()
+        {
+            string scriptPath = Path.Combine(_rootDir, "src", "Python", "GRPCServer.py");
+
+            _pythonExecutor = new PythonExecutor("python", scriptPath);
+            _pythonExecutor.Execute(string.Empty);
+        }
+        #endregion
+
+        #region Trích xuất Hình ảnh
         private async Task ProcessImage()
         {
             ImageExtractor imageExtractor = new ImageExtractor(_extractImageFolder);
             imageExtractor.ExtractImages(_videoPath, _frameSkipQuantity);
-
-            // Các phần mở rộng của file ảnh mà bạn muốn lấy
-            string[] imageExtensions = { ".jpg", ".jpeg", ".png", ".bmp", ".gif", ".tiff" };
-
             try
             {
                 DetectionResult detectionResult = new DetectionResult();
-                // Lấy danh sách file từ thư mục
                 string[] allFiles = Directory.GetFiles(_extractImageFolder);
 
-                // Lọc file ảnh dựa trên phần mở rộng
                 foreach (string file in allFiles)
                 {
-                    stopwatch = Stopwatch.StartNew();
-                    stopwatch.Start();
+                    _stopwatch = Stopwatch.StartNew();
+                    _stopwatch.Start();
 
-                    //var results = await SendImagePathToApi(file);
                     var results = await gRpc(file);
 
-                    stopwatch.Stop();
+                    _stopwatch.Stop();
 
-                    // Cập nhật kết quả vào dictionary
-                    //foreach (var box in results.boundingBoxes) // Sử dụng flask
                     foreach (var box in results)
                     {
                         string label = box.label.ToString();
@@ -132,11 +129,16 @@ namespace VehicleDetection_8._0_
                         }
                     }
 
-                    Invoke(new Action(() => DisplayImageWithBoundingBoxes(file, results)));
-                    Invoke(new Action(() => pictureBox1.Refresh()));
+                    Invoke(new Action(() =>
+                            {
+                                pictureBox1.Image = Helper.DrawBoundingBoxes(file, results);
+                                pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+                                pictureBox1.Refresh();
+                            }
+                        )
+                    );
 
-
-                    detectionResult.TotalTime = (double)stopwatch.Elapsed.TotalSeconds;
+                    detectionResult.TotalTime = (double)_stopwatch.Elapsed.TotalSeconds;
                     detectionResult.TotalVehicles = (int)detectionResult.VehicleCounts.Values.Sum();
                     UpdateDataGridView(detectionResult.VehicleCounts);
                     File.Delete(file);
@@ -152,60 +154,6 @@ namespace VehicleDetection_8._0_
 
         }
 
-        // Gửi yêu cầu POST đến Flask API
-        private async Task<(List<dynamic> boundingBoxes, string receiveTime, double processTime)> SendImagePathToApi(string imagePath)
-        {
-            string apiUrl = "http://localhost:5000/detect";
-            Stopwatch test = new Stopwatch();
-            test = Stopwatch.StartNew();
-            using (var client = new HttpClient())
-            {
-                test.Start();
-                var requestData = new { image_path = imagePath };
-                string json = JsonConvert.SerializeObject(requestData);
-                test.Stop();
-                double time1 = (double)test.Elapsed.TotalSeconds;
-
-                DateTime sendTime = DateTime.UtcNow; // Thời điểm gửi yêu cầu (UTC)
-                Console.WriteLine(sendTime.ToString());
-
-                test = Stopwatch.StartNew();
-                _logFilePath = Path.Combine(_rootDir, "resources", "Logs", "Log.txt");
-                WriteLog(_logFilePath, $"[CSharp] Send Time (UTC): {sendTime:o}");
-
-                test.Start();
-                var content = new StringContent(json, Encoding.UTF8, "application/json");
-                HttpResponseMessage response = await client.PostAsync(apiUrl, content);
-                test.Stop();
-                double time2 = (double)test.Elapsed.TotalSeconds;
-
-                if (response.IsSuccessStatusCode)
-                {
-                    string responseJson = await response.Content.ReadAsStringAsync();
-
-                    // Trả về danh sách dynamic để xử lý trực tiếp các trường
-                    //return JsonConvert.DeserializeObject<List<dynamic>>(responseJson);
-
-
-                    dynamic result = JsonConvert.DeserializeObject<dynamic>(responseJson);
-
-                    // Lấy boundingBoxes, receive_time và process_time từ phản hồi
-                    var boundingBoxes = JsonConvert.DeserializeObject<List<dynamic>>(result["detections"].ToString());
-                    string receiveTime = result["receive_time"];
-                    double processTime = result["process_time"];
-
-                    WriteLog(_logFilePath, $"[Python] Receive Time (UTC): {receiveTime}");
-                    WriteLog(_logFilePath, $"[Python] Process Time (UTC): {processTime}");
-                    WriteLog(_logFilePath, $"[CSharp] Response received successfully from {apiUrl}. Status: {response.StatusCode}");
-
-                    return (boundingBoxes, receiveTime, processTime);
-                }
-                else
-                {
-                    throw new Exception($"API Error: {response.StatusCode}");
-                }
-            }
-        }
         private async Task<List<dynamic>> gRpc(string imagePath)
         {
             try
@@ -243,33 +191,7 @@ namespace VehicleDetection_8._0_
                 return new List<dynamic>(); // Trả về danh sách rỗng nếu có ngoại lệ
             }
         }
-        private void DisplayImageWithBoundingBoxes(string filePath, dynamic boundingBoxes)
-        {
-            using (Image img = Image.FromFile(filePath))
-            {
-                Bitmap bitmap = new Bitmap(img);
-                using (Graphics g = Graphics.FromImage(bitmap))
-                {
-                    Color customColor = ColorTranslator.FromHtml("#33FF66");
-                    using (Pen pen = new Pen(customColor, 2)) // Độ dày là 2
-                    {
-                        foreach (var box in boundingBoxes)
-                        {
-                            int x = box.x, y = box.y, w = box.w, h = box.h;
-                            g.DrawRectangle(pen, x, y, w, h);
-                            g.DrawString(box.label.ToString(), new Font("Arial", 12), new SolidBrush(ColorTranslator.FromHtml("#33FF66")), x, y - 24);
-                        }
-                    }
-                }
-                pictureBox1.Image = bitmap;
-                pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            }
-        }
 
-        private void nmrframeSkip_ValueChanged(object sender, EventArgs e)
-        {
-            _frameSkipQuantity = (int)nmrframeSkip.Value;
-        }
         #endregion
 
         #region Cập nhật Giao diện Người dùng (UI)
@@ -290,7 +212,6 @@ namespace VehicleDetection_8._0_
                 dataGridView1.Rows.Add(result.Key, result.Value);
             }
         }
-
         private async void UpdateDataGridView(Dictionary<string, int> results)
         {
             Invoke((Action)(() =>
@@ -305,32 +226,6 @@ namespace VehicleDetection_8._0_
                     dataGridView1.Rows.Add(result.Key, result.Value);
                 }
             }));
-        }
-        #endregion
-        #region Ghi Log
-        private void WriteLog(string filePath, string message)
-        {
-            try
-            {
-                // Kiểm tra và tạo file nếu chưa tồn tại
-                if (!File.Exists(filePath))
-                {
-                    using (var fileStream = File.Create(filePath))
-                    {
-                        // Đảm bảo file được tạo trước khi đóng
-                    }
-                }
-
-                // Ghi log với timestamp
-                using (StreamWriter writer = new StreamWriter(filePath, true))
-                {
-                    writer.WriteLine($"[{DateTime.UtcNow:yyyy-MM-dd HH:mm:ss.fff}] {message}");
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Lỗi khi ghi log: {ex.Message}");
-            }
         }
         #endregion
     }

@@ -1,0 +1,5 @@
+cd ai-vison/python-docs-samples/vision/cloud-client/detect/
+
+sudo pip install -r requirements.txt
+
+python detect.py safe-search./resources/violent.jpg

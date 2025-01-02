@@ -1,2 +1,5 @@
 ServiceAccToken_ChuThang.JSON
 ServiceAccToken.JSON
+/bin
+/obj
+/.vs

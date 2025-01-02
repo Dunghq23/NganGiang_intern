@@ -1,0 +1,15 @@
+Source/home/pi/recogNum-env/bin/activate
+
+cd recogNum-env/recogNum/
+
+Mô hình number recognition model training
+
+sudo nano trainModel.py
+
+python3 trainModel.py
+
+Mô hình number recognition using a trained model
+
+sudo nano recogNumber.py
+
+python3 recogNumber.py

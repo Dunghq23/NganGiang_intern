@@ -1,0 +1,96 @@
+
+1.Face Deetection Using Haar Cascade
+
+cd opencv
+
+cp -r data/samples/python/tutorial_code/objectDetection/cascade_classifier/
+
+sudo apt-get install libilmbase-dev libopenexr-dev lib-gstreamer1.0-dev
+
+cd /samples/python/tutorial_code/objectDetection/cascade_classifier/
+
+sudo nano objectDetection.py
+
+python3 objectDetectuon.py
+
+
+2.Face Detection Using Open Face
+
+cd opencv
+
+git clone htpps://github.com/codingforentrepreneurs/OpenCV-Python-Series 
+
+cd face/OpenCV-Python-Series/src
+
+sudo nano base.py
+
+python3 base.py
+
+sudo nano faces-train.py
+
+python3 faces-train.py
+
+sudo nano faces.py
+
+python3 faces.py
+
+3.Face Detection Using face recognition library
+
+cd opencv/face
+
+git clone https://github.com/davisking/dlib.git
+
+cd dlib/
+
+mkdir build
+
+cd build
+
+cmake
+
+cmake --build
+
+sudo python3 setup.py install 
+
+sudo nano /etc/dphys-swapfile 
+
+sudo /etc/init.d/dphys-swapfile restart 
+
+python3
+
+import dlib
+
+exit()
+
+cd ..
+
+sudo pip install face_recognition_models-0.3.0-py2.py3-none-any.whl 
+
+cd face_recognition sudo pip3 install face_recognition --no-cache-dir
+
+sudo nano /etc/dphys-swapfile 
+
+sudo /etc/init.d/dphys-swapfile restart 
+ 
+cd examples 
+
+3.1Find faces in Photos 
+
+sudo nano find_faces_in_picture.py
+
+python3 find_faces_in_picture.py
+
+3.2Identify each person in the picture and draw a box around it
+
+sudo nano identify_and_draw_boxes_on_faces.py
+
+python3 identify_and_draw_boxes_on_faces.py
+
+3.3Recignize faces in live video using webcam 
+
+sudo nano facerec_from_webcam_faster.py
+
+python3 facerec_from_webcam_faster.py
+
+
+

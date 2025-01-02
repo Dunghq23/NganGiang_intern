@@ -1,0 +1,5 @@
+cd ai-vison/python-docs-samples/vision/cloud-client/web/
+
+sudo pip install -r requirements.txt
+
+python detect.py web_detect.py ../detect/resources/bicycle.jpg

@@ -1,0 +1,5 @@
+cd ai-vison/python-docs-samples/vision/cloud-client/face_detection/
+
+sudo pip install -r requirements.txt
+
+python faces.py ../detect/resources/face-input.jpg
