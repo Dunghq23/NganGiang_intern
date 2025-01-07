@@ -1,0 +1,15 @@
+HƯỚNG DẪN CHẠY FILE Chương 3
+
+Tại thư mục Gốc (ImageAI), truy cập vào thư mục Chương 3 bằng lệnh dưới đây: 
+    cd Code/Chuong3
+    * Lưu ý: trường hợp đang ở thư mục Chuong1 thì quay trở lại thư mục cha của thư mục đó bằng lệnh:
+    cd ..
+
+1. Chạy file Detect
+    python Detect.py Text ./resources/text.jpg
+
+2. Chạy file phát hiện chữ
+    python DetectText.py
+
+3. Chạy file phát hiện nhãn
+    python DetectLabel.py

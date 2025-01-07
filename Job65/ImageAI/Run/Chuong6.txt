@@ -1,0 +1,12 @@
+HƯỚNG DẪN CHẠY FILE Chương 6
+
+Tại thư mục Gốc (ImageAI), truy cập vào thư mục Chương 6 bằng lệnh dưới đây: 
+    cd Code/Chuong6
+    * Lưu ý: trường hợp đang ở thư mục Chuong5 thì quay trở lại thư mục cha của thư mục đó bằng lệnh:
+    cd ..
+
+1. Chạy file Gợi ý cắt ảnh
+    python CropImage.py
+
+2. Chạy file phát hiện Web
+    python DetectWeb.py

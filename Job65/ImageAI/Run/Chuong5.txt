@@ -1,0 +1,16 @@
+HƯỚNG DẪN CHẠY FILE Chương 5
+
+Tại thư mục Gốc (ImageAI), truy cập vào thư mục Chương 5 bằng lệnh dưới đây: 
+    cd Code/Chuong5
+    * Lưu ý: trường hợp đang ở thư mục Chuong4 thì quay trở lại thư mục cha của thư mục đó bằng lệnh:
+    cd ..
+
+1. Chạy file phát Detect
+    python Detect.py Properties ./resources/recycle.jpg
+    python Detect.py Safe ./resources/threatening.jpg
+
+2. Chạy file phát hiện thuộc tính
+    python Properties.py
+
+3. Chạy file tìm kiếm an toàn
+    python SafeSearch.py

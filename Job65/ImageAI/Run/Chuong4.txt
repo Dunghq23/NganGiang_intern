@@ -1,0 +1,15 @@
+HƯỚNG DẪN CHẠY FILE Chương 4
+
+Tại thư mục Gốc (ImageAI), truy cập vào thư mục Chương 4 bằng lệnh dưới đây: 
+    cd Code/Chuong4
+    * Lưu ý: trường hợp đang ở thư mục Chuong3 thì quay trở lại thư mục cha của thư mục đó bằng lệnh:
+    cd ..
+
+1. Chạy file phát hiện biểu cảm, cảm xúc
+    python DetectEmotion.py
+
+2. Chạy file phát hiện khuôn mặt
+    python DetectFace.py
+
+3. Chạy file phát hiện địa điểm
+    python DetectLandmark.py

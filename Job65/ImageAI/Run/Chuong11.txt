@@ -1,0 +1,14 @@
+HƯỚNG DẪN CHẠY FILE Chương 11
+(Chương này không chạy trên Raspberry Pi mà chạy trên máy tính có GPU)
+
+Tại thư mục Gốc (ImageAI), truy cập vào thư mục Chương 11 bằng lệnh dưới đây: 
+    cd Code/Chuong11
+    * Lưu ý: trường hợp đang ở thư mục Chuong10 thì quay trở lại thư mục cha của thư mục đó bằng lệnh:
+    cd ..
+    
+1. Chạy huấn luyện mô hình
+    python retrain.py --image_dir flowers 
+
+2. Chạy nhận dạng
+    python label_image.py --graph=/tmp/output_graph.pb --labels=/tmp/output_labels.txt --input_layer=Placeholder --output_layer=final_result --image=./flowers/daisy/21652746_cc379e0eea_m.jpg
+

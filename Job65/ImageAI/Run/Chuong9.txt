@@ -1,0 +1,24 @@
+HƯỚNG DẪN CHẠY FILE Chương 9
+(Chương này không chạy trên Raspberry Pi mà chạy trên máy tính có GPU)
+
+Tại thư mục Gốc (ImageAI), truy cập vào thư mục Chương 9 bằng lệnh dưới đây: 
+    cd Code/Chuong9
+    * Lưu ý: trường hợp đang ở thư mục Chuong8 thì quay trở lại thư mục cha của thư mục đó bằng lệnh:
+    cd ..
+
+1. Chạy file MNIST_MachineLeaning.py:
+    python MNIST_MachineLeaning.py
+    
+2. Chạy file MNIST_DeepLearning_DropOut.py:
+    python MNIST_DeepLearning_DropOut.py
+
+3. Chạy file MNIST_DeepLearning_Neural.py:
+    python MNIST_DeepLearning_Neural.py
+
+4. Chạy file MNIST_DeepLearning_Optimizer.py:
+    python MNIST_DeepLearning_Optimizer.py
+
+5. Chạy file MNIST_DeepLearning_Xavier.py:
+    python MNIST_DeepLearning_Xavier.py
+
+

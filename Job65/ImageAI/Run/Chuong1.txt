@@ -1,0 +1,10 @@
+HƯỚNG DẪN CHẠY FILE HELLO.py
+
+Khi chạy Terminal, thư mục đầu tiên sẽ là thư mục root, Hãy truy cập thư mục dự án bằng lệnh dưới đây
+    cd Desktop/DungShare/ImageAI
+
+Bước 1: Tại thư mục Gốc (ImageAI), truy cập vào thư mục Chương 1 bằng lệnh dưới đây: 
+    cd Code/Chuong1
+
+Bước 2: Chạy file:
+    python Hello.py

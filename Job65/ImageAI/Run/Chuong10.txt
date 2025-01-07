@@ -1,0 +1,13 @@
+HƯỚNG DẪN CHẠY FILE Chương 10
+(Chương này không chạy trên Raspberry Pi mà chạy trên máy tính có GPU)
+
+Tại thư mục Gốc (ImageAI), truy cập vào thư mục Chương 10 bằng lệnh dưới đây: 
+    cd Code/Chuong10
+    * Lưu ý: trường hợp đang ở thư mục Chuong9 thì quay trở lại thư mục cha của thư mục đó bằng lệnh:
+    cd ..
+    
+1. Chạy file CNN_old_Tensorflow.py:
+    python CNN_old_Tensorflow.py
+
+2. Chạy file CNN_API_Keras.py:
+    python CNN_API_Keras.py

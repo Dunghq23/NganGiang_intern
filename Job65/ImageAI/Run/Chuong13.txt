@@ -1,0 +1,58 @@
+HƯỚNG DẪN CHẠY FILE Chương 13
+
+Tại thư mục Gốc (ImageAI), truy cập vào thư mục Chương 13 bằng lệnh dưới đây: 
+    cd Code/Chuong13
+    * Lưu ý: Lệnh quay trở lại thư mục trước đó:
+        cd ..
+
+1. Truy cập thư mục Face_OpenCV
+    cd Face_OpenCV
+    python objectDetection.py
+
+    (Nhấn q để thoát chương trình)
+
+2. Truy cập thư mục Face_recognition ( Dùng lệnh "cd.." để trở về thư mục Chuong13)
+    cd .. 
+    cd Face_recognition
+
+    2.1. Chạy file facerec_from_webcam_faster
+        python facerec_from_webcam_faster.py (Nhấn q để thoát chương trình)
+    
+    2.2. Chạy file find_faces_in_picture
+        python find_faces_in_picture.py
+
+    2.3. Chạy file identify_and_draw_boxes_on_faces
+        python identify_and_draw_boxes_on_faces
+
+3. Truy cập thư mục haarcascades ( Dùng lệnh "cd.." để trở về thư mục Chuong13)
+    cd .. 
+    cd haarcascades
+
+    3.1. Chạy file base (Hiển thị camera)
+        python base.py
+
+    3.2. Chạy file Lấy dữ liệu khuôn mặt
+        python datasetGenerator.py
+
+    3.3. Chạy file Huấn luyện
+        python train.py
+
+    3.4. Chạy file nhận dạng
+        python recognition.py
+
+4. Truy cập thư mục LED ( Dùng lệnh "cd.." để trở về thư mục Chuong13)
+    cd .. 
+    cd LED
+
+    4.1. Chạy file kiểm tra đèn LED
+        python testLED.py
+
+    4.2. Chạy file Phát hiện khuôn mặt đèn sẽ nháy
+        python control_device_by_face.py
+
+5. Chạy file face-camera
+    python face-camera.py (Nhấn q để thoát)
+
+6. Chạy file face.py
+    python face.py (Nhấn q để thoát)
+

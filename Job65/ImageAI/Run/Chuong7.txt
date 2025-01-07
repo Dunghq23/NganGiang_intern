@@ -1,0 +1,12 @@
+HƯỚNG DẪN CHẠY FILE Chương 7
+
+Tại thư mục Gốc (ImageAI), truy cập vào thư mục Chương 7 bằng lệnh dưới đây: 
+    cd Code/Chuong7
+    * Lưu ý: trường hợp đang ở thư mục Chuong6 thì quay trở lại thư mục cha của thư mục đó bằng lệnh:
+    cd ..
+
+1. Chạy file phát hiện tài liệu
+    python DetectDocument.py
+
+2. Chạy file phát hiện logo
+    python DetectLogo.py
