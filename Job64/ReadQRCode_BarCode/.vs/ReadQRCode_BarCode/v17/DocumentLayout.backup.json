@@ -1,0 +1,111 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\NganGiangCompany\\projects\\ReadQRCode_BarCode\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1B68148B-CF4A-4179-9C32-60ECC9378620}|ReadQRCode_BarCode.csproj|d:\\ngangiangcompany\\projects\\readqrcode_barcode\\readcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B68148B-CF4A-4179-9C32-60ECC9378620}|ReadQRCode_BarCode.csproj|solutionrelative:readcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B68148B-CF4A-4179-9C32-60ECC9378620}|ReadQRCode_BarCode.csproj|D:\\NganGiangCompany\\projects\\ReadQRCode_BarCode\\readcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1B68148B-CF4A-4179-9C32-60ECC9378620}|ReadQRCode_BarCode.csproj|solutionrelative:readcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B68148B-CF4A-4179-9C32-60ECC9378620}|ReadQRCode_BarCode.csproj|d:\\ngangiangcompany\\projects\\readqrcode_barcode\\generatecode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B68148B-CF4A-4179-9C32-60ECC9378620}|ReadQRCode_BarCode.csproj|solutionrelative:generatecode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B68148B-CF4A-4179-9C32-60ECC9378620}|ReadQRCode_BarCode.csproj|d:\\ngangiangcompany\\projects\\readqrcode_barcode\\generatecode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1B68148B-CF4A-4179-9C32-60ECC9378620}|ReadQRCode_BarCode.csproj|solutionrelative:generatecode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B68148B-CF4A-4179-9C32-60ECC9378620}|ReadQRCode_BarCode.csproj|d:\\ngangiangcompany\\projects\\readqrcode_barcode\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B68148B-CF4A-4179-9C32-60ECC9378620}|ReadQRCode_BarCode.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{31d7ac01-d35b-492b-9197-3ed774a65b7b}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\NganGiangCompany\\projects\\ReadQRCode_BarCode\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\NganGiangCompany\\projects\\ReadQRCode_BarCode\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T02:06:46.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GenerateCode.cs [Design]",
+              "DocumentMoniker": "D:\\NganGiangCompany\\projects\\ReadQRCode_BarCode\\GenerateCode.cs",
+              "RelativeDocumentMoniker": "GenerateCode.cs",
+              "ToolTip": "D:\\NganGiangCompany\\projects\\ReadQRCode_BarCode\\GenerateCode.cs [Design]",
+              "RelativeToolTip": "GenerateCode.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T01:45:56.695Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReadCode.cs",
+              "DocumentMoniker": "D:\\NganGiangCompany\\projects\\ReadQRCode_BarCode\\ReadCode.cs",
+              "RelativeDocumentMoniker": "ReadCode.cs",
+              "ToolTip": "D:\\NganGiangCompany\\projects\\ReadQRCode_BarCode\\ReadCode.cs",
+              "RelativeToolTip": "ReadCode.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAkwDMAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T10:05:31.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReadCode.cs [Design]",
+              "DocumentMoniker": "D:\\NganGiangCompany\\projects\\ReadQRCode_BarCode\\ReadCode.cs",
+              "RelativeDocumentMoniker": "ReadCode.cs",
+              "ToolTip": "D:\\NganGiangCompany\\projects\\ReadQRCode_BarCode\\ReadCode.cs [Design]",
+              "RelativeToolTip": "ReadCode.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T10:00:34.336Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GenerateCode.cs",
+              "DocumentMoniker": "D:\\NganGiangCompany\\projects\\ReadQRCode_BarCode\\GenerateCode.cs",
+              "RelativeDocumentMoniker": "GenerateCode.cs",
+              "ToolTip": "D:\\NganGiangCompany\\projects\\ReadQRCode_BarCode\\GenerateCode.cs",
+              "RelativeToolTip": "GenerateCode.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAEsAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T07:07:32.522Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
