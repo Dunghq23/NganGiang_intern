@@ -1,0 +1,6 @@
+cd /AIY-projects-python/src/examples/voice 
+
+python3 buzzer.py
+
+OK GOOGLE START SOUND
+

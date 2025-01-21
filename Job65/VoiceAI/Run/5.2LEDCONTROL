@@ -1,0 +1,8 @@
+cd /AIY-projects-python/src/examples/voice 
+
+python3 led.py
+
+OK GOOGLE LED ON
+
+OK GOOGLE LED OFF
+

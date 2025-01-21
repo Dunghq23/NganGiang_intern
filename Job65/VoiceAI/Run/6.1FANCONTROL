@@ -1,0 +1,7 @@
+cd /AIY-projects-python/src/examples/voice 
+
+python3 fan.py
+
+OK GOOGLE START FAN
+
+OK GOOGLE STOP FAN

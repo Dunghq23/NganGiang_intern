@@ -1,0 +1,11 @@
+cd /AIY-projects-python/src/examples/voice 
+
+python3 security.py
+
+OK GOOGLE READY SYSTEM
+
+OK GOOGLE READY DOOR SYSTEM
+
+OK GOOGLE SYSTEM ON
+
+OK GOOGLE SYSTEM OFF 

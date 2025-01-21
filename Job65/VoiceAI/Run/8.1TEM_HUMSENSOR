@@ -1,0 +1,7 @@
+cd /AIY-projects-python/src/examples/voice 
+
+python3 dht11.py
+
+OK GOOGLE SHOW TEMPERATURE
+
+OK GOOGLE SHOW HUMIDITY

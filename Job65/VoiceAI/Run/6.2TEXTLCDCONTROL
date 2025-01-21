@@ -1,0 +1,7 @@
+cd /AIY-projects-python/src/examples/voice 
+
+python3 textlcd.py
+
+OK GOOGLE DISPLAY
+
+OK GOOGLE TURN LCD OFF

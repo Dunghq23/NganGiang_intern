@@ -1,0 +1,9 @@
+cd /AIY-projects-python/src/examples/voice 
+
+python3 light_control.py
+
+OK GOOGLE READY SYSTEM
+
+OK GOOGLE SYSTEM ON
+
+OK GOOGLE SYSTEM OFF

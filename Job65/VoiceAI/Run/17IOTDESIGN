@@ -1,0 +1,3 @@
+cd /AIY-projects-python/src/examples/voice 
+
+python3 deviceserver.py

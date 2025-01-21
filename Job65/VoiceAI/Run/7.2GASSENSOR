@@ -1,0 +1,5 @@
+cd /AIY-projects-python/src/examples/voice 
+
+python3 gas.py
+
+OK GOOGLE SHOW GAS
