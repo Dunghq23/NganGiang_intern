@@ -65,10 +65,20 @@ def calculate_velocity(video_path):
                         
                         # Tính khoảng cách pixel
                         velocity_pixel = np.sqrt(dx**2 + dy**2)
+
+                        # # Lấy DPI của frame
+                        # # Lấy Frame size vertical
+                        # # Tính inch
+                        # # inch = px vertical * DPI;
+
+                        # # chuyển inch sang m
+                        # meter = inch * 0.0254  # inch/m
                         
                         # Chuyển đổi sang km/h (giả sử)
-                        pixel_per_meter = 50  # Cần điều chỉnh
-                        velocity_mps = velocity_pixel / pixel_per_meter  # m/s
+                        pixel_per_meter = 50  # Cần điều chỉnh (px/m)
+                        R = 1/pixel_per_meter  # m/px
+
+                        velocity_mps = velocity_pixel * R  # m/s
                         velocity_kmh = velocity_mps * 3.6
                         
                         vehicle_tracking[obj_id]['velocities'].append(velocity_kmh)
@@ -99,5 +109,5 @@ def calculate_velocity(video_path):
     return vehicle_tracking
 
 # Sử dụng
-video_path = 'b.mp4'
+video_path = 'a.mp4'
 tracking_data = calculate_velocity(video_path)

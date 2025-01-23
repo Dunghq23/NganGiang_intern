@@ -50,3 +50,6 @@ D:\Documents\Work\NganGiang\HAQUANGDUNG\Job62\CSharp\Test\bin\Debug\net8.0-windo
 D:\Documents\Work\NganGiang\HAQUANGDUNG\Job62\CSharp\Test\bin\Debug\net8.0-windows\runtimes\win-x86\native\msvcp140_codecvt_ids.dll
 D:\Documents\Work\NganGiang\HAQUANGDUNG\Job62\CSharp\Test\bin\Debug\net8.0-windows\runtimes\win-x86\native\vcruntime140.dll
 D:\Documents\Work\NganGiang\HAQUANGDUNG\Job62\CSharp\Test\obj\Debug\net8.0-windows\Test.csproj.Up2Date
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job62\CSharp\Test\bin\Debug\net8.0-windows\AForge.dll
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job62\CSharp\Test\bin\Debug\net8.0-windows\AForge.Video.dll
+D:\Documents\Work\NganGiang\HAQUANGDUNG\Job62\CSharp\Test\bin\Debug\net8.0-windows\AForge.Video.DirectShow.dll
