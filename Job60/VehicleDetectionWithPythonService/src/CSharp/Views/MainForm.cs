@@ -4,6 +4,7 @@ using System.Text;
 using Newtonsoft.Json;
 using System.Diagnostics;
 using Grpc.Net.Client;
+using VehicleDetection_8._0_.src.CSharp.Models;
 
 namespace VehicleDetection_8._0_
 {

@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job57\\VehicleDetection(8.0)\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{04945C25-676E-46CF-94AF-92400E8D4CED}|VehicleDetection(8.0).csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job57\\vehicledetection(8.0)\\src\\csharp\\services\\yolov8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04945C25-676E-46CF-94AF-92400E8D4CED}|VehicleDetection(8.0).csproj|solutionrelative:src\\csharp\\services\\yolov8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{04945C25-676E-46CF-94AF-92400E8D4CED}|VehicleDetection(8.0).csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job57\\vehicledetection(8.0)\\src\\csharp\\views\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{04945C25-676E-46CF-94AF-92400E8D4CED}|VehicleDetection(8.0).csproj|solutionrelative:src\\csharp\\views\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04945C25-676E-46CF-94AF-92400E8D4CED}|VehicleDetection(8.0).csproj|D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job57\\VehicleDetection(8.0)\\src\\csharp\\views\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{04945C25-676E-46CF-94AF-92400E8D4CED}|VehicleDetection(8.0).csproj|solutionrelative:src\\csharp\\views\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04945C25-676E-46CF-94AF-92400E8D4CED}|VehicleDetection(8.0).csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job57\\vehicledetection(8.0)\\vehicledetection(8.0).csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{04945C25-676E-46CF-94AF-92400E8D4CED}|VehicleDetection(8.0).csproj|solutionrelative:vehicledetection(8.0).csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{04945C25-676E-46CF-94AF-92400E8D4CED}|VehicleDetection(8.0).csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job57\\vehicledetection(8.0)\\src\\csharp\\models\\detectionresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{04945C25-676E-46CF-94AF-92400E8D4CED}|VehicleDetection(8.0).csproj|solutionrelative:src\\csharp\\models\\detectionresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04945C25-676E-46CF-94AF-92400E8D4CED}|VehicleDetection(8.0).csproj|D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job57\\VehicleDetection(8.0)\\src\\csharp\\views\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{04945C25-676E-46CF-94AF-92400E8D4CED}|VehicleDetection(8.0).csproj|solutionrelative:src\\csharp\\views\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{04945C25-676E-46CF-94AF-92400E8D4CED}|VehicleDetection(8.0).csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job57\\vehicledetection(8.0)\\src\\csharp\\services\\yolov8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04945C25-676E-46CF-94AF-92400E8D4CED}|VehicleDetection(8.0).csproj|solutionrelative:src\\csharp\\services\\yolov8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,25 +30,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job57\\VehicleDetection(8.0)\\src\\CSharp\\Views\\Form1.cs",
               "RelativeDocumentMoniker": "src\\CSharp\\Views\\Form1.cs",
               "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job57\\VehicleDetection(8.0)\\src\\CSharp\\Views\\Form1.cs",
               "RelativeToolTip": "src\\CSharp\\Views\\Form1.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAIwFAAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-08T07:24:11.272Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "VehicleDetection(8.0)",
+              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job57\\VehicleDetection(8.0)\\VehicleDetection(8.0).csproj",
+              "RelativeDocumentMoniker": "VehicleDetection(8.0).csproj",
+              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job57\\VehicleDetection(8.0)\\VehicleDetection(8.0).csproj",
+              "RelativeToolTip": "VehicleDetection(8.0).csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-25T01:25:35.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "DetectionResult.cs",
               "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job57\\VehicleDetection(8.0)\\src\\CSharp\\Models\\DetectionResult.cs",
               "RelativeDocumentMoniker": "src\\CSharp\\Models\\DetectionResult.cs",
@@ -56,7 +79,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job57\\VehicleDetection(8.0)\\src\\CSharp\\Views\\Form1.cs",
               "RelativeDocumentMoniker": "src\\CSharp\\Views\\Form1.cs",
@@ -67,16 +90,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "YoloV8.cs",
               "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job57\\VehicleDetection(8.0)\\src\\CSharp\\Services\\YoloV8.cs",
               "RelativeDocumentMoniker": "src\\CSharp\\Services\\YoloV8.cs",
               "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job57\\VehicleDetection(8.0)\\src\\CSharp\\Services\\YoloV8.cs",
               "RelativeToolTip": "src\\CSharp\\Services\\YoloV8.cs",
-              "ViewState": "AgIAAKkAAAAAAAAAAAAowMgAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAKcAAAAAAAAAAADwv8gAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T08:10:25.851Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T08:10:25.851Z"
             }
           ]
         }
