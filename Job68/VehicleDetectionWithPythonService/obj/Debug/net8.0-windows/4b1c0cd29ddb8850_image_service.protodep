@@ -1,0 +1,2 @@
+src/CSharp/Services/Generated/ImageService.cs \
+src/CSharp/Services/Generated/ImageServiceGrpc.cs: D:/Documents/Work/NganGiang/HAQUANGDUNG/Job60/Python/grpc/image_service.proto

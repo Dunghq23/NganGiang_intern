@@ -1,0 +1,2 @@
+obj\Debug\net8.0-windows\src\Python/ImageService.cs \
+obj\Debug\net8.0-windows\src\Python/ImageServiceGrpc.cs: src/Python/image_service.proto

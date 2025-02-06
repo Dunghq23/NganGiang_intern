@@ -153,7 +153,6 @@ namespace VehicleDetection_8._0_
 
 
         }
-
         private async Task<List<dynamic>> gRpc(string imagePath)
         {
             try

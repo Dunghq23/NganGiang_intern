@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+service ImageTransfer {
+    rpc SendImage (ImageRequest) returns (ImageResponse);
+}
+
+message ImageRequest {
+    string path = 1;
+    // Thêm trường model_path một cách optional
+    optional string model_path = 2;
+
+}
+
+message ImageResponse {
+    bool success = 1;
+    string message = 2;
+    string data = 3;
+}
