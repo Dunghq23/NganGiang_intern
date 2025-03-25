@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "dgSpecHash": "l4tEAwYND3M=",
+  "success": true,
+  "projectFilePath": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job61\\LidClassification_Console_Capture\\LidClassification_Console.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\HQD\\.nuget\\packages\\emgu.cv\\3.4.1.2976\\emgu.cv.3.4.1.2976.nupkg.sha512",
+    "C:\\Users\\HQD\\.nuget\\packages\\emgu.cv.runtime.windows\\4.2.0.3636\\emgu.cv.runtime.windows.4.2.0.3636.nupkg.sha512",
+    "C:\\Users\\HQD\\.nuget\\packages\\google.protobuf\\3.29.1\\google.protobuf.3.29.1.nupkg.sha512",
+    "C:\\Users\\HQD\\.nuget\\packages\\grpc.core\\2.29.0\\grpc.core.2.29.0.nupkg.sha512",
+    "C:\\Users\\HQD\\.nuget\\packages\\grpc.core.api\\2.29.0\\grpc.core.api.2.29.0.nupkg.sha512",
+    "C:\\Users\\HQD\\.nuget\\packages\\grpc.tools\\2.68.1\\grpc.tools.2.68.1.nupkg.sha512",
+    "C:\\Users\\HQD\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\HQD\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\HQD\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\HQD\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\HQD\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.3\\system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512",
+    "C:\\Users\\HQD\\.nuget\\packages\\system.threading.channels\\5.0.0\\system.threading.channels.5.0.0.nupkg.sha512",
+    "C:\\Users\\HQD\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+    "C:\\Users\\HQD\\.nuget\\packages\\zedgraph\\5.1.7\\zedgraph.5.1.7.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Emgu.CV from 4.2.0.3636 to 3.4.1.2976. Reference the package directly from the project to select a different version. \r\n LidClassification_Console -> Emgu.CV.runtime.windows 4.2.0.3636 -> Emgu.CV (= 4.2.0.3636) \r\n LidClassification_Console -> EMGU.CV (>= 3.4.1.2976)",
+      "libraryId": "Emgu.CV",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.7.2",
+        ".NETFramework,Version=v4.7.2/win",
+        ".NETFramework,Version=v4.7.2/win-arm64",
+        ".NETFramework,Version=v4.7.2/win-x64",
+        ".NETFramework,Version=v4.7.2/win-x86"
+      ]
+    }
+  ]
+}

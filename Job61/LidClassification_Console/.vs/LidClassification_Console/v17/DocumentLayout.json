@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job61\\LidClassification_Console\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D4EACA51-681F-4A93-9162-C3C1A91747F5}|LidClassification_Console.csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job61\\lidclassification_console\\src\\csharp\\service\\pythonexcutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4EACA51-681F-4A93-9162-C3C1A91747F5}|LidClassification_Console.csproj|solutionrelative:src\\csharp\\service\\pythonexcutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D4EACA51-681F-4A93-9162-C3C1A91747F5}|LidClassification_Console.csproj|d:\\documents\\work\\ngangiang\\haquangdung\\job61\\lidclassification_console\\src\\csharp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4EACA51-681F-4A93-9162-C3C1A91747F5}|LidClassification_Console.csproj|solutionrelative:src\\csharp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,23 +14,27 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PythonExcutor.cs",
-              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job61\\LidClassification_Console\\src\\CSharp\\Service\\PythonExcutor.cs",
-              "RelativeDocumentMoniker": "src\\CSharp\\Service\\PythonExcutor.cs",
-              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job61\\LidClassification_Console\\src\\CSharp\\Service\\PythonExcutor.cs",
-              "RelativeToolTip": "src\\CSharp\\Service\\PythonExcutor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job61\\LidClassification_Console\\src\\CSharp\\Program.cs",
+              "RelativeDocumentMoniker": "src\\CSharp\\Program.cs",
+              "ToolTip": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job61\\LidClassification_Console\\src\\CSharp\\Program.cs",
+              "RelativeToolTip": "src\\CSharp\\Program.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAYwG0AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T01:21:53.088Z",
+              "WhenOpened": "2025-03-04T03:01:01.23Z",
               "EditorCaption": ""
             }
           ]
