@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+service ImageTransfer {
+    rpc SendImage (ImageRequest) returns (ImageResponse);
+    rpc CalculateDensity (DensityRequest) returns (DensityResponse);
+}
+
+message ImageRequest {
+    string path = 1;
+    string model_path = 2;
+}
+
+message ImageResponse {
+    bool success = 1;
+    string message = 2;
+    string data = 3;
+}
+
+
+message DensityRequest {
+    string model_path = 1;
+    string pathImageProcessed = 2;
+    string pathImage = 3;
+}
+
+message DensityResponse {
+    bool success = 1;
+    string message = 2;
+    float density = 3;
+}

@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: yolo-grpc
+Version: 0.1.0
+Summary: A gRPC service for object detection using YOLO
+Home-page: https://github.com/<your-github-username>/yolo_grpc
+Author: Ha Quang Dung
+Author-email: dungha.4work@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Object Detection Service
+
+## Giới thiệu
+Thư viện cung cấp dịch vụ phát hiện đối tượng sử dụng YOLO qua gRPC.
+
+## Cài đặt
+```bash
+pip install object_detection_service
+```
+
+## Sử dụng cơ bản
+```python
+from yolo-grpc import ObjectDetector
+import cv2
+
+# Khởi tạo detector
+detector = ObjectDetector('path_to_model.pt')
+
+# Đọc ảnh
+image = cv2.imread('image.jpg')
+
+# Phát hiện đối tượng
+results = detector.detect_objects(image)
+print(results)
+```
+
+## Chạy Server gRPC
+```python
+from object_detection_service import serve
+```
+
+### Khởi động server
+```python
+serve('path_to_model.pt', port=50051)
+```
