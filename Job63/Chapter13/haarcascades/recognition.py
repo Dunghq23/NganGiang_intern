@@ -30,6 +30,7 @@ except ValueError:
     print("[ERROR] Dữ liệu trong tệp tin names.txt không đúng định dạng. Vui lòng kiểm tra lại!")
     exit()
 
+CONFIDENCE_THRESHOLD = 70
 # Bắt đầu nhận diện khuôn mặt
 while True:
     ret, frame = camera.read()
@@ -56,7 +57,7 @@ while True:
         id, confidence = recognizer.predict(roi_gray)
 
         # Xử lý kết quả dự đoán
-        if 0 < id <= len(names) and confidence < 100:
+        if 0 < id <= len(names) and confidence < CONFIDENCE_THRESHOLD:
             recognized_name = names[id - 1]
             confidence_text = "  {0}%".format(round(100 - confidence))
         else:

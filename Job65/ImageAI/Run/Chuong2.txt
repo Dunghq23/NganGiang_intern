@@ -3,7 +3,7 @@ HƯỚNG DẪN CHẠY FILE Chương 2
 Bước 1: Tại thư mục Gốc (ImageAI), truy cập vào thư mục Chương 2 bằng lệnh dưới đây: 
     cd Code/Chuong2
     *Lưu ý: trường hợp đang ở thư mục Chuong1 thì quay trở lại thư mục cha của thư mục đó bằng lệnh:
-    cd ..
+    cd ../Chuong2
 
 Bước 2: Chạy file:
     python detect.py faces ./Faces/StartUp.jpg
