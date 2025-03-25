@@ -74,7 +74,6 @@ namespace VehicleDetection_8._0_
                 MessageBox.Show("Vui lòng chọn Video trước khi trích xuất!");
                 return;
             }
-
             _stopwatch = Stopwatch.StartNew();
             Task.Factory.StartNew(() => ProcessImage());
         }
