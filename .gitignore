@@ -1,8 +1,22 @@
+# Token nhạy cảm
 ServiceAccToken_ChuThang.JSON
 ServiceAccToken.JSON
-/bin
-/obj
-/.vs
-/flowers
-.zip
-.rar
+
+# Thư mục build của các project .NET hoặc tương tự
+bin/
+obj/
+.vs/
+
+# Dữ liệu (ảnh, tệp mẫu, thư mục huấn luyện, v.v.)
+flowers/
+
+# File nén
+*.zip
+*.rar
+
+# Python virtual environment (nếu cần)
+py3.8_env/
+
+# Dữ liệu gán nhãn và cắt (nếu bạn dùng)
+labeled_images2/
+Cropped/

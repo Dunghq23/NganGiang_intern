@@ -1,1 +1,12 @@
+# Bỏ qua file token nhạy cảm
 ServiceAccountToken.JSON
+
+# Bỏ qua thư mục môi trường ảo
+tf_env/
+easyocr_env/
+visionAPI_env
+
+# Bỏ qua thư mục chứa ảnh gán nhãn và ảnh cắt
+dataset/
+labeled_images/
+Cropped/
