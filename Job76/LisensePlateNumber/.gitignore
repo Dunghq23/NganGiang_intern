@@ -1,0 +1,31 @@
+﻿# ===== .NET/C# =====
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VSCode
+.vscode/
+
+# Rider
+.idea/
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Môi trường ảo
+venv/
+env/
+.tf_env/
+**/tf_env/
+
+# ===== Logs / Outputs =====
+*.log
+outputs/
