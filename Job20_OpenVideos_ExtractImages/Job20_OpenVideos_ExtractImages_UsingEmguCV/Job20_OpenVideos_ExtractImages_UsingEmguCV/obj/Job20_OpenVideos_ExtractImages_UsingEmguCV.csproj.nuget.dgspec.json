@@ -10,12 +10,12 @@
         "projectUniqueName": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job20_OpenVideos_ExtractImages\\Job20_OpenVideos_ExtractImages_UsingEmguCV\\Job20_OpenVideos_ExtractImages_UsingEmguCV\\Job20_OpenVideos_ExtractImages_UsingEmguCV.csproj",
         "projectName": "Job20_OpenVideos_ExtractImages_UsingEmguCV",
         "projectPath": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job20_OpenVideos_ExtractImages\\Job20_OpenVideos_ExtractImages_UsingEmguCV\\Job20_OpenVideos_ExtractImages_UsingEmguCV\\Job20_OpenVideos_ExtractImages_UsingEmguCV.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\HQD\\.nuget\\packages\\",
         "outputPath": "D:\\Documents\\Work\\NganGiang\\HAQUANGDUNG\\Job20_OpenVideos_ExtractImages\\Job20_OpenVideos_ExtractImages_UsingEmguCV\\Job20_OpenVideos_ExtractImages_UsingEmguCV\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HQD\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,6 +29,11 @@
           "net48": {
             "projectReferences": {}
           }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
